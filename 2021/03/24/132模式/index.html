@@ -3,15 +3,15 @@
 
 	<head>
 		
-<title>dp子序列问题-</title>
+<title>132模式-</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="shortcut icon" type="image/x-icon" href="/image/favicon.ico">
 
 
-<meta name="keywords" content="题目,算法,学习,">
-<meta name="description" content="关于dp子序列问题的备忘">
+<meta name="keywords" content="题目,算法,单调栈,">
+<meta name="description" content="">
 
 
 <script src="/js/jquery.min.js"></script>
@@ -262,11 +262,11 @@
             
             <li><a href="/tags/算法">算法</a></li>
             
-            <li><a href="/tags/学习">学习</a></li>
+            <li><a href="/tags/单调栈">单调栈</a></li>
             
             
         </ul>
-        <h1>dp子序列问题</h1>
+        <h1>132模式</h1>
         <div class="article-info">
             <div class="article-author">
                 
@@ -279,30 +279,44 @@
                 </svg>
                 
                 <span> <a href="">PICOF</a></span>
-                <p>2021-03-17 23:21:09</p>
+                <p>2021-03-24 22:26:01</p>
             </div>
         </div>
     </div>
 </div>
 <div class="article-content">
     <div id="article" class="content">
-        <p><strong>PS：本文属于备忘笔记，今后遇到类似题目会持续更新</strong></p>
-<p>​    今天在力扣上面看到一个子序列dp的问题，不得不感叹用dp数组解决的子序列问题还真是挺多，该题目属于困难分类，确实废了一番功夫。不过在练后回顾理清思路时，感觉其实也并没有那么难，只是有些套路有待总结——话不多说直接上题</p>
-<blockquote>
-<p>给定一个字符串 s 和一个字符串 t ，计算在 s 的子序列中 t 出现的个数。</p>
-<p>字符串的一个 子序列 是指，通过删除一些（也可以不删除）字符且不干扰剩余字符相对位置所组成的新字符串。（例如，”ACE” 是 “ABCDE” 的一个子序列，而 “AEC” 不是）</p>
-<p>题目数据保证答案符合 32 位带符号整数范围。</p>
+        <p><em>这道题主要涉及到了单调栈的运用，我还不是很熟悉这一类题型</em></p>
+<h3 id="题干"><a href="#题干" class="headerlink" title="题干:"></a><strong>题干:</strong></h3><blockquote>
+<p>给你一个整数数组 nums ，数组中共有 n 个整数。132 模式的子序列 由三个整数 nums[i]、nums[j] 和 nums[k] 组成，并同时满足：i &lt; j &lt; k 和 nums[i] &lt; nums[k] &lt; nums[j] 。</p>
+<p>如果 nums 中存在 132 模式的子序列 ，返回 true ；否则，返回 false 。</p>
+<p>进阶：很容易想到时间复杂度为 O(n^2) 的解决方案，你可以设计一个时间复杂度为 O(n logn) 或 O(n) 的解决方案吗？</p>
 </blockquote>
 <blockquote>
 <p>示例 1：</p>
-<p>输入：s = “rabbbit”, t = “rabbit”<br>输出：3<br>解释：<br>如下图所示, 有 3 种可以从 s 中得到 “rabbit” 的方案。<br>(上箭头符号 ^ 表示选取的字母)<br>rabbbit<br>^^^^ ^^<br>rabbbit<br>^^ ^^^^<br>rabbbit<br>^^^ ^^^<br>示例 2：</p>
-<p>输入：s = “babgbag”, t = “bag”<br>输出：5<br>解释：<br>如下图所示, 有 5 种可以从 s 中得到 “bag” 的方案。<br>(上箭头符号 ^ 表示选取的字母)<br>babgbag<br>^^ ^<br>babgbag<br>^^    ^<br>babgbag<br>^    ^^<br>babgbag<br>  ^  ^^<br>babgbag<br>    ^^^</p>
+<p>输入：nums = [1,2,3,4]<br>输出：false<br>解释：序列中不存在 132 模式的子序列。<br>示例 2：</p>
+<p>输入：nums = [3,1,4,2]<br>输出：true<br>解释：序列中有 1 个 132 模式的子序列： [1, 4, 2] 。<br>示例 3：</p>
+<p>输入：nums = [-1,3,2,0]<br>输出：true<br>解释：序列中有 3 个 132 模式的的子序列：[-1, 3, 2]、[-1, 3, 0] 和 [-1, 2, 0] 。</p>
 <p>提示：</p>
 <ul>
-<li>0 &lt;= s.length, t.length &lt;= 1000</li>
-<li>s 和 t 由英文字母组成</li>
+<li>n == nums.length</li>
+<li>1 &lt;= n &lt;= 104</li>
+<li>-109 &lt;= nums[i] &lt;= 109</li>
 </ul>
+<p>来源：力扣（LeetCode）<br>链接：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/132-pattern">https://leetcode-cn.com/problems/132-pattern</a></p>
 </blockquote>
+<p>读完后第一反应是找一些方便判断的特征，找到对应的候选数字后不断进行维护。。。然后运行的时间复杂度是O（n^2）,而且在写代码时让人非常不舒服，过程过于繁杂且容易出错。</p>
+<p>所以这里我们引入单调栈，即用栈存储数据，且栈内数据一定是单增（或单减），一旦遇到下一个数就立马用其与栈内元素比较，大于（或小于）的元素则全部出栈，最后将新的数压栈。</p>
+<p>对于这道题，我们用单减的单调栈，即栈内元素中一定存在代表132模式中“3”的元素，而出栈元素用一个max变量维护，保证max对应132中“2”的候选元素中的最大值。此时，只要新的元素小于max，即可返回true（即新元素为132模式中代表“1”的元素）</p>
+<p>代码如下：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">find132pattern</span><span class="params">(<span class="keyword">int</span>* nums, <span class="keyword">int</span> numsSize)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span>(numsSize&lt;<span class="number">3</span>)</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">int</span> <span class="built_in">stack</span>[numsSize];</span><br><span class="line"></span><br><span class="line">  <span class="keyword">int</span> nu=<span class="number">0</span>,max=<span class="number">-1000000001</span>;</span><br><span class="line"></span><br><span class="line">  <span class="built_in">stack</span>[nu++]=nums[numsSize<span class="number">-1</span>];</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> i=numsSize<span class="number">-2</span>;i&gt;=<span class="number">0</span>;i--)&#123;</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">if</span>(nums[i]&lt;max)</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">for</span>(<span class="keyword">int</span> j=nu<span class="number">-1</span>;j&gt;=<span class="number">0</span>;j--)</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">if</span>(<span class="built_in">stack</span>[j]&lt;nums[i])&#123;</span><br><span class="line"></span><br><span class="line">​    nu--;</span><br><span class="line"></span><br><span class="line">​    max=<span class="built_in">stack</span>[j];</span><br><span class="line"></span><br><span class="line">​    &#125;</span><br><span class="line"></span><br><span class="line">​    <span class="built_in">stack</span>[nu++]=nums[i];</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>如下图解：</strong></p>
+<p><img src="/.com//132%E6%A8%A1%E5%BC%8F%5Cpic132.png" alt="pic132"></p>
+<p>这里还有一篇关于单调栈的文章，写的很好，放个链接在这里：</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_42784951/article/details/88963758?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161659419116780262549524%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&amp;request_id=161659419116780262549524&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_v2~rank_v29-2-88963758.pc_search_result_cache&amp;utm_term=%E5%8D%95%E8%B0%83%E6%A0%88">https://blog.csdn.net/weixin_42784951/article/details/88963758?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161659419116780262549524%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&amp;request_id=161659419116780262549524&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_v2~rank_v29-2-88963758.pc_search_result_cache&amp;utm_term=%E5%8D%95%E8%B0%83%E6%A0%88</a></p>
 
     </div>
 </div>
@@ -332,19 +346,12 @@
 </script>
 <div class="Last-Next">
     
-    <a href="/2021/03/24/132%E6%A8%A1%E5%BC%8F/">
-        <div class="last">
-            <span>上一篇</span>
-            <p>132模式</p>
-        </div>
-    </a>
-    
 
     
-    <a href="/2021/03/16/%E9%80%86%E6%B3%A2%E5%85%B0/">
+    <a href="/2021/03/17/dp%E5%AD%90%E5%BA%8F%E5%88%97%E9%97%AE%E9%A2%98/">
         <div class="next">
             <span>下一篇</span>
-            <p>逆波兰（转载）</p>
+            <p>dp子序列问题</p>
         </div>
     </a>
     
