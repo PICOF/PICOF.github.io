@@ -3,14 +3,15 @@
 
 	<head>
 		
-<title>PICOF&#39;blog-</title>
+<title>接雨水问题-</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="shortcut icon" type="image/x-icon" href="/image/favicon.ico">
 
-<meta name="keywords" content="个人博客,blog,Quiet主题，哲学">
-<meta name="description" content="描述">
+
+<meta name="keywords" content="题目,单调栈,动态规划,">
+<meta name="description" content="关于逆波兰转化的备忘">
 
 
 <script src="/js/jquery.min.js"></script>
@@ -33,7 +34,13 @@
 
 	<body>
 		
-<link rel="stylesheet" href="/css/home.css">
+<link rel="stylesheet" href="/css/page.css">
+
+
+<link rel="stylesheet" href="/css/page_cente.css">
+
+
+<link rel="stylesheet" href="/css/atom-one-dark.css">
 
 
 <link rel="stylesheet" href="/css/header.css">
@@ -49,13 +56,13 @@
 				<ul>
 					
 						
-							<li class="select">
-								<a href="/">
-									HOME
-								</a>
-								<span class="dot"></span>
-							</li>
-							
+								<li>
+									<a href="/">
+										HOME
+									</a>
+									<span class="dot"></span>
+								</li>
+								
 									
 						
 								<li>
@@ -246,219 +253,111 @@
 		<script>
 			$(function () { $(window).scroll(function () { if ($(document).scrollTop() > 100) { $(".header-top").removeClass("header-move2"); $('.header-top').addClass('header-move1') } else { $(".header-top").removeClass("header-move1"); $('.header-top').addClass('header-move2') } }) });
 		</script>
-<div class="header-bg">
-	<div class="bg-content">
-		<span>
-			<img class="site-logo" src="/image/logo.png" alt="Q">
-		</span>
-		<h2>
-			DEEP DARK♂ FANTACY
-		</h2>
-	</div>
+<div class="header-bg ">
+    <div class="bg-content">
+        <ul class="tag">
+            
+            
+            <li><a href="/tags/题目">题目</a></li>
+            
+            <li><a href="/tags/单调栈">单调栈</a></li>
+            
+            <li><a href="/tags/动态规划">动态规划</a></li>
+            
+            
+        </ul>
+        <h1>接雨水问题</h1>
+        <div class="article-info">
+            <div class="article-author">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                    <g>
+                        <path fill="#12183A"
+                            d="M6.187 15.265A6.47 6.47 0 0 0 10 16.5a6.47 6.47 0 0 0 3.813-1.235A4.99 4.99 0 0 0 10 13.5a4.99 4.99 0 0 0-3.813 1.765zM5.082 14.25A6.485 6.485 0 0 1 10 12c1.965 0 3.726.872 4.918 2.25a6.5 6.5 0 1 0-9.836 0zM10 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0-1.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z">
+                        </path>
+                    </g>
+                </svg>
+                
+                <span> <a href="">PICOF</a></span>
+                <p>2021-04-02 15:57:57</p>
+            </div>
+        </div>
+    </div>
 </div>
-<div class="main">
-	<div class="feed">
-		
-			<div class="feed-display">
-				<a href="/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/">
-					<h2 class="feed-title">
-						接雨水问题
-					</h2>
-					
-							<img src="https://api.ixiaowai.cn/gqapi/gqapi.php" alt="Quiet">
-							
-				</a>
-				<div class="feed-meat">
-					<div class="meat-info">
-						<div class="info-auth">
-							<a href="">
-								PICOF
-							</a>
-						</div>
-						<div class="info-data">
-							2021-04-02
-						</div>
-					</div>
-					<div class="meat-type"></div>
-				</div>
-			</div>
-			
-			<div class="feed-display">
-				<a href="/2021/03/31/image/">
-					<h2 class="feed-title">
-						image
-					</h2>
-					
-							<img src="https://api.ixiaowai.cn/gqapi/gqapi.php" alt="Quiet">
-							
-				</a>
-				<div class="feed-meat">
-					<div class="meat-info">
-						<div class="info-auth">
-							<a href="">
-								PICOF
-							</a>
-						</div>
-						<div class="info-data">
-							2021-03-31
-						</div>
-					</div>
-					<div class="meat-type"></div>
-				</div>
-			</div>
-			
-			<div class="feed-display">
-				<a href="/2021/03/30/1/">
-					<h2 class="feed-title">
-						分治解决二进制逆位问题
-					</h2>
-					
-							<img src="https://api.ixiaowai.cn/gqapi/gqapi.php" alt="Quiet">
-							
-				</a>
-				<div class="feed-meat">
-					<div class="meat-info">
-						<div class="info-auth">
-							<a href="">
-								PICOF
-							</a>
-						</div>
-						<div class="info-data">
-							2021-03-30
-						</div>
-					</div>
-					<div class="meat-type"></div>
-				</div>
-			</div>
-			
-			<div class="feed-display">
-				<a href="/2021/03/24/132/">
-					<h2 class="feed-title">
-						132模式
-					</h2>
-					
-							<img src="https://api.ixiaowai.cn/gqapi/gqapi.php" alt="Quiet">
-							
-				</a>
-				<div class="feed-meat">
-					<div class="meat-info">
-						<div class="info-auth">
-							<a href="">
-								PICOF
-							</a>
-						</div>
-						<div class="info-data">
-							2021-03-24
-						</div>
-					</div>
-					<div class="meat-type"></div>
-				</div>
-			</div>
-			
-			<div class="feed-display">
-				<a href="/2021/03/17/dp%E5%AD%90%E5%BA%8F%E5%88%97%E9%97%AE%E9%A2%98/">
-					<h2 class="feed-title">
-						dp子序列问题
-					</h2>
-					
-							<img src="https://api.ixiaowai.cn/gqapi/gqapi.php" alt="Quiet">
-							
-				</a>
-				<div class="feed-meat">
-					<div class="meat-info">
-						<div class="info-auth">
-							<a href="">
-								PICOF
-							</a>
-						</div>
-						<div class="info-data">
-							2021-03-17
-						</div>
-					</div>
-					<div class="meat-type"></div>
-				</div>
-			</div>
-			
-			<div class="feed-display">
-				<a href="/2021/03/16/%E9%80%86%E6%B3%A2%E5%85%B0/">
-					<h2 class="feed-title">
-						逆波兰（转载）
-					</h2>
-					
-							<img src="https://api.ixiaowai.cn/gqapi/gqapi.php" alt="Quiet">
-							
-				</a>
-				<div class="feed-meat">
-					<div class="meat-info">
-						<div class="info-auth">
-							<a href="">
-								PICOF
-							</a>
-						</div>
-						<div class="info-data">
-							2021-03-16
-						</div>
-					</div>
-					<div class="meat-type"></div>
-				</div>
-			</div>
-			
-			<div class="feed-display">
-				<a href="/2021/03/09/I-love-jwjj/">
-					<h2 class="feed-title">
-						I love jwjj
-					</h2>
-					
-							<img src="https://api.ixiaowai.cn/gqapi/gqapi.php" alt="Quiet">
-							
-				</a>
-				<div class="feed-meat">
-					<div class="meat-info">
-						<div class="info-auth">
-							<a href="">
-								PICOF
-							</a>
-						</div>
-						<div class="info-data">
-							2021-03-09
-						</div>
-					</div>
-					<div class="meat-type"></div>
-				</div>
-			</div>
-			
-			<div class="feed-display">
-				<a href="/2021/03/09/first/">
-					<h2 class="feed-title">
-						first
-					</h2>
-					
-							<img src="https://api.ixiaowai.cn/gqapi/gqapi.php" alt="Quiet">
-							
-				</a>
-				<div class="feed-meat">
-					<div class="meat-info">
-						<div class="info-auth">
-							<a href="">
-								PICOF
-							</a>
-						</div>
-						<div class="info-data">
-							2021-03-09
-						</div>
-					</div>
-					<div class="meat-type"></div>
-				</div>
-			</div>
-			
-	</div>
-</div>
-<div class="change-page">
-	
-			
-</div>
+<div class="article-content">
+    <div id="article" class="content">
+        <p><em>今天遇见了一道程序员面试经典题，虽然分级算是困难但实际上较好上手，并且有许多解法都能正确解决此类问题，是很好的学习材料，特此记录。</em></p>
+<h2 id="题干："><a href="#题干：" class="headerlink" title="题干："></a><strong>题干：</strong></h2><blockquote>
+<p>给定一个直方图(也称柱状图)，假设有人从上面源源不断地倒水，最后直方图能存多少水量?直方图的宽度为 1。</p>
+<p><img src="/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/rainwatertrap.png" alt="rainwatertrap"></p>
+<p>上面是由数组 [0,1,0,2,1,0,1,3,2,1,2,1] 表示的直方图，在这种情况下，可以接 6 个单位的水（蓝色部分表示水）。 感谢 Marcos 贡献此图。</p>
+<p>示例:</p>
+<p>输入: [0,1,0,2,1,0,1,3,2,1,2,1]<br>输出: 6</p>
+<p>来源：力扣（LeetCode）<br>链接：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/volume-of-histogram-lcci">https://leetcode-cn.com/problems/volume-of-histogram-lcci</a></p>
+</blockquote>
+<p>下面是三种不同的解法：</p>
+<p>[^（朴素做法是将每个height元素都向左右两边遍历，很明显这个方案时间复杂度足足有O(n^2)，在此不作赘述）]: </p>
+<h2 id="一、动态规划："><a href="#一、动态规划：" class="headerlink" title="一、动态规划："></a>一、动态规划：</h2><h2 id><a href="#" class="headerlink" title></a><img src="/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E8%A7%A3%E6%B3%95.png" alt="动态规划解法"></h2><p>因为实际蓄水量取决于左右两边最矮的高度，因此两边重叠得到的就是对应的蓄水量（注意单个方向遍历时都是取的遍历中遇到过的最高高度）</p>
+<p>时间复杂度只有O(n)。</p>
+<h2 id="二、单调栈："><a href="#二、单调栈：" class="headerlink" title="二、单调栈："></a>二、单调栈：</h2><p>其实，个人觉得用单调栈其实更好一些（问就是单调栈yyds），仅用一次遍历就可以得出答案，比上一解法三次遍历更优。</p>
+<p>具体操作过程主要有3步：</p>
+<blockquote>
+<ol>
+<li><strong>设置一个单调栈用于储存元素下标（注意是下标）</strong></li>
+<li><strong>开始向右依次遍历，遇到元素入栈，如果有top元素，且top比即将入栈的元素小，则出栈并计算该元素蓄水量，直至没有更小的top或者栈空</strong></li>
+<li><strong>重复2步骤直至遍历结束</strong></li>
+</ol>
+</blockquote>
+<p>至于每次如何计算蓄水量，下面有图解：</p>
+<p>（来源：力扣官方题解）</p>
+<p><img src="/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/f11.png" alt="f11"></p>
+<p><img src="/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/f12.png" alt="f12"></p>
+<p><img src="/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/f13.png" alt="f13"></p>
+<p><img src="/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/f14.png" alt="f14"></p>
+<p>由上图可见，基本上我们计算蓄水量时有三个重要的量：即将放入的元素next，栈顶元素top，以及top之前的一个元素pre。</p>
+<p>每次计算蓄水量时，其实是计算一个矩形面积——长为next-pre-1，而高则是在height[pre]和height[next]中挑一个最小的（满足“木桶效应”），与height[top]做差。最后再与之前得到的总蓄水量相加。</p>
+<h2 id="三、双指针："><a href="#三、双指针：" class="headerlink" title="三、双指针："></a>三、双指针：</h2><p>这个其实是最好理解的做法，算是朴素做法的一种优化设计。</p>
+<p>大致思路是利用left，right两个指针进行遍历，遇到right比left高就记录沿途蓄水量并移动left至right位置，没遇到就把沿途最高的值赋给left再次遍历，直至left到倒数第二个（此时就不可能再有后续蓄水量了）结束。</p>
+<p><em><strong>愿清明安康</strong></em></p>
 
-<script>$(function () { $('.feed').addClass('move'); })</script>
+    </div>
+</div>
+<style>
+    #noneimg img {
+        display: none;
+        z-index: 109;
+        width: 600px !important;
+        border-radius: 0px;
+        position: fixed;
+        box-shadow: 0 0 0px #c3c3c300 !important;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto !important;
+    }
+
+    @media screen and (max-width:600px) {
+        #noneimg img {
+            width: 88%
+        }
+    }
+</style>
+<script>
+    $(function () { $('#article').click(function (e) { if (e.target.tagName == "IMG") { if ($('#nonediv').length == 0) { let MImg = `<div id='noneimg'><img src='${e.target.currentSrc}'></div>`; let MDiv = "<div id='nonediv' style='cursor: pointer;display: none; position: fixed;left: 0;top: 0; right: 0;bottom: 0;background-color: #333;opacity:0.5;z-index: 108;'></div>"; $('#article').append(MDiv); $('#article').append(MImg); $("#nonediv").fadeIn("slow"); $("#noneimg img").fadeIn("slow") } } else { if ($('#nonediv').length !== 0) { $("#noneimg ").fadeOut("slow"); $("#nonediv").fadeOut("slow"); setTimeout(function () { $('#nonediv').remove(); $('#noneimg').remove() }, 500) } } }); $('.article-content').addClass('content-move') });
+</script>
+<div class="Last-Next">
+    
+
+    
+    <a href="/2021/03/31/image/">
+        <div class="next">
+            <span>下一篇</span>
+            <p>image</p>
+        </div>
+    </a>
+    
+</div>
 		
 <link rel="stylesheet" href="/css/food.css">
 
