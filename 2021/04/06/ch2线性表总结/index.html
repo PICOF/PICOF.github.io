@@ -3,15 +3,15 @@
 
 	<head>
 		
-<title>森林中的兔子-</title>
+<title>ch2线性表总结-</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="shortcut icon" type="image/x-icon" href="/image/favicon.ico">
 
 
-<meta name="keywords" content="题目,哈希表,">
-<meta name="description" content="有多少兔子？">
+<meta name="keywords" content="学习,课内总结,线性表,">
+<meta name="description" content="关于线性表章节的备忘">
 
 
 <script src="/js/jquery.min.js"></script>
@@ -258,13 +258,15 @@
         <ul class="tag">
             
             
-            <li><a href="/tags/题目">题目</a></li>
+            <li><a href="/tags/学习">学习</a></li>
             
-            <li><a href="/tags/哈希表">哈希表</a></li>
+            <li><a href="/tags/课内总结">课内总结</a></li>
+            
+            <li><a href="/tags/线性表">线性表</a></li>
             
             
         </ul>
-        <h1>森林中的兔子</h1>
+        <h1>ch2线性表总结</h1>
         <div class="article-info">
             <div class="article-author">
                 
@@ -277,53 +279,47 @@
                 </svg>
                 
                 <span> <a href="">PICOF</a></span>
-                <p>2021-04-04 22:28:18</p>
+                <p>2021-04-06 07:32:53</p>
             </div>
         </div>
     </div>
 </div>
 <div class="article-content">
     <div id="article" class="content">
-        <p>今天的题目是兔子，很快啊，我全都码出去了啊</p>
-<p>可惜年轻人不讲武德，诶，来骗，来偷袭</p>
+        <p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/a.png" alt="a"></p>
 <blockquote>
-<p>森林中，每个兔子都有颜色。其中一些兔子（可能是全部）告诉你还有多少其他的兔子和自己有相同的颜色。我们将这些回答放在 answers 数组里。</p>
-<p>返回森林中兔子的最少数量。</p>
+<p>☺<strong>线性表（Linear List）是由n (n≥0)个类型相同的数据元素a1,a2,…，an组成的有限序列，记做（a1,a2,…，ai-1，ai，ai+1， …，an）。</strong><br><strong>数据元素之间是一对一的关系，即每个数据元素最多有一个直接前驱和一个直接后继。</strong></p>
+<p>☺<strong>线性表（Linear List）是由n (n≥0)个类型相同的数据元素a1,a2,…，an组成的有限序列，记做（a1,a2,…，ai-1，ai，ai+1， …，an）。</strong><br><strong>数据元素之间是一对一的关系，即每个数据元素最多有一个直接前驱和一个直接后继。</strong></p>
+</blockquote>
+<h3 id="实际上，链表就是一种典型的线性表（链式储存）。"><a href="#实际上，链表就是一种典型的线性表（链式储存）。" class="headerlink" title="实际上，链表就是一种典型的线性表（链式储存）。"></a><code>实际上，链表就是一种典型的线性表（链式储存）。</code></h3><blockquote>
+<p>线性表的三个特点：</p>
+<ul>
+<li>同一性：线性表由同类数据元素组成，每一个ai必须属于同一数据对象。</li>
+<li>有穷性：线性表由有限个数据元素组成，表长度就是表中数据元素的个数。</li>
+<li>有序性：线性表中相邻数据元素之间存在着 序偶关系&lt;ai,ai+1&gt;。</li>
+</ul>
+</blockquote>
+<h3 id="一、线性表的顺序存储："><a href="#一、线性表的顺序存储：" class="headerlink" title="一、线性表的顺序存储："></a>一、线性表的顺序存储：</h3><p>简单来讲，数组就算是顺序储存，在编程学习过程中，我们之前提到了数组加法的定义——下标向后改变指向，实际上就是因为顺序储存的物理相邻状态与逻辑相邻状态一致。</p>
+<p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/b.png" alt="b"></p>
+<p>顺序操作的基本运算如下：</p>
+<p>☺<strong>查找操作：</strong> 两种：1、按序号和2、按内容，选取哪一种主要取决于得到的相关信息是什么。</p>
+<p>☺<strong>插入操作：</strong> 相比链式存储而言，顺序表的插入显得非常繁琐，为了在中间插入某个数往往需要将其后的数全部依次后移。</p>
+<p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/c.png" alt="c"></p>
+<p>注意这里k–是为了避免出现数据覆盖的情况而从后向前依次进行移位操作。</p>
+<p>其实讲道理，这种插入操作本身也算一种“原地算法”。算法分析如下：</p>
+<p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/d.png" alt="d"></p>
+<p>☺<strong>删除操作：</strong>讲道理和上面插入其实一样的，因此算法复杂度也都是O(n)。</p>
+<p>☺<strong>顺序表合并算法：</strong></p>
+<p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/e.png" alt="e"></p>
 <blockquote>
-<p>示例:<br>输入: answers = [1, 1, 2]<br>输出: 5<br>解释:<br>两只回答了 “1” 的兔子可能有相同的颜色，设为红色。<br>之后回答了 “2” 的兔子不会是红色，否则他们的回答会相互矛盾。<br>设回答了 “2” 的兔子为蓝色。<br>此外，森林中还应有另外 2 只蓝色兔子的回答没有包含在数组中。<br>因此森林中兔子的最少数量是 5: 3 只回答的和 2 只没有回答的。</p>
+<p>☺<strong>算法思想</strong> <strong>：</strong></p>
+<p>♫设表LC是一个空表，设两个指针i、j分别指向表LA和LB中的元素，<br>♫若LA.elem[i]&gt;LB.elem[j]，则当前先将LB.elem[j]插入到表LC中，<br>♫若LA.elem[i]≤LB.elem[j] ，当前先将LA.elem[i]插入到表LC中，<br>♫如此进行下去，直到其中一个表被扫描完毕，然后再将未扫描完的表中剩余的所有元素放到表LC中。</p>
+<p><em>因此算法的时间复杂度其实就和两表长度和有关</em></p>
 </blockquote>
-<blockquote>
-<p>输入: answers = [10, 10, 10]<br>输出: 11</p>
-</blockquote>
-<blockquote>
-<p>输入: answers = []<br>输出: 0</p>
-</blockquote>
-<p>说明:</p>
-<ol>
-<li>answers 的长度最大为1000。</li>
-<li>answers[i] 是在 [0, 999] 范围内的整数。</li>
-</ol>
-<p>来源：力扣（LeetCode）<br>链接：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/rabbits-in-forest">https://leetcode-cn.com/problems/rabbits-in-forest</a><br>著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。</p>
-</blockquote>
-<p>首先看到这个题目我们就想到——</p>
-<p><strong>这个：</strong></p>
-<p><img src="/2021/04/04/%E6%A3%AE%E6%9E%97%E4%B8%AD%E7%9A%84%E5%85%94%E5%AD%90/rabbit.jpeg" alt="rabbit"></p>
-<p><strong>这个：</strong></p>
-<p><img src="/2021/04/04/%E6%A3%AE%E6%9E%97%E4%B8%AD%E7%9A%84%E5%85%94%E5%AD%90/tutu.jpeg" alt="tutu"></p>
-<p><img src="/2021/04/04/%E6%A3%AE%E6%9E%97%E4%B8%AD%E7%9A%84%E5%85%94%E5%AD%90/IMG_2631.PNG" alt="IMG_2631"></p>
-<p><strong>还有这个(o′┏▽┓｀o) ：</strong></p>
-<p><img src="/2021/04/04/%E6%A3%AE%E6%9E%97%E4%B8%AD%E7%9A%84%E5%85%94%E5%AD%90/tu.jpg" alt="tu"></p>
-<p><img src="/2021/04/04/%E6%A3%AE%E6%9E%97%E4%B8%AD%E7%9A%84%E5%85%94%E5%AD%90/mai.png" alt="mai"></p>
-<p><img src="/2021/04/04/%E6%A3%AE%E6%9E%97%E4%B8%AD%E7%9A%84%E5%85%94%E5%AD%90/mai2.png" alt="mai2"></p>
-<p>（欸嘿嘿嘿嘿，吸溜，欸嘿嘿……）</p>
-<p><img src="/2021/04/04/%E6%A3%AE%E6%9E%97%E4%B8%AD%E7%9A%84%E5%85%94%E5%AD%90/GKD.jpg" alt="GKD"></p>
-<h4 id="咳咳，不闹了正经点了"><a href="#咳咳，不闹了正经点了" class="headerlink" title="咳咳，不闹了正经点了"></a><em>咳咳，不闹了正经点了</em></h4><p>这道题其实就是灵活利用哈希表，最重要的是如何理解题目：每个兔子都会说出和他相同颜色剩余兔子的数目n——所以这种这种颜色兔子应该有n+1只，因此利用哈希表对对应数量的单元格下储存即可，同时用一个变量来存放总数量。</p>
-<p>那么此时还有一个问题——即若对应数目与进行数量描述的兔子相冲突该怎么办（e.g:比如[0,0,0]这种情况，这三只兔子虽然对应剩余同颜色兔子数量描述相同，却绝对不可能是一种颜色的兔子），这个时候就需要一次清零操作了——可以看作当某种颜色装满兔子后，清零变为另一种颜色，此时再次填入，再一次计算数目。</p>
-<p><strong>代码如下：</strong></p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">numRabbits</span><span class="params">(<span class="keyword">int</span>* answers, <span class="keyword">int</span> answersSize)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">int</span> <span class="built_in">set</span>[<span class="number">1001</span>]=&#123;<span class="number">0</span>&#125;,ans=<span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;answersSize;i++)&#123;</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">if</span>(<span class="built_in">set</span>[answers[i]]==<span class="number">0</span>)<span class="comment">//只要是“0”，即是一种全新的颜色，重新计数</span></span><br><span class="line"></span><br><span class="line">​      ans+=(answers[i]+<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">​    <span class="built_in">set</span>[answers[i]]++;</span><br><span class="line"></span><br><span class="line">​    <span class="built_in">set</span>[answers[i]]%=(answers[i]+<span class="number">1</span>);<span class="comment">//这里取模就是上文提到过的清零操作</span></span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> ans;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>哎呀感觉涩图没看够啊（；´д｀）ゞ。。。</p>
-
+<p>其实也完全可以先直接一股脑全部塞进去，再利用qsort（）函数进行排序（从懒得写代码的角度来说我其实更喜欢这个）。</p>
+<h4 id="总结："><a href="#总结：" class="headerlink" title="总结："></a><strong>总结：</strong></h4><p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/f.png" alt="f"></p>
+<p>顺序储存固然方便，但同时也存在诸多不足。因此，在一些特定情况下，顺序存储显然已不能满足要求，此时就需要用到链式存储。</p>
+<h3 id="二、线性表的链式存储："><a href="#二、线性表的链式存储：" class="headerlink" title="二、线性表的链式存储："></a>二、线性表的链式存储：</h3>
     </div>
 </div>
 <style>
@@ -352,19 +348,12 @@
 </script>
 <div class="Last-Next">
     
-    <a href="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/">
-        <div class="last">
-            <span>上一篇</span>
-            <p>ch2线性表总结</p>
-        </div>
-    </a>
-    
 
     
-    <a href="/2021/04/04/%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E5%BA%8F%E5%88%97/">
+    <a href="/2021/04/04/%E6%A3%AE%E6%9E%97%E4%B8%AD%E7%9A%84%E5%85%94%E5%AD%90/">
         <div class="next">
             <span>下一篇</span>
-            <p>最长公共子序列</p>
+            <p>森林中的兔子</p>
         </div>
     </a>
     
