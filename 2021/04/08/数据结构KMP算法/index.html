@@ -284,7 +284,11 @@
 </div>
 <div class="article-content">
     <div id="article" class="content">
-        <p>课上老师提到了KMP，下来了解了一下——md感觉瞬间懵逼（这就是马鹿吗i了i了）</p>
+        <p><em>温馨提示：本篇属于总结，难免有疏漏和错误，如有发现建议直接囸作者，欸嘿</em></p>
+<hr>
+<p><img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/hutao.JPG" alt="hutao"></p>
+<hr>
+<p>课上老师提到了KMP，下来了解了一下——md感觉瞬间懵逼（这就是马鹿吗i了i了）</p>
 <p>KMP简介是这样的：</p>
 <p><img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/a.png" alt="a"></p>
 <p>其中对核心要素next数组是这么介绍的：</p>
@@ -310,6 +314,20 @@
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_34080571/article/details/93982239?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=KMPnext&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-4-93982239.first_rank_v2_pc_rank_v29">https://blog.csdn.net/weixin_34080571/article/details/93982239?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=KMPnext&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-4-93982239.first_rank_v2_pc_rank_v29</a></p>
 <p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/dusf/p/kmp.html">https://www.cnblogs.com/dusf/p/kmp.html</a></p>
 <h3 id="BMP的优化："><a href="#BMP的优化：" class="headerlink" title="BMP的优化："></a>BMP的优化：</h3><p>实际上，现在我们一般用的BMP算法与上面我们推导出来的还有一些细微的不同——BMP还可以进一步优化，省去一些不必要的过程。</p>
+<p>这里我们看一下目标串与模板串进行比对的函数：</p>
+<p><img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/betterKMP.png" alt="betterKMP"></p>
+<p>其实我们的优化就是利用中间标红的<em><strong>“j=next[j]”</strong></em>，对GetNext函数进行优化</p>
+<p>在比对过程中，可能会出现这样的状况：</p>
+<p><img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/search.jpg" alt="search"></p>
+<p>可以看到其实“d”在与“c”判断后，接下来几个连续与“a”的判断是多余的，因此要更改判断方式使相同的字符不会被重复选取。</p>
+<p><img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/betterNext.png" alt="GetNext"></p>
+<p>上图红色部分的意思是如果有t[j]==t[k]了，那么就说明KMP函数中调用next[j]肯定会出现重复，于是我们就直接跳过他调用next[k]（若再出现一致则重复递归）。</p>
+<blockquote>
+<p>附上详细讲解：</p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/105629613">https://zhuanlan.zhihu.com/p/105629613</a></p>
+</blockquote>
+<p>KMP算法大致就是这样运行的，建议再做两道题巩固一下o(*￣▽￣*)o~</p>
+<hr>
 
     </div>
 </div>
