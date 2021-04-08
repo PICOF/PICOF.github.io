@@ -328,6 +328,8 @@
 </blockquote>
 <p>KMP算法大致就是这样运行的，建议再做两道题巩固一下o(*￣▽￣*)o~</p>
 <hr>
+<p>好了，话也说完了，那差不多就该</p>
+<p><img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/IMG_2662.JPG" alt="IMG_2662"></p>
 
     </div>
 </div>
@@ -356,6 +358,13 @@
     $(function () { $('#article').click(function (e) { if (e.target.tagName == "IMG") { if ($('#nonediv').length == 0) { let MImg = `<div id='noneimg'><img src='${e.target.currentSrc}'></div>`; let MDiv = "<div id='nonediv' style='cursor: pointer;display: none; position: fixed;left: 0;top: 0; right: 0;bottom: 0;background-color: #333;opacity:0.5;z-index: 108;'></div>"; $('#article').append(MDiv); $('#article').append(MImg); $("#nonediv").fadeIn("slow"); $("#noneimg img").fadeIn("slow") } } else { if ($('#nonediv').length !== 0) { $("#noneimg ").fadeOut("slow"); $("#nonediv").fadeOut("slow"); setTimeout(function () { $('#nonediv').remove(); $('#noneimg').remove() }, 500) } } }); $('.article-content').addClass('content-move') });
 </script>
 <div class="Last-Next">
+    
+    <a href="/2021/04/08/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%88%E7%AC%91%EF%BC%89/">
+        <div class="last">
+            <span>上一篇</span>
+            <p>学习资料（笑）</p>
+        </div>
+    </a>
     
 
     
