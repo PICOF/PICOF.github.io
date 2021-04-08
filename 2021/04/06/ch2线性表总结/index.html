@@ -319,7 +319,33 @@
 <p>其实也完全可以先直接一股脑全部塞进去，再利用qsort（）函数进行排序（从懒得写代码的角度来说我其实更喜欢这个）。</p>
 <h4 id="总结："><a href="#总结：" class="headerlink" title="总结："></a><strong>总结：</strong></h4><p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/f.png" alt="f"></p>
 <p>顺序储存固然方便，但同时也存在诸多不足。因此，在一些特定情况下，顺序存储显然已不能满足要求，此时就需要用到链式存储。</p>
-<h3 id="二、线性表的链式存储："><a href="#二、线性表的链式存储：" class="headerlink" title="二、线性表的链式存储："></a>二、线性表的链式存储：</h3>
+<h3 id="二、线性表的链式存储："><a href="#二、线性表的链式存储：" class="headerlink" title="二、线性表的链式存储："></a>二、线性表的链式存储：</h3><p>☺<strong>采用链式存储结构的线性表称为链表</strong> <strong>。</strong></p>
+<p>☺<strong>设计链式存储结构时，每个逻辑结点存储单独存储，为了表示逻辑关系，增加指针域。</strong> </p>
+<p><em>（物理上不一定相连，是由指针域来保持逻辑关系上相连的）</em></p>
+<p>仅有后继节点的是单链表，而多一个前驱节点则成为了双链表</p>
+<p>（附上一个不错的简述：<a target="_blank" rel="noopener" href="https://blog.csdn.net/SlimShadyKe/article/details/89503062?spm=1001.2014.3001.5506%EF%BC%89">https://blog.csdn.net/SlimShadyKe/article/details/89503062?spm=1001.2014.3001.5506）</a></p>
+<blockquote>
+<p><strong>为什么要添加头节点，有什么优点：</strong></p>
+<ul>
+<li>第一个结点的操作和表中其他结点的操作相一致，无需进行特殊处理；</li>
+<li>无论链表是否为空，都有一个头结点，因此空表和非空表的处理也就统一了。</li>
+</ul>
+</blockquote>
+<p>对于链表的初始化和插入删除等操作，这里有一个较为详细的教程：</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/swag_wg/article/details/89673850?utm_medium=distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromMachineLearnPai2~default-1.control&amp;dist_request_id=1328769.68644.16176667858667719&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromMachineLearnPai2~default-1.control">https://blog.csdn.net/swag_wg/article/details/89673850?utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-1.control&amp;dist_request_id=1328769.68644.16176667858667719&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-1.control</a></p>
+<p>注：查找无论是按序号还是按值，都必须确认当前是否处于一个合法的位置（即判断是否越界，检查是否为NULL），不同点在于一个加了计数器辅助，另一个用值域做筛选。</p>
+<p>计算长度和按序号查找加入计数器的方法类似。</p>
+<h4 id="循环链表："><a href="#循环链表：" class="headerlink" title="循环链表："></a>循环链表：</h4><blockquote>
+<p><strong>与非循环单链表相比，循环单链表：</strong></p>
+<ol>
+<li>链表中没有空指针域</li>
+<li>p所指结点为尾结点的条件：p-&gt;next==L（头节点）</li>
+</ol>
+</blockquote>
+<p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/g.png" alt="g"></p>
+<p>由此可见带尾结点的链表结构在进行一些运算时比仅有头指针的链表表现更优（查找，合并等操作），比如：</p>
+<p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/i.png" alt="i"><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/h.png" alt="h"></p>
+
     </div>
 </div>
 <style>
@@ -347,6 +373,13 @@
     $(function () { $('#article').click(function (e) { if (e.target.tagName == "IMG") { if ($('#nonediv').length == 0) { let MImg = `<div id='noneimg'><img src='${e.target.currentSrc}'></div>`; let MDiv = "<div id='nonediv' style='cursor: pointer;display: none; position: fixed;left: 0;top: 0; right: 0;bottom: 0;background-color: #333;opacity:0.5;z-index: 108;'></div>"; $('#article').append(MDiv); $('#article').append(MImg); $("#nonediv").fadeIn("slow"); $("#noneimg img").fadeIn("slow") } } else { if ($('#nonediv').length !== 0) { $("#noneimg ").fadeOut("slow"); $("#nonediv").fadeOut("slow"); setTimeout(function () { $('#nonediv').remove(); $('#noneimg').remove() }, 500) } } }); $('.article-content').addClass('content-move') });
 </script>
 <div class="Last-Next">
+    
+    <a href="/2021/04/06/%E8%AF%AF%E4%B8%8A%E8%B4%BC%E8%88%B9%E5%AD%A6%E4%B9%A0C-%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1/">
+        <div class="last">
+            <span>上一篇</span>
+            <p>误上贼船学习C++面对对象</p>
+        </div>
+    </a>
     
 
     
