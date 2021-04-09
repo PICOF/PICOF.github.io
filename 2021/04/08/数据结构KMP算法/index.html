@@ -1,37 +1,838 @@
-{% extends '_layout.swig' %}
-{% import '_macro/post.swig' as post_template %}
-{% import '_macro/sidebar.swig' as sidebar_template %}
+<!DOCTYPE html>
 
 
-{% block title %}{{ page.title }} | {{ config.title }}{% endblock %}
 
-{% block page_class %}page-post-detail{% endblock %}
+  
 
 
-{% block content %}
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="算法,数据结构," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="KMP">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据结构KMP算法">
+<meta property="og:url" content="http://picof.github.io/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/index.html">
+<meta property="og:site_name" content="PICOF&#39;blog">
+<meta property="og:description" content="KMP">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://picof.github.io/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/hutao.JPG">
+<meta property="og:image" content="http://picof.github.io/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/a.png">
+<meta property="og:image" content="http://picof.github.io/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/b.png">
+<meta property="og:image" content="http://picof.github.io/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/c.jpeg">
+<meta property="og:image" content="http://picof.github.io/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/long.png">
+<meta property="og:image" content="http://picof.github.io/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/next.png">
+<meta property="og:image" content="http://picof.github.io/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/GetNext.png">
+<meta property="og:image" content="http://picof.github.io/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/betterKMP.png">
+<meta property="og:image" content="http://picof.github.io/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/search.jpg">
+<meta property="og:image" content="http://picof.github.io/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/betterNext.png">
+<meta property="og:image" content="http://picof.github.io/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/IMG_2662.JPG">
+<meta property="article:published_time" content="2021-04-08T03:41:17.000Z">
+<meta property="article:modified_time" content="2021-04-08T11:50:51.726Z">
+<meta property="article:author" content="None">
+<meta property="article:tag" content="算法">
+<meta property="article:tag" content="数据结构">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://picof.github.io/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/hutao.JPG">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://PICOF.github.io/2021/04/08/数据结构KMP算法/"/>
+
+
+
+
+
+  <title>数据结构KMP算法 | PICOF'blog</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">PICOF'blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
 
   <div id="posts" class="posts-expand">
-    {{ post_template.render(page) }}
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://PICOF.github.io/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="PICOF'blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">数据结构KMP算法</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-04-08T11:41:17+08:00">
+                2021-04-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E9%A1%B9%E7%9B%AE%E6%A1%88%E4%BE%8B/" itemprop="url" rel="index">
+                    <span itemprop="name">项目案例</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><em>温馨提示：本篇属于总结，难免有疏漏和错误，如有发现建议直接囸作者，欸嘿</em></p>
+<hr>
+<p><img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/hutao.JPG" alt="hutao"></p>
+<hr>
+<p>课上老师提到了KMP，下来了解了一下——md感觉瞬间懵逼（这就是马鹿吗i了i了）</p>
+<p>KMP简介是这样的：</p>
+<p><img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/a.png" alt="a"></p>
+<p>其中对核心要素next数组是这么介绍的：</p>
+<p><img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/b.png" alt="b"></p>
+<p><img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/c.jpeg" alt="c"></p>
+<p>最核心的next求法明白了，基本上KMP就没问题了。但是不幸的是，这玩意儿特别绕……</p>
+<h3 id="最长相等前后缀："><a href="#最长相等前后缀：" class="headerlink" title="最长相等前后缀："></a><strong>最长相等前后缀：</strong></h3><p>我们先看一下一个例子：<strong>abbcbabcc</strong></p>
+<p>这里对于他每一位字符而言，都会有一个对应的<strong>最长</strong>相等前后缀，针对倒数第二个c而言，我们可以画个图：<img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/long.png" alt="long"></p>
+<p>红框对应的就是一对最长相等前后缀，注意这里的“对称”并非是镜像的，而应该是以“a”，“a b”为整体的中心对称。</p>
+<p>现在再回到next求法上面。</p>
+<h3 id="关于NEXT："><a href="#关于NEXT：" class="headerlink" title="关于NEXT："></a>关于NEXT：</h3><p><img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/next.png" alt="next"></p>
+<p>这里的方程其实给人一种动态规划的状态转移方程的感觉（然而这个其实不是），但是问了一些ACM大手子，他们认为确实用了动态规划的一些思想但是缺少最优子结构什么的……</p>
+<blockquote>
+<p>我觉得KMP有dp的思想，但不能算dp，你可以认为它做了两个事情：构造状态转移关系和根据关系转移，但是并没有明确的最优子结构和转移方程，硬要说的话，更接近记忆化搜索或者自动机</p>
+</blockquote>
+<p>上面定义中，next[0]=-1是为了算法方便做的改动（实际j=0和j=-1都对应0）</p>
+<p>在这个过程中，最重要的其实就是确定当前的Max{k}，我们先看看GetNext代码：</p>
+<p><img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/GetNext.png" alt="GetNext"></p>
+<p>next[j]=k是记录当前最长相等前后缀长度，但是k=next[k]呢？这里就是理解这个函数的最大障碍，要弄清楚这个原理，我们再看看字符串中的对称：<br>$$<br>比如“abcdeabcdef”这个字符串<br>$$<br>字符串中“e”元素对应<strong>最长相等前后缀</strong>其实就是“abcde”，我们可以这么划分一下：</p>
+<p><strong>【abcde】【abcde】f</strong></p>
+<p>此时元素“f”出现了不匹配，那么我们就要找到一个新的<strong>最长相等前后缀</strong>，而这个新的最长相等前后缀肯定是小于“abcde”且除新的“f”元素以外都包含于“abcde”的，此时由于<strong>【abcde】【abcde】f</strong>中两个“abcdef”彼此对称，我们就可以把k回溯至开头的“abcde”后方进行判定。</p>
+<p>如此反复调用之前记录过的next[k]数据，即可求得新的最长相等前后缀。这里有两篇教程：</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_34080571/article/details/93982239?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=KMPnext&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-4-93982239.first_rank_v2_pc_rank_v29">https://blog.csdn.net/weixin_34080571/article/details/93982239?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=KMPnext&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-4-93982239.first_rank_v2_pc_rank_v29</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/dusf/p/kmp.html">https://www.cnblogs.com/dusf/p/kmp.html</a></p>
+<h3 id="BMP的优化："><a href="#BMP的优化：" class="headerlink" title="BMP的优化："></a>BMP的优化：</h3><p>实际上，现在我们一般用的BMP算法与上面我们推导出来的还有一些细微的不同——BMP还可以进一步优化，省去一些不必要的过程。</p>
+<p>这里我们看一下目标串与模板串进行比对的函数：</p>
+<p><img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/betterKMP.png" alt="betterKMP"></p>
+<p>其实我们的优化就是利用中间标红的<em><strong>“j=next[j]”</strong></em>，对GetNext函数进行优化</p>
+<p>在比对过程中，可能会出现这样的状况：</p>
+<p><img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/search.jpg" alt="search"></p>
+<p>可以看到其实“d”在与“c”判断后，接下来几个连续与“a”的判断是多余的，因此要更改判断方式使相同的字符不会被重复选取。</p>
+<p><img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/betterNext.png" alt="GetNext"></p>
+<p>上图红色部分的意思是如果有t[j]==t[k]了，那么就说明KMP函数中调用next[j]肯定会出现重复，于是我们就直接跳过他调用next[k]（若再出现一致则重复递归）。</p>
+<blockquote>
+<p>附上详细讲解：</p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/105629613">https://zhuanlan.zhihu.com/p/105629613</a></p>
+</blockquote>
+<p>KMP算法大致就是这样运行的，建议再做两道题巩固一下o(*￣▽￣*)o~</p>
+<hr>
+<p>好了，话也说完了，那差不多就该</p>
+<p><img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/IMG_2662.JPG" alt="IMG_2662"></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E7%AE%97%E6%B3%95/" rel="tag"># 算法</a>
+          
+            <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="tag"># 数据结构</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2021/04/06/%E8%AF%AF%E4%B8%8A%E8%B4%BC%E8%88%B9%E5%AD%A6%E4%B9%A0C-%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1/" rel="next" title="误上贼船学习C++面对对象">
+                <i class="fa fa-chevron-left"></i> 误上贼船学习C++面对对象
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2021/04/08/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%88%E7%AC%91%EF%BC%89/" rel="prev" title="学习资料（笑）">
+                学习资料（笑） <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
 
     <div class="post-spread">
-      {% if theme.jiathis %}
-        {% include '_partials/share/jiathis.swig' %}
-      {% elseif theme.baidushare %}
-        {% include '_partials/share/baidushare.swig' %}
-      {% elseif theme.add_this_id %}
-        {% include '_partials/share/add-this.swig' %}
-      {% elseif theme.duoshuo_shortname and theme.duoshuo_share %}
-        {% include '_partials/share/duoshuo_share.swig' %}
-      {% endif %}
+      
     </div>
   </div>
 
-{% endblock %}
 
-{% block sidebar %}
-  {{ sidebar_template.render(true) }}
-{% endblock %}
+          </div>
+          
 
-{% block script_extra %}
-  {% include '_scripts/pages/post-details.swig' %}
-{% endblock %}
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">19</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%80%E9%95%BF%E7%9B%B8%E7%AD%89%E5%89%8D%E5%90%8E%E7%BC%80%EF%BC%9A"><span class="nav-number">1.</span> <span class="nav-text">最长相等前后缀：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E4%BA%8ENEXT%EF%BC%9A"><span class="nav-number">2.</span> <span class="nav-text">关于NEXT：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#BMP%E7%9A%84%E4%BC%98%E5%8C%96%EF%BC%9A"><span class="nav-number">3.</span> <span class="nav-text">BMP的优化：</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">None</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: '34JaUOWKIzaErTN3kNpmGQIr-gzGzoHsz',
+        appKey: 'q1AOfq4hT1awmBzPprgaPz1l',
+        placeholder: '快来一起玩呀(o゜▽゜)o☆',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

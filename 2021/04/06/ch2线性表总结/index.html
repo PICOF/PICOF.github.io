@@ -1,37 +1,852 @@
-{% extends '_layout.swig' %}
-{% import '_macro/post.swig' as post_template %}
-{% import '_macro/sidebar.swig' as sidebar_template %}
+<!DOCTYPE html>
 
 
-{% block title %}{{ page.title }} | {{ config.title }}{% endblock %}
 
-{% block page_class %}page-post-detail{% endblock %}
+  
 
 
-{% block content %}
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="课内总结,学习,线性表," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="关于线性表章节的备忘">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ch2线性表总结">
+<meta property="og:url" content="http://picof.github.io/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/index.html">
+<meta property="og:site_name" content="PICOF&#39;blog">
+<meta property="og:description" content="关于线性表章节的备忘">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://picof.github.io/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/a.png">
+<meta property="og:image" content="http://picof.github.io/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/b.png">
+<meta property="og:image" content="http://picof.github.io/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/c.png">
+<meta property="og:image" content="http://picof.github.io/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/d.png">
+<meta property="og:image" content="http://picof.github.io/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/e.png">
+<meta property="og:image" content="http://picof.github.io/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/f.png">
+<meta property="og:image" content="http://picof.github.io/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/g.png">
+<meta property="og:image" content="http://picof.github.io/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/i.png">
+<meta property="og:image" content="http://picof.github.io/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/h.png">
+<meta property="article:published_time" content="2021-04-05T23:32:53.000Z">
+<meta property="article:modified_time" content="2021-04-06T13:05:15.348Z">
+<meta property="article:author" content="None">
+<meta property="article:tag" content="课内总结">
+<meta property="article:tag" content="学习">
+<meta property="article:tag" content="线性表">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://picof.github.io/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/a.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://PICOF.github.io/2021/04/06/ch2线性表总结/"/>
+
+
+
+
+
+  <title>ch2线性表总结 | PICOF'blog</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">PICOF'blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
 
   <div id="posts" class="posts-expand">
-    {{ post_template.render(page) }}
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://PICOF.github.io/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="PICOF'blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">ch2线性表总结</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-04-06T07:32:53+08:00">
+                2021-04-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" itemprop="url" rel="index">
+                    <span itemprop="name">数据结构</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/a.png" alt="a"></p>
+<blockquote>
+<p>☺<strong>线性表（Linear List）是由n (n≥0)个类型相同的数据元素a1,a2,…，an组成的有限序列，记做（a1,a2,…，ai-1，ai，ai+1， …，an）。</strong><br><strong>数据元素之间是一对一的关系，即每个数据元素最多有一个直接前驱和一个直接后继。</strong></p>
+<p>☺<strong>线性表（Linear List）是由n (n≥0)个类型相同的数据元素a1,a2,…，an组成的有限序列，记做（a1,a2,…，ai-1，ai，ai+1， …，an）。</strong><br><strong>数据元素之间是一对一的关系，即每个数据元素最多有一个直接前驱和一个直接后继。</strong></p>
+</blockquote>
+<h3 id="实际上，链表就是一种典型的线性表（链式储存）。"><a href="#实际上，链表就是一种典型的线性表（链式储存）。" class="headerlink" title="实际上，链表就是一种典型的线性表（链式储存）。"></a><code>实际上，链表就是一种典型的线性表（链式储存）。</code></h3><blockquote>
+<p>线性表的三个特点：</p>
+<ul>
+<li>同一性：线性表由同类数据元素组成，每一个ai必须属于同一数据对象。</li>
+<li>有穷性：线性表由有限个数据元素组成，表长度就是表中数据元素的个数。</li>
+<li>有序性：线性表中相邻数据元素之间存在着 序偶关系&lt;ai,ai+1&gt;。</li>
+</ul>
+</blockquote>
+<h3 id="一、线性表的顺序存储："><a href="#一、线性表的顺序存储：" class="headerlink" title="一、线性表的顺序存储："></a>一、线性表的顺序存储：</h3><p>简单来讲，数组就算是顺序储存，在编程学习过程中，我们之前提到了数组加法的定义——下标向后改变指向，实际上就是因为顺序储存的物理相邻状态与逻辑相邻状态一致。</p>
+<p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/b.png" alt="b"></p>
+<p>顺序操作的基本运算如下：</p>
+<p>☺<strong>查找操作：</strong> 两种：1、按序号和2、按内容，选取哪一种主要取决于得到的相关信息是什么。</p>
+<p>☺<strong>插入操作：</strong> 相比链式存储而言，顺序表的插入显得非常繁琐，为了在中间插入某个数往往需要将其后的数全部依次后移。</p>
+<p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/c.png" alt="c"></p>
+<p>注意这里k–是为了避免出现数据覆盖的情况而从后向前依次进行移位操作。</p>
+<p>其实讲道理，这种插入操作本身也算一种“原地算法”。算法分析如下：</p>
+<p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/d.png" alt="d"></p>
+<p>☺<strong>删除操作：</strong>讲道理和上面插入其实一样的，因此算法复杂度也都是O(n)。</p>
+<p>☺<strong>顺序表合并算法：</strong></p>
+<p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/e.png" alt="e"></p>
+<blockquote>
+<p>☺<strong>算法思想</strong> <strong>：</strong></p>
+<p>♫设表LC是一个空表，设两个指针i、j分别指向表LA和LB中的元素，<br>♫若LA.elem[i]&gt;LB.elem[j]，则当前先将LB.elem[j]插入到表LC中，<br>♫若LA.elem[i]≤LB.elem[j] ，当前先将LA.elem[i]插入到表LC中，<br>♫如此进行下去，直到其中一个表被扫描完毕，然后再将未扫描完的表中剩余的所有元素放到表LC中。</p>
+<p><em>因此算法的时间复杂度其实就和两表长度和有关</em></p>
+</blockquote>
+<p>其实也完全可以先直接一股脑全部塞进去，再利用qsort（）函数进行排序（从懒得写代码的角度来说我其实更喜欢这个）。</p>
+<h4 id="总结："><a href="#总结：" class="headerlink" title="总结："></a><strong>总结：</strong></h4><p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/f.png" alt="f"></p>
+<p>顺序储存固然方便，但同时也存在诸多不足。因此，在一些特定情况下，顺序存储显然已不能满足要求，此时就需要用到链式存储。</p>
+<h3 id="二、线性表的链式存储："><a href="#二、线性表的链式存储：" class="headerlink" title="二、线性表的链式存储："></a>二、线性表的链式存储：</h3><p>☺<strong>采用链式存储结构的线性表称为链表</strong> <strong>。</strong></p>
+<p>☺<strong>设计链式存储结构时，每个逻辑结点存储单独存储，为了表示逻辑关系，增加指针域。</strong> </p>
+<p><em>（物理上不一定相连，是由指针域来保持逻辑关系上相连的）</em></p>
+<p>仅有后继节点的是单链表，而多一个前驱节点则成为了双链表</p>
+<p>（附上一个不错的简述：<a target="_blank" rel="noopener" href="https://blog.csdn.net/SlimShadyKe/article/details/89503062?spm=1001.2014.3001.5506%EF%BC%89">https://blog.csdn.net/SlimShadyKe/article/details/89503062?spm=1001.2014.3001.5506）</a></p>
+<blockquote>
+<p><strong>为什么要添加头节点，有什么优点：</strong></p>
+<ul>
+<li>第一个结点的操作和表中其他结点的操作相一致，无需进行特殊处理；</li>
+<li>无论链表是否为空，都有一个头结点，因此空表和非空表的处理也就统一了。</li>
+</ul>
+</blockquote>
+<p>对于链表的初始化和插入删除等操作，这里有一个较为详细的教程：</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/swag_wg/article/details/89673850?utm_medium=distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromMachineLearnPai2~default-1.control&amp;dist_request_id=1328769.68644.16176667858667719&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromMachineLearnPai2~default-1.control">https://blog.csdn.net/swag_wg/article/details/89673850?utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-1.control&amp;dist_request_id=1328769.68644.16176667858667719&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-1.control</a></p>
+<p>注：查找无论是按序号还是按值，都必须确认当前是否处于一个合法的位置（即判断是否越界，检查是否为NULL），不同点在于一个加了计数器辅助，另一个用值域做筛选。</p>
+<p>计算长度和按序号查找加入计数器的方法类似。</p>
+<h4 id="循环链表："><a href="#循环链表：" class="headerlink" title="循环链表："></a>循环链表：</h4><blockquote>
+<p><strong>与非循环单链表相比，循环单链表：</strong></p>
+<ol>
+<li>链表中没有空指针域</li>
+<li>p所指结点为尾结点的条件：p-&gt;next==L（头节点）</li>
+</ol>
+</blockquote>
+<p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/g.png" alt="g"></p>
+<p>由此可见带尾结点的链表结构在进行一些运算时比仅有头指针的链表表现更优（查找，合并等操作），比如：</p>
+<p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/i.png" alt="i"><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/h.png" alt="h"></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E8%AF%BE%E5%86%85%E6%80%BB%E7%BB%93/" rel="tag"># 课内总结</a>
+          
+            <a href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag"># 学习</a>
+          
+            <a href="/tags/%E7%BA%BF%E6%80%A7%E8%A1%A8/" rel="tag"># 线性表</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2021/04/04/%E6%A3%AE%E6%9E%97%E4%B8%AD%E7%9A%84%E5%85%94%E5%AD%90/" rel="next" title="森林中的兔子">
+                <i class="fa fa-chevron-left"></i> 森林中的兔子
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2021/04/06/%E8%AF%AF%E4%B8%8A%E8%B4%BC%E8%88%B9%E5%AD%A6%E4%B9%A0C-%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1/" rel="prev" title="误上贼船学习C++面对对象">
+                误上贼船学习C++面对对象 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
 
     <div class="post-spread">
-      {% if theme.jiathis %}
-        {% include '_partials/share/jiathis.swig' %}
-      {% elseif theme.baidushare %}
-        {% include '_partials/share/baidushare.swig' %}
-      {% elseif theme.add_this_id %}
-        {% include '_partials/share/add-this.swig' %}
-      {% elseif theme.duoshuo_shortname and theme.duoshuo_share %}
-        {% include '_partials/share/duoshuo_share.swig' %}
-      {% endif %}
+      
     </div>
   </div>
 
-{% endblock %}
 
-{% block sidebar %}
-  {{ sidebar_template.render(true) }}
-{% endblock %}
+          </div>
+          
 
-{% block script_extra %}
-  {% include '_scripts/pages/post-details.swig' %}
-{% endblock %}
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">19</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E9%99%85%E4%B8%8A%EF%BC%8C%E9%93%BE%E8%A1%A8%E5%B0%B1%E6%98%AF%E4%B8%80%E7%A7%8D%E5%85%B8%E5%9E%8B%E7%9A%84%E7%BA%BF%E6%80%A7%E8%A1%A8%EF%BC%88%E9%93%BE%E5%BC%8F%E5%82%A8%E5%AD%98%EF%BC%89%E3%80%82"><span class="nav-number">1.</span> <span class="nav-text">实际上，链表就是一种典型的线性表（链式储存）。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E7%BA%BF%E6%80%A7%E8%A1%A8%E7%9A%84%E9%A1%BA%E5%BA%8F%E5%AD%98%E5%82%A8%EF%BC%9A"><span class="nav-number">2.</span> <span class="nav-text">一、线性表的顺序存储：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%80%BB%E7%BB%93%EF%BC%9A"><span class="nav-number">2.1.</span> <span class="nav-text">总结：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E7%BA%BF%E6%80%A7%E8%A1%A8%E7%9A%84%E9%93%BE%E5%BC%8F%E5%AD%98%E5%82%A8%EF%BC%9A"><span class="nav-number">3.</span> <span class="nav-text">二、线性表的链式存储：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BE%AA%E7%8E%AF%E9%93%BE%E8%A1%A8%EF%BC%9A"><span class="nav-number">3.1.</span> <span class="nav-text">循环链表：</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">None</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: '34JaUOWKIzaErTN3kNpmGQIr-gzGzoHsz',
+        appKey: 'q1AOfq4hT1awmBzPprgaPz1l',
+        placeholder: '快来一起玩呀(o゜▽゜)o☆',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
