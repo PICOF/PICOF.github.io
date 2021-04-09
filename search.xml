@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>132模式</title>
-    <url>/PICOF.github.io/2021/03/24/132/</url>
+    <url>/2021/03/24/132/</url>
     <content><![CDATA[<p><em>这道题主要涉及到了单调栈的运用，我还不是很熟悉这一类题型</em></p>
 <h3 id="题干"><a href="#题干" class="headerlink" title="题干:"></a><strong>题干:</strong></h3><blockquote>
 <p>给你一个整数数组 nums ，数组中共有 n 个整数。132 模式的子序列 由三个整数 nums[i]、nums[j] 和 nums[k] 组成，并同时满足：i &lt; j &lt; k 和 nums[i] &lt; nums[k] &lt; nums[j] 。</p>
@@ -46,7 +46,7 @@
   </entry>
   <entry>
     <title>分治解决二进制逆位问题</title>
-    <url>/PICOF.github.io/2021/03/30/1/</url>
+    <url>/2021/03/30/1/</url>
     <content><![CDATA[<h2 id="190、颠倒二进制位"><a href="#190、颠倒二进制位" class="headerlink" title="190、颠倒二进制位"></a><strong>190、颠倒二进制位</strong></h2><blockquote>
 <p>颠倒给定的 32 位无符号整数的二进制位。</p>
 <p>提示：</p>
@@ -87,7 +87,7 @@
   </entry>
   <entry>
     <title>I love jwjj</title>
-    <url>/PICOF.github.io/2021/03/09/I-love-jwjj/</url>
+    <url>/2021/03/09/I-love-jwjj/</url>
     <content><![CDATA[<h1 id="jwjj-I-love-you"><a href="#jwjj-I-love-you" class="headerlink" title="jwjj,I love you"></a>jwjj,I love you</h1>]]></content>
       <categories>
         <category>对jwjj的爱</category>
@@ -99,7 +99,7 @@
   </entry>
   <entry>
     <title>ch2线性表总结</title>
-    <url>/PICOF.github.io/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/</url>
+    <url>/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/</url>
     <content><![CDATA[<p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/nice.jpg" alt="nice"></p>
 <span id="more"></span>
 
@@ -174,7 +174,7 @@
   </entry>
   <entry>
     <title>image</title>
-    <url>/PICOF.github.io/2021/03/31/image/</url>
+    <url>/2021/03/31/image/</url>
     <content><![CDATA[<p><img src="/2021/03/31/image/1.jpg" alt="1"></p>
 <p>很淦，终于把图片弄好了</p>
 <p>没想到错误原因竟然是路径符号’/‘和’\‘混了orz</p>
@@ -188,7 +188,7 @@
   </entry>
   <entry>
     <title>dp子序列问题</title>
-    <url>/PICOF.github.io/2021/03/17/dp%E5%AD%90%E5%BA%8F%E5%88%97%E9%97%AE%E9%A2%98/</url>
+    <url>/2021/03/17/dp%E5%AD%90%E5%BA%8F%E5%88%97%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<p><strong>PS：本文属于备忘笔记，今后遇到类似题目会持续更新</strong></p>
 <p>​    今天在力扣上面看到一个子序列dp的问题，不得不感叹用dp数组解决的子序列问题还真是挺多，该题目属于困难分类，确实废了一番功夫。不过在练后回顾理清思路时，感觉其实也并没有那么难，只是有些套路有待总结——话不多说直接上题</p>
 <blockquote>
@@ -219,7 +219,7 @@
   </entry>
   <entry>
     <title>first</title>
-    <url>/PICOF.github.io/2021/03/09/first/</url>
+    <url>/2021/03/09/first/</url>
     <content><![CDATA[<p><strong>老色皮</strong>博主终于搭了博客</p>
 <p>因为平时都在搞黄涩所以基本不怎么更新&gt;V&lt;</p>
 ]]></content>
@@ -232,7 +232,7 @@
   </entry>
   <entry>
     <title>学习资料（笑）</title>
-    <url>/PICOF.github.io/2021/04/08/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%88%E7%AC%91%EF%BC%89/</url>
+    <url>/2021/04/08/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%88%E7%AC%91%EF%BC%89/</url>
     <content><![CDATA[<p><img src="/2021/04/08/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%88%E7%AC%91%EF%BC%89/cover.jpg" alt="cover"></p>
 <span id="more"></span>
 
@@ -261,7 +261,7 @@
   </entry>
   <entry>
     <title>接雨水问题</title>
-    <url>/PICOF.github.io/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/</url>
+    <url>/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<p><em>今天遇见了一道程序员面试经典题，虽然分级算是困难但实际上较好上手，并且有许多解法都能正确解决此类问题，是很好的学习材料，特此记录。</em></p>
 <h2 id="题干："><a href="#题干：" class="headerlink" title="题干："></a><strong>题干：</strong></h2><blockquote>
 <p>给定一个直方图(也称柱状图)，假设有人从上面源源不断地倒水，最后直方图能存多少水量?直方图的宽度为 1。</p>
@@ -308,7 +308,7 @@
   </entry>
   <entry>
     <title>数据结构KMP算法</title>
-    <url>/PICOF.github.io/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/</url>
+    <url>/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/</url>
     <content><![CDATA[<p><img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/cover.JPG" alt="cover"></p>
 <p><em>温馨提示：本篇属于总结，难免有疏漏和错误，如有发现建议直接囸作者，欸嘿</em></p>
 <span id="more"></span>
@@ -369,7 +369,7 @@
   </entry>
   <entry>
     <title>森林中的兔子</title>
-    <url>/PICOF.github.io/2021/04/04/%E6%A3%AE%E6%9E%97%E4%B8%AD%E7%9A%84%E5%85%94%E5%AD%90/</url>
+    <url>/2021/04/04/%E6%A3%AE%E6%9E%97%E4%B8%AD%E7%9A%84%E5%85%94%E5%AD%90/</url>
     <content><![CDATA[<p><img src="/2021/04/04/%E6%A3%AE%E6%9E%97%E4%B8%AD%E7%9A%84%E5%85%94%E5%AD%90/cover.jpg" alt="cover"></p>
 <p>今天的题目是兔子，很快啊，我全都码出去了啊</p>
 <p>可惜年轻人不讲武德，诶，来骗，来偷袭</p>
@@ -423,7 +423,7 @@
   </entry>
   <entry>
     <title>误上贼船学习C++面对对象</title>
-    <url>/PICOF.github.io/2021/04/06/%E8%AF%AF%E4%B8%8A%E8%B4%BC%E8%88%B9%E5%AD%A6%E4%B9%A0C-%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1/</url>
+    <url>/2021/04/06/%E8%AF%AF%E4%B8%8A%E8%B4%BC%E8%88%B9%E5%AD%A6%E4%B9%A0C-%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1/</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>C++</category>
@@ -436,7 +436,7 @@
   </entry>
   <entry>
     <title>最长公共子序列</title>
-    <url>/PICOF.github.io/2021/04/04/%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E5%BA%8F%E5%88%97/</url>
+    <url>/2021/04/04/%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E5%BA%8F%E5%88%97/</url>
     <content><![CDATA[<p><em>这一类最长公共子序列问题属于二维数组动态规划的典型题目，非常经典所以做一下笔记。</em></p>
 <p><strong>首先是题干部分：</strong></p>
 <blockquote>
@@ -488,7 +488,7 @@
   </entry>
   <entry>
     <title>逆波兰（转载）</title>
-    <url>/PICOF.github.io/2021/03/16/%E9%80%86%E6%B3%A2%E5%85%B0/</url>
+    <url>/2021/03/16/%E9%80%86%E6%B3%A2%E5%85%B0/</url>
     <content><![CDATA[<p>输入有两行,第一行为逆波兰式的结果,第二行为输入表达式的正确计算结果。逆波兰式中相邻的数字或运算符之间不用输出空格</p>
 <p>保证表达式计算的合理性,不需判断除零等情况</p>
 <p>表达式的计算遵循同级运算从左向右,先乘除后加减</p>
