@@ -1,526 +1,401 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>I love jwjj</title>
-    <url>/2021/03/09/I-love-jwjj/</url>
-    <content><![CDATA[<h1 id="jwjj-I-love-you"><a href="#jwjj-I-love-you" class="headerlink" title="jwjj,I love you"></a>jwjj,I love you</h1>]]></content>
+<search> 
+  
+  
+    
+    <entry>
+      <title>学习资料（笑）</title>
+      <link href="2021/04/08/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%88%E7%AC%91%EF%BC%89/"/>
+      <url>2021/04/08/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%88%E7%AC%91%EF%BC%89/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/2021/04/08/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%88%E7%AC%91%EF%BC%89/cover.jpg" alt="cover"></p><span id="more"></span><p>​                         不是吧阿sir封面这样都敢点进来，我建议你去找个大夫看看xp有没有问题</p><p><img src="/2021/04/08/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%88%E7%AC%91%EF%BC%89/nz.jpg" alt="nz"></p><p><img src="/2021/04/08/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%88%E7%AC%91%EF%BC%89/IMG_2425(20210318-103735).JPG" alt="IMG_2425(20210318-103735)"></p><p><img src="/2021/04/08/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%88%E7%AC%91%EF%BC%89/IMG_2525(20210322-203136).JPG" alt="IMG_2525(20210322-203136)"></p><p><img src="/2021/04/08/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%88%E7%AC%91%EF%BC%89/IMG_2663(20210408-162605).JPG" alt="IMG_2663(20210408-162605)"></p><p><img src="/2021/04/08/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%88%E7%AC%91%EF%BC%89/IMG_2527(20210323-110811).JPG" alt="IMG_2527(20210323-110811)"></p><p><img src="/2021/04/08/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%88%E7%AC%91%EF%BC%89/IMG_2528(20210323-110814).JPG" alt="IMG_2528(20210323-110814)"></p><p><img src="/2021/04/08/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%88%E7%AC%91%EF%BC%89/IMG_2583(20210330-080940).JPG" alt="IMG_2583(20210330-080940)"></p><p><img src="/2021/04/08/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%88%E7%AC%91%EF%BC%89/IMG_2592(20210402-162142).JPG" alt="IMG_2592(20210402-162142)"></p><p><img src="/2021/04/08/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%88%E7%AC%91%EF%BC%89/IMG_2630(20210405-123204).JPG" alt="IMG_2630(20210405-123204)"></p><p><img src="/2021/04/08/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%88%E7%AC%91%EF%BC%89/IMG_2640(20210407-103828).JPG" alt="IMG_2640(20210407-103828)"></p><p><img src="/2021/04/08/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%88%E7%AC%91%EF%BC%89/IMG_2655(20210408-110859).JPG" alt="IMG_2655(20210408-110859)"></p><p><img src="/2021/04/08/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%88%E7%AC%91%EF%BC%89/IMG_2543(20210325-131423).JPG" alt="IMG_2543(20210325-131423)"></p><p><img src="/2021/04/08/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%88%E7%AC%91%EF%BC%89/IMG_2531(20210323-154152).JPG" alt="IMG_2531(20210323-154152)"></p><p><img src="/2021/04/08/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%88%E7%AC%91%EF%BC%89/hitplane.jpg" alt="hitplane"></p>]]></content>
+      
+      
       <categories>
-        <category>对jwjj的爱</category>
+          
+          <category> 杂项 </category>
+          
       </categories>
-      <tags>
-        <tag>jwjj</tag>
-        <tag>爱</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>132模式</title>
-    <url>/2021/03/24/132/</url>
-    <content><![CDATA[<p><em>这道题主要涉及到了单调栈的运用，我还不是很熟悉这一类题型</em></p>
-<h3 id="题干"><a href="#题干" class="headerlink" title="题干:"></a><strong>题干:</strong></h3><blockquote>
-<p>给你一个整数数组 nums ，数组中共有 n 个整数。132 模式的子序列 由三个整数 nums[i]、nums[j] 和 nums[k] 组成，并同时满足：i &lt; j &lt; k 和 nums[i] &lt; nums[k] &lt; nums[j] 。</p>
-<p>如果 nums 中存在 132 模式的子序列 ，返回 true ；否则，返回 false 。</p>
-<p>进阶：很容易想到时间复杂度为 O(n^2) 的解决方案，你可以设计一个时间复杂度为 O(n logn) 或 O(n) 的解决方案吗？</p>
-</blockquote>
-<blockquote>
-<p>示例 1：</p>
-<p>输入：nums = [1,2,3,4]<br>输出：false<br>解释：序列中不存在 132 模式的子序列。<br>示例 2：</p>
-<p>输入：nums = [3,1,4,2]<br>输出：true<br>解释：序列中有 1 个 132 模式的子序列： [1, 4, 2] 。<br>示例 3：</p>
-<p>输入：nums = [-1,3,2,0]<br>输出：true<br>解释：序列中有 3 个 132 模式的的子序列：[-1, 3, 2]、[-1, 3, 0] 和 [-1, 2, 0] 。</p>
-<p>提示：</p>
-<ul>
-<li>n == nums.length</li>
-<li>1 &lt;= n &lt;= 104</li>
-<li>-109 &lt;= nums[i] &lt;= 109</li>
-</ul>
-<p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/132-pattern">https://leetcode-cn.com/problems/132-pattern</a></p>
-</blockquote>
-<p>读完后第一反应是找一些方便判断的特征，找到对应的候选数字后不断进行维护。。。然后运行的时间复杂度是O（n^2）,而且在写代码时让人非常不舒服，过程过于繁杂且容易出错。</p>
-<p>所以这里我们引入单调栈，即用栈存储数据，且栈内数据一定是单增（或单减），一旦遇到下一个数就立马用其与栈内元素比较，大于（或小于）的元素则全部出栈，最后将新的数压栈。</p>
-<p>对于这道题，我们用单减的单调栈，即栈内元素中一定存在代表132模式中“3”的元素，而出栈元素用一个max变量维护，保证max对应132中“2”的候选元素中的最大值。此时，只要新的元素小于max，即可返回true（即新元素为132模式中代表“1”的元素）</p>
-<p>代码如下：</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">find132pattern</span><span class="params">(<span class="keyword">int</span>* nums, <span class="keyword">int</span> numsSize)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span>(numsSize&lt;<span class="number">3</span>)</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">int</span> <span class="built_in">stack</span>[numsSize];</span><br><span class="line"></span><br><span class="line">  <span class="keyword">int</span> nu=<span class="number">0</span>,max=<span class="number">-1000000001</span>;</span><br><span class="line"></span><br><span class="line">  <span class="built_in">stack</span>[nu++]=nums[numsSize<span class="number">-1</span>];</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> i=numsSize<span class="number">-2</span>;i&gt;=<span class="number">0</span>;i--)&#123;</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">if</span>(nums[i]&lt;max)</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">for</span>(<span class="keyword">int</span> j=nu<span class="number">-1</span>;j&gt;=<span class="number">0</span>;j--)</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">if</span>(<span class="built_in">stack</span>[j]&lt;nums[i])&#123;</span><br><span class="line"></span><br><span class="line">​    nu--;</span><br><span class="line"></span><br><span class="line">​    max=<span class="built_in">stack</span>[j];</span><br><span class="line"></span><br><span class="line">​    &#125;</span><br><span class="line"></span><br><span class="line">​    <span class="built_in">stack</span>[nu++]=nums[i];</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<p><strong>如下图解：</strong></p>
-<p><img src="/2021/03/24/132/132.png" alt="132模式"></p>
-<p>这里还有一篇关于单调栈的文章，写的很好，放个链接在这里：</p>
-<p><a href="https://blog.csdn.net/weixin_42784951/article/details/88963758?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161659419116780262549524%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&amp;request_id=161659419116780262549524&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_v2~rank_v29-2-88963758.pc_search_result_cache&amp;utm_term=%E5%8D%95%E8%B0%83%E6%A0%88">https://blog.csdn.net/weixin_42784951/article/details/88963758?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161659419116780262549524%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&amp;request_id=161659419116780262549524&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_v2~rank_v29-2-88963758.pc_search_result_cache&amp;utm_term=%E5%8D%95%E8%B0%83%E6%A0%88</a></p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 学习资料 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>数据结构KMP算法</title>
+      <link href="2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/"/>
+      <url>2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/cover.JPG" alt="cover"></p><p><em>温馨提示：本篇属于总结，难免有疏漏和错误，如有发现建议直接囸作者，欸嘿</em></p><span id="more"></span><hr><p><img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/hutao.JPG" alt="hutao"></p><hr><p>课上老师提到了KMP，下来了解了一下——md感觉瞬间懵逼（这就是马鹿吗i了i了）</p><p>KMP简介是这样的：</p><p><img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/a.png" alt="a"></p><p>其中对核心要素next数组是这么介绍的：</p><p><img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/b.png" alt="b"></p><p><img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/c.jpeg" alt="c"></p><p>最核心的next求法明白了，基本上KMP就没问题了。但是不幸的是，这玩意儿特别绕……</p><h3 id="最长相等前后缀："><a href="#最长相等前后缀：" class="headerlink" title="最长相等前后缀："></a><strong>最长相等前后缀：</strong></h3><p>我们先看一下一个例子：<strong>abbcbabcc</strong></p><p>这里对于他每一位字符而言，都会有一个对应的<strong>最长</strong>相等前后缀，针对倒数第二个c而言，我们可以画个图：<img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/long.png" alt="long"></p><p>红框对应的就是一对最长相等前后缀，注意这里的“对称”并非是镜像的，而应该是以“a”，“a b”为整体的中心对称。</p><p>现在再回到next求法上面。</p><h3 id="关于NEXT："><a href="#关于NEXT：" class="headerlink" title="关于NEXT："></a>关于NEXT：</h3><p><img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/next.png" alt="next"></p><p>这里的方程其实给人一种动态规划的状态转移方程的感觉（然而这个其实不是），但是问了一些ACM大手子，他们认为确实用了动态规划的一些思想但是缺少最优子结构什么的……</p><blockquote><p>我觉得KMP有dp的思想，但不能算dp，你可以认为它做了两个事情：构造状态转移关系和根据关系转移，但是并没有明确的最优子结构和转移方程，硬要说的话，更接近记忆化搜索或者自动机</p></blockquote><p>上面定义中，next[0]=-1是为了算法方便做的改动（实际j=0和j=-1都对应0）</p><p>在这个过程中，最重要的其实就是确定当前的Max{k}，我们先看看GetNext代码：</p><p><img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/GetNext.png" alt="GetNext"></p><p>next[j]=k是记录当前最长相等前后缀长度，但是k=next[k]呢？这里就是理解这个函数的最大障碍，要弄清楚这个原理，我们再看看字符串中的对称：<br>$$<br>比如“abcdeabcdef”这个字符串<br>$$<br>字符串中“e”元素对应<strong>最长相等前后缀</strong>其实就是“abcde”，我们可以这么划分一下：</p><p><strong>【abcde】【abcde】f</strong></p><p>此时元素“f”出现了不匹配，那么我们就要找到一个新的<strong>最长相等前后缀</strong>，而这个新的最长相等前后缀肯定是小于“abcde”且除新的“f”元素以外都包含于“abcde”的，此时由于<strong>【abcde】【abcde】f</strong>中两个“abcdef”彼此对称，我们就可以把k回溯至开头的“abcde”后方进行判定。</p><p>如此反复调用之前记录过的next[k]数据，即可求得新的最长相等前后缀。这里有两篇教程：</p><p><a href="https://blog.csdn.net/weixin_34080571/article/details/93982239?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=KMPnext&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-4-93982239.first_rank_v2_pc_rank_v29">https://blog.csdn.net/weixin_34080571/article/details/93982239?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=KMPnext&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-4-93982239.first_rank_v2_pc_rank_v29</a></p><p><a href="https://www.cnblogs.com/dusf/p/kmp.html">https://www.cnblogs.com/dusf/p/kmp.html</a></p><h3 id="BMP的优化："><a href="#BMP的优化：" class="headerlink" title="BMP的优化："></a>BMP的优化：</h3><p>实际上，现在我们一般用的BMP算法与上面我们推导出来的还有一些细微的不同——BMP还可以进一步优化，省去一些不必要的过程。</p><p>这里我们看一下目标串与模板串进行比对的函数：</p><p><img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/betterKMP.png" alt="betterKMP"></p><p>其实我们的优化就是利用中间标红的<em><strong>“j=next[j]”</strong></em>，对GetNext函数进行优化</p><p>在比对过程中，可能会出现这样的状况：</p><p><img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/search.jpg" alt="search"></p><p>可以看到其实“d”在与“c”判断后，接下来几个连续与“a”的判断是多余的，因此要更改判断方式使相同的字符不会被重复选取。</p><p><img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/betterNext.png" alt="GetNext"></p><p>上图红色部分的意思是如果有t[j]==t[k]了，那么就说明KMP函数中调用next[j]肯定会出现重复，于是我们就直接跳过他调用next[k]（若再出现一致则重复递归）。</p><blockquote><p>附上详细讲解：</p><p><a href="https://zhuanlan.zhihu.com/p/105629613">https://zhuanlan.zhihu.com/p/105629613</a></p></blockquote><p>KMP算法大致就是这样运行的，建议再做两道题巩固一下o(*￣▽￣*)o~</p><hr><p>好了，话也说完了，那差不多就该</p><p><img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/IMG_2662.JPG" alt="IMG_2662"></p>]]></content>
+      
+      
       <categories>
-        <category>程序算法</category>
+          
+          <category> 项目案例 </category>
+          
       </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>单调栈</tag>
-        <tag>题目</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ch2线性表总结</title>
-    <url>/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/nice.jpg" alt="nice"></p>
-<span id="more"></span>
-
-<p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/a.png" alt="a"></p>
-<blockquote>
-<p>☺<strong>线性表（Linear List）是由n (n≥0)个类型相同的数据元素a1,a2,…，an组成的有限序列，记做（a1,a2,…，ai-1，ai，ai+1， …，an）。</strong><br><strong>数据元素之间是一对一的关系，即每个数据元素最多有一个直接前驱和一个直接后继。</strong></p>
-<p>☺<strong>线性表（Linear List）是由n (n≥0)个类型相同的数据元素a1,a2,…，an组成的有限序列，记做（a1,a2,…，ai-1，ai，ai+1， …，an）。</strong><br><strong>数据元素之间是一对一的关系，即每个数据元素最多有一个直接前驱和一个直接后继。</strong></p>
-</blockquote>
-<h3 id="实际上，链表就是一种典型的线性表（链式储存）。"><a href="#实际上，链表就是一种典型的线性表（链式储存）。" class="headerlink" title="实际上，链表就是一种典型的线性表（链式储存）。"></a><code>实际上，链表就是一种典型的线性表（链式储存）。</code></h3><blockquote>
-<p>线性表的三个特点：</p>
-<ul>
-<li>同一性：线性表由同类数据元素组成，每一个ai必须属于同一数据对象。</li>
-<li>有穷性：线性表由有限个数据元素组成，表长度就是表中数据元素的个数。</li>
-<li>有序性：线性表中相邻数据元素之间存在着 序偶关系&lt;ai,ai+1&gt;。</li>
-</ul>
-</blockquote>
-<h3 id="一、线性表的顺序存储："><a href="#一、线性表的顺序存储：" class="headerlink" title="一、线性表的顺序存储："></a>一、线性表的顺序存储：</h3><p>简单来讲，数组就算是顺序储存，在编程学习过程中，我们之前提到了数组加法的定义——下标向后改变指向，实际上就是因为顺序储存的物理相邻状态与逻辑相邻状态一致。</p>
-<p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/b.png" alt="b"></p>
-<p>顺序操作的基本运算如下：</p>
-<p>☺<strong>查找操作：</strong> 两种：1、按序号和2、按内容，选取哪一种主要取决于得到的相关信息是什么。</p>
-<p>☺<strong>插入操作：</strong> 相比链式存储而言，顺序表的插入显得非常繁琐，为了在中间插入某个数往往需要将其后的数全部依次后移。</p>
-<p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/c.png" alt="c"></p>
-<p>注意这里k–是为了避免出现数据覆盖的情况而从后向前依次进行移位操作。</p>
-<p>其实讲道理，这种插入操作本身也算一种“原地算法”。算法分析如下：</p>
-<p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/d.png" alt="d"></p>
-<p>☺<strong>删除操作：</strong>讲道理和上面插入其实一样的，因此算法复杂度也都是O(n)。</p>
-<p>☺<strong>顺序表合并算法：</strong></p>
-<p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/e.png" alt="e"></p>
-<blockquote>
-<p>☺<strong>算法思想</strong> <strong>：</strong></p>
-<p>♫设表LC是一个空表，设两个指针i、j分别指向表LA和LB中的元素，<br>♫若LA.elem[i]&gt;LB.elem[j]，则当前先将LB.elem[j]插入到表LC中，<br>♫若LA.elem[i]≤LB.elem[j] ，当前先将LA.elem[i]插入到表LC中，<br>♫如此进行下去，直到其中一个表被扫描完毕，然后再将未扫描完的表中剩余的所有元素放到表LC中。</p>
-<p><em>因此算法的时间复杂度其实就和两表长度和有关</em></p>
-</blockquote>
-<p>其实也完全可以先直接一股脑全部塞进去，再利用qsort（）函数进行排序（从懒得写代码的角度来说我其实更喜欢这个）。</p>
-<h4 id="总结："><a href="#总结：" class="headerlink" title="总结："></a><strong>总结：</strong></h4><p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/f.png" alt="f"></p>
-<p>顺序储存固然方便，但同时也存在诸多不足。因此，在一些特定情况下，顺序存储显然已不能满足要求，此时就需要用到链式存储。</p>
-<h3 id="二、线性表的链式存储："><a href="#二、线性表的链式存储：" class="headerlink" title="二、线性表的链式存储："></a>二、线性表的链式存储：</h3><p>☺<strong>采用链式存储结构的线性表称为链表</strong> <strong>。</strong></p>
-<p>☺<strong>设计链式存储结构时，每个逻辑结点存储单独存储，为了表示逻辑关系，增加指针域。</strong> </p>
-<p><em>（物理上不一定相连，是由指针域来保持逻辑关系上相连的）</em></p>
-<p>仅有后继节点的是单链表，而多一个前驱节点则成为了双链表</p>
-<p>（附上一个不错的简述：<a href="https://blog.csdn.net/SlimShadyKe/article/details/89503062?spm=1001.2014.3001.5506%EF%BC%89">https://blog.csdn.net/SlimShadyKe/article/details/89503062?spm=1001.2014.3001.5506）</a></p>
-<blockquote>
-<p><strong>为什么要添加头节点，有什么优点：</strong></p>
-<ul>
-<li>第一个结点的操作和表中其他结点的操作相一致，无需进行特殊处理；</li>
-<li>无论链表是否为空，都有一个头结点，因此空表和非空表的处理也就统一了。</li>
-</ul>
-</blockquote>
-<p>对于链表的初始化和插入删除等操作，这里有一个较为详细的教程：</p>
-<p><a href="https://blog.csdn.net/swag_wg/article/details/89673850?utm_medium=distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromMachineLearnPai2~default-1.control&amp;dist_request_id=1328769.68644.16176667858667719&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromMachineLearnPai2~default-1.control">https://blog.csdn.net/swag_wg/article/details/89673850?utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-1.control&amp;dist_request_id=1328769.68644.16176667858667719&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-1.control</a></p>
-<p>注：查找无论是按序号还是按值，都必须确认当前是否处于一个合法的位置（即判断是否越界，检查是否为NULL），不同点在于一个加了计数器辅助，另一个用值域做筛选。</p>
-<p>计算长度和按序号查找加入计数器的方法类似。</p>
-<h4 id="循环链表："><a href="#循环链表：" class="headerlink" title="循环链表："></a>循环链表：</h4><blockquote>
-<p><strong>与非循环单链表相比，循环单链表：</strong></p>
-<ol>
-<li>链表中没有空指针域</li>
-<li>p所指结点为尾结点的条件：p-&gt;next==L（头节点）</li>
-</ol>
-</blockquote>
-<p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/g.png" alt="g"></p>
-<p>由此可见带尾结点的链表结构在进行一些运算时比仅有头指针的链表表现更优（查找，合并等操作），比如：</p>
-<p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/i.png" alt="i"><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/h.png" alt="h"></p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 算法 </tag>
+            
+            <tag> 数据结构 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>误上贼船学习C++面对对象</title>
+      <link href="2021/04/06/%E8%AF%AF%E4%B8%8A%E8%B4%BC%E8%88%B9%E5%AD%A6%E4%B9%A0C-%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1/"/>
+      <url>2021/04/06/%E8%AF%AF%E4%B8%8A%E8%B4%BC%E8%88%B9%E5%AD%A6%E4%B9%A0C-%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
       <categories>
-        <category>数据结构</category>
+          
+          <category> C++ </category>
+          
       </categories>
-      <tags>
-        <tag>课内总结</tag>
-        <tag>学习</tag>
-        <tag>线性表</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>分治解决二进制逆位问题</title>
-    <url>/2021/03/30/1/</url>
-    <content><![CDATA[<h2 id="190、颠倒二进制位"><a href="#190、颠倒二进制位" class="headerlink" title="190、颠倒二进制位"></a><strong>190、颠倒二进制位</strong></h2><blockquote>
-<p>颠倒给定的 32 位无符号整数的二进制位。</p>
-<p>提示：</p>
-<p>请注意，在某些语言（如 Java）中，没有无符号整数类型。在这种情况下，输入和输出都将被指定为有符号整数类型，并且不应影响您的实现，因为无论整数是有符号的还是无符号的，其内部的二进制表示形式都是相同的。<br>在 Java 中，编译器使用二进制补码记法来表示有符号整数。因此，在上面的 示例 2 中，输入表示有符号整数 -3，输出表示有符号整数 -1073741825。</p>
-<p>进阶:<br>如果多次调用这个函数，你将如何优化你的算法？</p>
-</blockquote>
-<blockquote>
-<p>示例 1：</p>
-<p>输入: 00000010100101000001111010011100<br>输出: 00111001011110000010100101000000<br>解释: 输入的二进制串 00000010100101000001111010011100 表示无符号整数 43261596，<br>     因此返回 964176192，其二进制表示形式为 00111001011110000010100101000000。<br>示例 2：</p>
-<p>输入：11111111111111111111111111111101<br>输出：10111111111111111111111111111111<br>解释：输入的二进制串 11111111111111111111111111111101 表示无符号整数 4294967293，<br>     因此返回 3221225471 其二进制表示形式为 10111111111111111111111111111111 。<br>示例 1：</p>
-<p>输入：n = 00000010100101000001111010011100<br>输出：964176192 (00111001011110000010100101000000)<br>解释：输入的二进制串 00000010100101000001111010011100 表示无符号整数 43261596，<br>     因此返回 964176192，其二进制表示形式为 00111001011110000010100101000000。<br>示例 2：</p>
-<p>输入：n = 11111111111111111111111111111101<br>输出：3221225471 (10111111111111111111111111111111)<br>解释：输入的二进制串 11111111111111111111111111111101 表示无符号整数 4294967293，<br>     因此返回 3221225471 其二进制表示形式为 10111111111111111111111111111111 。</p>
-<p>提示：</p>
-<ul>
-<li>输入是一个长度为 32 的二进制字符串</li>
-</ul>
-</blockquote>
-<p>首先想到位运算绝壁不难，（然后就推不动了）再套用一个循环，把每次移位操作后的二进制数累加，很容易就得到了结果。</p>
-<p>不过问题就在于——总会有一些沙雕面试官给你提出一些奇奇怪怪的问题，比如：如果不使用循环，此题该如何解答？</p>
-<p><img src="/2021/03/30/1/%E5%81%9A%E4%BA%8B.jpeg" alt="做事"></p>
-<h5 id="可以说是非常适合治疗低血压了"><a href="#可以说是非常适合治疗低血压了" class="headerlink" title="可以说是非常适合治疗低血压了"></a>可以说是非常适合治疗低血压了</h5><p>于是带着懵逼，我找到了这样一种神奇地不讲道理的解法：</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="keyword">uint32_t</span> M1 = <span class="number">0x55555555</span>;  <span class="comment">// 01010101010101010101010101010101</span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">uint32_t</span> M2 = <span class="number">0x33333333</span>;  <span class="comment">// 00110011001100110011001100110011</span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">uint32_t</span> M4 = <span class="number">0x0f0f0f0f</span>;  <span class="comment">// 00001111000011110000111100001111</span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">uint32_t</span> M8 = <span class="number">0x00ff00ff</span>;  <span class="comment">// 00000000111111110000000011111111</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">uint32_t</span> <span class="title">reverseBits</span><span class="params">(<span class="keyword">uint32_t</span> n)</span> </span>&#123;</span><br><span class="line">    n = n &gt;&gt; <span class="number">1</span> &amp; M1 | (n &amp; M1) &lt;&lt; <span class="number">1</span>;</span><br><span class="line">    n = n &gt;&gt; <span class="number">2</span> &amp; M2 | (n &amp; M2) &lt;&lt; <span class="number">2</span>;</span><br><span class="line">    n = n &gt;&gt; <span class="number">4</span> &amp; M4 | (n &amp; M4) &lt;&lt; <span class="number">4</span>;</span><br><span class="line">    n = n &gt;&gt; <span class="number">8</span> &amp; M8 | (n &amp; M8) &lt;&lt; <span class="number">8</span>;</span><br><span class="line">    <span class="keyword">return</span> n &gt;&gt; <span class="number">16</span> | n &lt;&lt; <span class="number">16</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>这是个分治算法（应该算吧），通过不断对n进行二分交换，最后达到完全倒序的效果（不信可以试一试，确实倒序了），期间对多个十六进制数进行的与运算是为了保留特定位数上的二进制信息，或运算则是将每次的两半结果叠加，最后返回的即是倒序数列。可以看出这个做法的时间复杂度只有O(1)，比循环更优。</p>
-<p>对了，关于位运算这里填一个传送门：</p>
-<p><a href="https://www.cnblogs.com/yrjns/p/11246163.html">https://www.cnblogs.com/yrjns/p/11246163.html</a></p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 学习 </tag>
+            
+            <tag> C++ </tag>
+            
+            <tag> 面对对象 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ch2线性表总结</title>
+      <link href="2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/"/>
+      <url>2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/nice.jpg" alt="nice"></p><span id="more"></span><p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/a.png" alt="a"></p><blockquote><p>☺<strong>线性表（Linear List）是由n (n≥0)个类型相同的数据元素a1,a2,…，an组成的有限序列，记做（a1,a2,…，ai-1，ai，ai+1， …，an）。</strong><br><strong>数据元素之间是一对一的关系，即每个数据元素最多有一个直接前驱和一个直接后继。</strong></p><p>☺<strong>线性表（Linear List）是由n (n≥0)个类型相同的数据元素a1,a2,…，an组成的有限序列，记做（a1,a2,…，ai-1，ai，ai+1， …，an）。</strong><br><strong>数据元素之间是一对一的关系，即每个数据元素最多有一个直接前驱和一个直接后继。</strong></p></blockquote><h3 id="实际上，链表就是一种典型的线性表（链式储存）。"><a href="#实际上，链表就是一种典型的线性表（链式储存）。" class="headerlink" title="实际上，链表就是一种典型的线性表（链式储存）。"></a><code>实际上，链表就是一种典型的线性表（链式储存）。</code></h3><blockquote><p>线性表的三个特点：</p><ul><li>同一性：线性表由同类数据元素组成，每一个ai必须属于同一数据对象。</li><li>有穷性：线性表由有限个数据元素组成，表长度就是表中数据元素的个数。</li><li>有序性：线性表中相邻数据元素之间存在着 序偶关系&lt;ai,ai+1&gt;。</li></ul></blockquote><h3 id="一、线性表的顺序存储："><a href="#一、线性表的顺序存储：" class="headerlink" title="一、线性表的顺序存储："></a>一、线性表的顺序存储：</h3><p>简单来讲，数组就算是顺序储存，在编程学习过程中，我们之前提到了数组加法的定义——下标向后改变指向，实际上就是因为顺序储存的物理相邻状态与逻辑相邻状态一致。</p><p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/b.png" alt="b"></p><p>顺序操作的基本运算如下：</p><p>☺<strong>查找操作：</strong> 两种：1、按序号和2、按内容，选取哪一种主要取决于得到的相关信息是什么。</p><p>☺<strong>插入操作：</strong> 相比链式存储而言，顺序表的插入显得非常繁琐，为了在中间插入某个数往往需要将其后的数全部依次后移。</p><p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/c.png" alt="c"></p><p>注意这里k–是为了避免出现数据覆盖的情况而从后向前依次进行移位操作。</p><p>其实讲道理，这种插入操作本身也算一种“原地算法”。算法分析如下：</p><p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/d.png" alt="d"></p><p>☺<strong>删除操作：</strong>讲道理和上面插入其实一样的，因此算法复杂度也都是O(n)。</p><p>☺<strong>顺序表合并算法：</strong></p><p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/e.png" alt="e"></p><blockquote><p>☺<strong>算法思想</strong> <strong>：</strong></p><p>♫设表LC是一个空表，设两个指针i、j分别指向表LA和LB中的元素，<br>♫若LA.elem[i]&gt;LB.elem[j]，则当前先将LB.elem[j]插入到表LC中，<br>♫若LA.elem[i]≤LB.elem[j] ，当前先将LA.elem[i]插入到表LC中，<br>♫如此进行下去，直到其中一个表被扫描完毕，然后再将未扫描完的表中剩余的所有元素放到表LC中。</p><p><em>因此算法的时间复杂度其实就和两表长度和有关</em></p></blockquote><p>其实也完全可以先直接一股脑全部塞进去，再利用qsort（）函数进行排序（从懒得写代码的角度来说我其实更喜欢这个）。</p><h4 id="总结："><a href="#总结：" class="headerlink" title="总结："></a><strong>总结：</strong></h4><p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/f.png" alt="f"></p><p>顺序储存固然方便，但同时也存在诸多不足。因此，在一些特定情况下，顺序存储显然已不能满足要求，此时就需要用到链式存储。</p><h3 id="二、线性表的链式存储："><a href="#二、线性表的链式存储：" class="headerlink" title="二、线性表的链式存储："></a>二、线性表的链式存储：</h3><p>☺<strong>采用链式存储结构的线性表称为链表</strong> <strong>。</strong></p><p>☺<strong>设计链式存储结构时，每个逻辑结点存储单独存储，为了表示逻辑关系，增加指针域。</strong> </p><p><em>（物理上不一定相连，是由指针域来保持逻辑关系上相连的）</em></p><p>仅有后继节点的是单链表，而多一个前驱节点则成为了双链表</p><p>（附上一个不错的简述：<a href="https://blog.csdn.net/SlimShadyKe/article/details/89503062?spm=1001.2014.3001.5506%EF%BC%89">https://blog.csdn.net/SlimShadyKe/article/details/89503062?spm=1001.2014.3001.5506）</a></p><blockquote><p><strong>为什么要添加头节点，有什么优点：</strong></p><ul><li>第一个结点的操作和表中其他结点的操作相一致，无需进行特殊处理；</li><li>无论链表是否为空，都有一个头结点，因此空表和非空表的处理也就统一了。</li></ul></blockquote><p>对于链表的初始化和插入删除等操作，这里有一个较为详细的教程：</p><p><a href="https://blog.csdn.net/swag_wg/article/details/89673850?utm_medium=distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromMachineLearnPai2~default-1.control&amp;dist_request_id=1328769.68644.16176667858667719&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromMachineLearnPai2~default-1.control">https://blog.csdn.net/swag_wg/article/details/89673850?utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-1.control&amp;dist_request_id=1328769.68644.16176667858667719&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-1.control</a></p><p>注：查找无论是按序号还是按值，都必须确认当前是否处于一个合法的位置（即判断是否越界，检查是否为NULL），不同点在于一个加了计数器辅助，另一个用值域做筛选。</p><p>计算长度和按序号查找加入计数器的方法类似。</p><h4 id="循环链表："><a href="#循环链表：" class="headerlink" title="循环链表："></a>循环链表：</h4><blockquote><p><strong>与非循环单链表相比，循环单链表：</strong></p><ol><li>链表中没有空指针域</li><li>p所指结点为尾结点的条件：p-&gt;next==L（头节点）</li></ol></blockquote><p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/g.png" alt="g"></p><p>由此可见带尾结点的链表结构在进行一些运算时比仅有头指针的链表表现更优（查找，合并等操作），比如：</p><p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/i.png" alt="i"><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/h.png" alt="h"></p>]]></content>
+      
+      
       <categories>
-        <category>程序算法</category>
+          
+          <category> 数据结构 </category>
+          
       </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>题目</tag>
-        <tag>进制转换</tag>
-        <tag>分治</tag>
-        <tag>位运算</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>first</title>
-    <url>/2021/03/09/first/</url>
-    <content><![CDATA[<p><strong>老色皮</strong>博主终于搭了博客</p>
-<p>因为平时都在搞黄涩所以基本不怎么更新&gt;V&lt;</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 学习 </tag>
+            
+            <tag> 课内总结 </tag>
+            
+            <tag> 线性表 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>森林中的兔子</title>
+      <link href="2021/04/04/%E6%A3%AE%E6%9E%97%E4%B8%AD%E7%9A%84%E5%85%94%E5%AD%90/"/>
+      <url>2021/04/04/%E6%A3%AE%E6%9E%97%E4%B8%AD%E7%9A%84%E5%85%94%E5%AD%90/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/2021/04/04/%E6%A3%AE%E6%9E%97%E4%B8%AD%E7%9A%84%E5%85%94%E5%AD%90/cover.jpg" alt="cover"></p><p>今天的题目是兔子，很快啊，我全都码出去了啊</p><p>可惜年轻人不讲武德，诶，来骗，来偷袭</p><span id="more"></span><blockquote><p>森林中，每个兔子都有颜色。其中一些兔子（可能是全部）告诉你还有多少其他的兔子和自己有相同的颜色。我们将这些回答放在 answers 数组里。</p><p>返回森林中兔子的最少数量。</p><blockquote><p>示例:<br>输入: answers = [1, 1, 2]<br>输出: 5<br>解释:<br>两只回答了 “1” 的兔子可能有相同的颜色，设为红色。<br>之后回答了 “2” 的兔子不会是红色，否则他们的回答会相互矛盾。<br>设回答了 “2” 的兔子为蓝色。<br>此外，森林中还应有另外 2 只蓝色兔子的回答没有包含在数组中。<br>因此森林中兔子的最少数量是 5: 3 只回答的和 2 只没有回答的。</p></blockquote><blockquote><p>输入: answers = [10, 10, 10]<br>输出: 11</p></blockquote><blockquote><p>输入: answers = []<br>输出: 0</p></blockquote><p>说明:</p><ol><li>answers 的长度最大为1000。</li><li>answers[i] 是在 [0, 999] 范围内的整数。</li></ol><p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/rabbits-in-forest">https://leetcode-cn.com/problems/rabbits-in-forest</a><br>著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。</p></blockquote><p>首先看到这个题目我们就想到——</p><p><strong>这个：</strong></p><p><img src="/2021/04/04/%E6%A3%AE%E6%9E%97%E4%B8%AD%E7%9A%84%E5%85%94%E5%AD%90/rabbit.jpeg" alt="rabbit"></p><p><strong>这个：</strong></p><p><img src="/2021/04/04/%E6%A3%AE%E6%9E%97%E4%B8%AD%E7%9A%84%E5%85%94%E5%AD%90/tutu.jpeg" alt="tutu"></p><p><img src="/2021/04/04/%E6%A3%AE%E6%9E%97%E4%B8%AD%E7%9A%84%E5%85%94%E5%AD%90/IMG_2631.PNG" alt="IMG_2631"></p><p><strong>还有这个(o′┏▽┓｀o) ：</strong></p><p><img src="/2021/04/04/%E6%A3%AE%E6%9E%97%E4%B8%AD%E7%9A%84%E5%85%94%E5%AD%90/tu.jpg" alt="tu"></p><p><img src="/2021/04/04/%E6%A3%AE%E6%9E%97%E4%B8%AD%E7%9A%84%E5%85%94%E5%AD%90/mai.png" alt="mai"></p><p><img src="/2021/04/04/%E6%A3%AE%E6%9E%97%E4%B8%AD%E7%9A%84%E5%85%94%E5%AD%90/mai2.png" alt="mai2"></p><p>（欸嘿嘿嘿嘿，吸溜，欸嘿嘿……）</p><p><img src="/2021/04/04/%E6%A3%AE%E6%9E%97%E4%B8%AD%E7%9A%84%E5%85%94%E5%AD%90/GKD.jpg" alt="GKD"></p><h4 id="咳咳，不闹了正经点了"><a href="#咳咳，不闹了正经点了" class="headerlink" title="咳咳，不闹了正经点了"></a><em>咳咳，不闹了正经点了</em></h4><p>这道题其实就是灵活利用哈希表，最重要的是如何理解题目：每个兔子都会说出和他相同颜色剩余兔子的数目n——所以这种这种颜色兔子应该有n+1只，因此利用哈希表对对应数量的单元格下储存即可，同时用一个变量来存放总数量。</p><p>那么此时还有一个问题——即若对应数目与进行数量描述的兔子相冲突该怎么办（e.g:比如[0,0,0]这种情况，这三只兔子虽然对应剩余同颜色兔子数量描述相同，却绝对不可能是一种颜色的兔子），这个时候就需要一次清零操作了——可以看作当某种颜色装满兔子后，清零变为另一种颜色，此时再次填入，再一次计算数目。</p><p><strong>代码如下：</strong></p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">numRabbits</span><span class="params">(<span class="keyword">int</span>* answers, <span class="keyword">int</span> answersSize)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">int</span> <span class="built_in">set</span>[<span class="number">1001</span>]=&#123;<span class="number">0</span>&#125;,ans=<span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;answersSize;i++)&#123;</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">if</span>(<span class="built_in">set</span>[answers[i]]==<span class="number">0</span>)<span class="comment">//只要是“0”，即是一种全新的颜色，重新计数</span></span><br><span class="line"></span><br><span class="line">​      ans+=(answers[i]+<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">​    <span class="built_in">set</span>[answers[i]]++;</span><br><span class="line"></span><br><span class="line">​    <span class="built_in">set</span>[answers[i]]%=(answers[i]+<span class="number">1</span>);<span class="comment">//这里取模就是上文提到过的清零操作</span></span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> ans;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>哎呀感觉涩图没看够啊（；´д｀）ゞ。。。</p>]]></content>
+      
+      
       <categories>
-        <category>项目案例</category>
+          
+          <category> 程序算法 </category>
+          
       </categories>
-      <tags>
-        <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>image</title>
-    <url>/2021/03/31/image/</url>
-    <content><![CDATA[<p><img src="/2021/03/31/image/1.jpg" alt="1"></p>
-<p>很淦，终于把图片弄好了</p>
-<p>没想到错误原因竟然是路径符号’/‘和’\‘混了orz</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 题目 </tag>
+            
+            <tag> 哈希表 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>最长公共子序列</title>
+      <link href="2021/04/04/%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E5%BA%8F%E5%88%97/"/>
+      <url>2021/04/04/%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E5%BA%8F%E5%88%97/</url>
+      
+        <content type="html"><![CDATA[<p><em>这一类最长公共子序列问题属于二维数组动态规划的典型题目，非常经典所以做一下笔记。</em></p><p><strong>首先是题干部分：</strong></p><blockquote><p>给定两个字符串 text1 和 text2，返回这两个字符串的最长 公共子序列 的长度。如果不存在 公共子序列 ，返回 0 。</p><p>一个字符串的 子序列 是指这样一个新的字符串：它是由原字符串在不改变字符的相对顺序的情况下删除某些字符（也可以不删除任何字符）后组成的新字符串。</p><p>例如，”ace” 是 “abcde” 的子序列，但 “aec” 不是 “abcde” 的子序列。<br>两个字符串的 公共子序列 是这两个字符串所共同拥有的子序列。</p><blockquote><p>示例 1：</p><p>输入：text1 = “abcde”, text2 = “ace”<br>输出：3<br>解释：最长公共子序列是 “ace” ，它的长度为 3 。</p></blockquote><blockquote><p>示例 2：</p><p>输入：text1 = “abc”, text2 = “abc”<br>输出：3<br>解释：最长公共子序列是 “abc” ，它的长度为 3 。</p></blockquote><blockquote><p>示例 3：</p><p>输入：text1 = “abc”, text2 = “def”<br>输出：0<br>解释：两个字符串没有公共子序列，返回 0 。</p></blockquote><p>提示：</p><ul><li>1 &lt;= text1.length, text2.length &lt;= 1000</li><li>text1 和 text2 仅由小写英文字符组成。</li></ul><p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/longest-common-subsequence">https://leetcode-cn.com/problems/longest-common-subsequence</a><br>著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。</p></blockquote><p>看见这种子序列啊，最长什么的，条件反射就会想到动态规划上，进而转到研究状态转化与条件。</p><p>这里我们很清晰地认识到任一个字母最长的子序列长度取决于他之前字母的最长子序列。很显然，两组字符串做动态规划，一维数组基本不太可能满足需求了，这个时候就需要用上二维数组。</p><p><img src="/2021/04/04/%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E5%BA%8F%E5%88%97/table.png" alt="table"></p><p>这里解释一下为什么表格第一行与第一列都要用0填满了——实际上这是防止边际判断和出界的一种方式（说白了就是懒，不这么搞也行就是麻烦点）。</p><p>表格的使用其实很简单：每次拿单行与不同列比较，遇到相同字母就将【当前位置的数】=【左上单元格的数】+1，否则就【当前位置的数】=MAX（【左边单元格的数】，【上边单元格的数】）。然后最后一行最后一列的元素就是答案啦。</p><p>不过这样的使用其实是有重要的含义的，比如【左上单元格的数】其实就是到当前列对应字母上一个字母时最长公共子序列长度，因此在当前已确定字母相同时，+1就相当于更新了当前最长公共子序列长度。</p><p>再说MAX（【左边单元格的数】，【上边单元格的数】）的含义，这其实就是一个状态转移方程的一部分（上面那个也是，欸嘿），优先选取最长的可能（与背包问题类似，都是动态规划）。</p><p><strong>代码如下：</strong></p><p>\</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> max(a,b) ( ((a)&gt;(b)) ? (a):(b) )</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">longestCommonSubsequence</span><span class="params">(<span class="keyword">char</span>* text1, <span class="keyword">char</span>* text2)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">int</span> max=<span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">int</span>** table=<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="keyword">int</span>*)*(<span class="built_in">strlen</span>(text1)+<span class="number">1</span>));</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="built_in">strlen</span>(text1)+<span class="number">1</span>;i++)&#123;</span><br><span class="line"></span><br><span class="line">​    table[i]=<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="keyword">int</span>)*(<span class="built_in">strlen</span>(text2)+<span class="number">1</span>));</span><br><span class="line"></span><br><span class="line">​    table[i][<span class="number">0</span>]=<span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="built_in">strlen</span>(text2)+<span class="number">1</span>;i++)</span><br><span class="line"></span><br><span class="line">  table[<span class="number">0</span>][i]=<span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;<span class="built_in">strlen</span>(text1)+<span class="number">1</span>;i++)&#123;</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;<span class="built_in">strlen</span>(text2)+<span class="number">1</span>;j++)&#123;</span><br><span class="line"></span><br><span class="line">​      <span class="keyword">if</span>(text1[i<span class="number">-1</span>]==text2[j<span class="number">-1</span>])</span><br><span class="line"></span><br><span class="line">​      table[i][j]=table[i<span class="number">-1</span>][j<span class="number">-1</span>]+<span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">​      <span class="keyword">else</span></span><br><span class="line"></span><br><span class="line">​      table[i][j]=max(table[i<span class="number">-1</span>][j],table[i][j<span class="number">-1</span>]);</span><br><span class="line"></span><br><span class="line">​    &#125;</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> table[<span class="built_in">strlen</span>(text1)][<span class="built_in">strlen</span>(text2)];</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><p>主要还是要多多锻炼，动态规划有时候感觉是真的阴间OMO</p><p><strong>最后放一张女儿在这里o(*≧▽≦)ツ┏━┓：</strong></p><p><img src="/2021/04/04/%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E5%BA%8F%E5%88%97/KLEE.png" alt="KLEE"></p>]]></content>
+      
+      
       <categories>
-        <category>项目案例</category>
+          
+          <category> 程序算法 </category>
+          
       </categories>
-      <tags>
-        <tag>测试</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>学习资料（笑）</title>
-    <url>/2021/04/08/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%88%E7%AC%91%EF%BC%89/</url>
-    <content><![CDATA[<p><img src="/2021/04/08/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%88%E7%AC%91%EF%BC%89/cover.jpg" alt="cover"></p>
-<span id="more"></span>
-
-<p>​                         不是吧阿sir封面这样都敢点进来，我建议你去找个大夫看看xp有没有问题</p>
-<p><img src="/2021/04/08/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%88%E7%AC%91%EF%BC%89/nz.jpg" alt="nz"></p>
-<p><img src="/2021/04/08/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%88%E7%AC%91%EF%BC%89/IMG_2425(20210318-103735).JPG" alt="IMG_2425(20210318-103735)"></p>
-<p><img src="/2021/04/08/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%88%E7%AC%91%EF%BC%89/IMG_2525(20210322-203136).JPG" alt="IMG_2525(20210322-203136)"></p>
-<p><img src="/2021/04/08/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%88%E7%AC%91%EF%BC%89/IMG_2663(20210408-162605).JPG" alt="IMG_2663(20210408-162605)"></p>
-<p><img src="/2021/04/08/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%88%E7%AC%91%EF%BC%89/IMG_2527(20210323-110811).JPG" alt="IMG_2527(20210323-110811)"></p>
-<p><img src="/2021/04/08/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%88%E7%AC%91%EF%BC%89/IMG_2528(20210323-110814).JPG" alt="IMG_2528(20210323-110814)"></p>
-<p><img src="/2021/04/08/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%88%E7%AC%91%EF%BC%89/IMG_2583(20210330-080940).JPG" alt="IMG_2583(20210330-080940)"></p>
-<p><img src="/2021/04/08/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%88%E7%AC%91%EF%BC%89/IMG_2592(20210402-162142).JPG" alt="IMG_2592(20210402-162142)"></p>
-<p><img src="/2021/04/08/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%88%E7%AC%91%EF%BC%89/IMG_2630(20210405-123204).JPG" alt="IMG_2630(20210405-123204)"></p>
-<p><img src="/2021/04/08/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%88%E7%AC%91%EF%BC%89/IMG_2640(20210407-103828).JPG" alt="IMG_2640(20210407-103828)"></p>
-<p><img src="/2021/04/08/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%88%E7%AC%91%EF%BC%89/IMG_2655(20210408-110859).JPG" alt="IMG_2655(20210408-110859)"></p>
-<p><img src="/2021/04/08/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%88%E7%AC%91%EF%BC%89/IMG_2543(20210325-131423).JPG" alt="IMG_2543(20210325-131423)"></p>
-<p><img src="/2021/04/08/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%88%E7%AC%91%EF%BC%89/IMG_2531(20210323-154152).JPG" alt="IMG_2531(20210323-154152)"></p>
-<p><img src="/2021/04/08/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%88%E7%AC%91%EF%BC%89/hitplane.jpg" alt="hitplane"></p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 算法 </tag>
+            
+            <tag> 题目 </tag>
+            
+            <tag> 动态规划 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>接雨水问题</title>
+      <link href="2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/"/>
+      <url>2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[<p><em>今天遇见了一道程序员面试经典题，虽然分级算是困难但实际上较好上手，并且有许多解法都能正确解决此类问题，是很好的学习材料，特此记录。</em></p><h2 id="题干："><a href="#题干：" class="headerlink" title="题干："></a><strong>题干：</strong></h2><blockquote><p>给定一个直方图(也称柱状图)，假设有人从上面源源不断地倒水，最后直方图能存多少水量?直方图的宽度为 1。</p><p><img src="/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/rainwatertrap.png" alt="rainwatertrap"></p><p>上面是由数组 [0,1,0,2,1,0,1,3,2,1,2,1] 表示的直方图，在这种情况下，可以接 6 个单位的水（蓝色部分表示水）。 感谢 Marcos 贡献此图。</p><p>示例:</p><p>输入: [0,1,0,2,1,0,1,3,2,1,2,1]<br>输出: 6</p><p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/volume-of-histogram-lcci">https://leetcode-cn.com/problems/volume-of-histogram-lcci</a></p></blockquote><p>下面是三种不同的解法：</p><p>[^（朴素做法是将每个height元素都向左右两边遍历，很明显这个方案时间复杂度足足有O(n^2)，在此不作赘述）]: </p><h2 id="一、动态规划："><a href="#一、动态规划：" class="headerlink" title="一、动态规划："></a>一、动态规划：</h2><h2 id><a href="#" class="headerlink" title></a><img src="/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/dp.png" alt="动态规划解法"></h2><p>因为实际蓄水量取决于左右两边最矮的高度，因此两边重叠得到的就是对应的蓄水量（注意单个方向遍历时都是取的遍历中遇到过的最高高度）</p><p>时间复杂度只有O(n)。</p><h2 id="二、单调栈："><a href="#二、单调栈：" class="headerlink" title="二、单调栈："></a>二、单调栈：</h2><p>其实，个人觉得用单调栈其实更好一些（问就是单调栈yyds），仅用一次遍历就可以得出答案，比上一解法三次遍历更优。</p><p>具体操作过程主要有3步：</p><blockquote><ol><li><strong>设置一个单调栈用于储存元素下标（注意是下标）</strong></li><li><strong>开始向右依次遍历，遇到元素入栈，如果有top元素，且top比即将入栈的元素小，则出栈并计算该元素蓄水量，直至没有更小的top或者栈空</strong></li><li><strong>重复2步骤直至遍历结束</strong></li></ol></blockquote><p>至于每次如何计算蓄水量，下面有图解：</p><p>（来源：力扣官方题解）</p><p><img src="/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/f11.png" alt="f11"></p><p><img src="/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/f12.png" alt="f12"></p><p><img src="/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/f13.png" alt="f13"></p><p><img src="/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/f14.png" alt="f14"></p><p>由上图可见，基本上我们计算蓄水量时有三个重要的量：即将放入的元素next，栈顶元素top，以及top之前的一个元素pre。</p><p>每次计算蓄水量时，其实是计算一个矩形面积——长为next-pre-1，而高则是在height[pre]和height[next]中挑一个最小的（满足“木桶效应”），与height[top]做差。最后再与之前得到的总蓄水量相加。</p><h2 id="三、双指针："><a href="#三、双指针：" class="headerlink" title="三、双指针："></a>三、双指针：</h2><p>这个其实是最好理解的做法，算是朴素做法的一种优化设计。</p><p>大致思路是利用left，right两个指针进行遍历，遇到right比left高就记录沿途蓄水量并移动left至right位置，没遇到就把沿途最高的值赋给left再次遍历，直至left到倒数第二个（此时就不可能再有后续蓄水量了）结束。</p><p><em><strong>愿清明安康</strong></em></p>]]></content>
+      
+      
       <categories>
-        <category>杂项</category>
+          
+          <category> 程序算法 </category>
+          
       </categories>
-      <tags>
-        <tag>学习资料</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>dp子序列问题</title>
-    <url>/2021/03/17/dp%E5%AD%90%E5%BA%8F%E5%88%97%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<p><strong>PS：本文属于备忘笔记，今后遇到类似题目会持续更新</strong></p>
-<p>​    今天在力扣上面看到一个子序列dp的问题，不得不感叹用dp数组解决的子序列问题还真是挺多，该题目属于困难分类，确实废了一番功夫。不过在练后回顾理清思路时，感觉其实也并没有那么难，只是有些套路有待总结——话不多说直接上题</p>
-<blockquote>
-<p>给定一个字符串 s 和一个字符串 t ，计算在 s 的子序列中 t 出现的个数。</p>
-<p>字符串的一个 子序列 是指，通过删除一些（也可以不删除）字符且不干扰剩余字符相对位置所组成的新字符串。（例如，”ACE” 是 “ABCDE” 的一个子序列，而 “AEC” 不是）</p>
-<p>题目数据保证答案符合 32 位带符号整数范围。</p>
-</blockquote>
-<blockquote>
-<p>示例 1：</p>
-<p>输入：s = “rabbbit”, t = “rabbit”<br>输出：3<br>解释：<br>如下图所示, 有 3 种可以从 s 中得到 “rabbit” 的方案。<br>(上箭头符号 ^ 表示选取的字母)<br>rabbbit<br>^^^^ ^^<br>rabbbit<br>^^ ^^^^<br>rabbbit<br>^^^ ^^^<br>示例 2：</p>
-<p>输入：s = “babgbag”, t = “bag”<br>输出：5<br>解释：<br>如下图所示, 有 5 种可以从 s 中得到 “bag” 的方案。<br>(上箭头符号 ^ 表示选取的字母)<br>babgbag<br>^^ ^<br>babgbag<br>^^    ^<br>babgbag<br>^    ^^<br>babgbag<br>  ^  ^^<br>babgbag<br>    ^^^</p>
-<p>提示：</p>
-<ul>
-<li>0 &lt;= s.length, t.length &lt;= 1000</li>
-<li>s 和 t 由英文字母组成</li>
-</ul>
-</blockquote>
-<p>牙白，这么久了都没有更新了</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 题目 </tag>
+            
+            <tag> 单调栈 </tag>
+            
+            <tag> 动态规划 </tag>
+            
+            <tag> 双指针 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>image</title>
+      <link href="2021/03/31/image/"/>
+      <url>2021/03/31/image/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/2021/03/31/image/1.jpg" alt="1"></p><p>很淦，终于把图片弄好了</p><p>没想到错误原因竟然是路径符号’/‘和’\‘混了orz</p>]]></content>
+      
+      
       <categories>
-        <category>程序算法</category>
+          
+          <category> 项目案例 </category>
+          
       </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>题目</tag>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>接雨水问题</title>
-    <url>/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<p><em>今天遇见了一道程序员面试经典题，虽然分级算是困难但实际上较好上手，并且有许多解法都能正确解决此类问题，是很好的学习材料，特此记录。</em></p>
-<h2 id="题干："><a href="#题干：" class="headerlink" title="题干："></a><strong>题干：</strong></h2><blockquote>
-<p>给定一个直方图(也称柱状图)，假设有人从上面源源不断地倒水，最后直方图能存多少水量?直方图的宽度为 1。</p>
-<p><img src="/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/rainwatertrap.png" alt="rainwatertrap"></p>
-<p>上面是由数组 [0,1,0,2,1,0,1,3,2,1,2,1] 表示的直方图，在这种情况下，可以接 6 个单位的水（蓝色部分表示水）。 感谢 Marcos 贡献此图。</p>
-<p>示例:</p>
-<p>输入: [0,1,0,2,1,0,1,3,2,1,2,1]<br>输出: 6</p>
-<p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/volume-of-histogram-lcci">https://leetcode-cn.com/problems/volume-of-histogram-lcci</a></p>
-</blockquote>
-<p>下面是三种不同的解法：</p>
-<p>[^（朴素做法是将每个height元素都向左右两边遍历，很明显这个方案时间复杂度足足有O(n^2)，在此不作赘述）]: </p>
-<h2 id="一、动态规划："><a href="#一、动态规划：" class="headerlink" title="一、动态规划："></a>一、动态规划：</h2><h2 id><a href="#" class="headerlink" title></a><img src="/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/dp.png" alt="动态规划解法"></h2><p>因为实际蓄水量取决于左右两边最矮的高度，因此两边重叠得到的就是对应的蓄水量（注意单个方向遍历时都是取的遍历中遇到过的最高高度）</p>
-<p>时间复杂度只有O(n)。</p>
-<h2 id="二、单调栈："><a href="#二、单调栈：" class="headerlink" title="二、单调栈："></a>二、单调栈：</h2><p>其实，个人觉得用单调栈其实更好一些（问就是单调栈yyds），仅用一次遍历就可以得出答案，比上一解法三次遍历更优。</p>
-<p>具体操作过程主要有3步：</p>
-<blockquote>
-<ol>
-<li><strong>设置一个单调栈用于储存元素下标（注意是下标）</strong></li>
-<li><strong>开始向右依次遍历，遇到元素入栈，如果有top元素，且top比即将入栈的元素小，则出栈并计算该元素蓄水量，直至没有更小的top或者栈空</strong></li>
-<li><strong>重复2步骤直至遍历结束</strong></li>
-</ol>
-</blockquote>
-<p>至于每次如何计算蓄水量，下面有图解：</p>
-<p>（来源：力扣官方题解）</p>
-<p><img src="/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/f11.png" alt="f11"></p>
-<p><img src="/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/f12.png" alt="f12"></p>
-<p><img src="/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/f13.png" alt="f13"></p>
-<p><img src="/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/f14.png" alt="f14"></p>
-<p>由上图可见，基本上我们计算蓄水量时有三个重要的量：即将放入的元素next，栈顶元素top，以及top之前的一个元素pre。</p>
-<p>每次计算蓄水量时，其实是计算一个矩形面积——长为next-pre-1，而高则是在height[pre]和height[next]中挑一个最小的（满足“木桶效应”），与height[top]做差。最后再与之前得到的总蓄水量相加。</p>
-<h2 id="三、双指针："><a href="#三、双指针：" class="headerlink" title="三、双指针："></a>三、双指针：</h2><p>这个其实是最好理解的做法，算是朴素做法的一种优化设计。</p>
-<p>大致思路是利用left，right两个指针进行遍历，遇到right比left高就记录沿途蓄水量并移动left至right位置，没遇到就把沿途最高的值赋给left再次遍历，直至left到倒数第二个（此时就不可能再有后续蓄水量了）结束。</p>
-<p><em><strong>愿清明安康</strong></em></p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 测试 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>分治解决二进制逆位问题</title>
+      <link href="2021/03/30/1/"/>
+      <url>2021/03/30/1/</url>
+      
+        <content type="html"><![CDATA[<h2 id="190、颠倒二进制位"><a href="#190、颠倒二进制位" class="headerlink" title="190、颠倒二进制位"></a><strong>190、颠倒二进制位</strong></h2><blockquote><p>颠倒给定的 32 位无符号整数的二进制位。</p><p>提示：</p><p>请注意，在某些语言（如 Java）中，没有无符号整数类型。在这种情况下，输入和输出都将被指定为有符号整数类型，并且不应影响您的实现，因为无论整数是有符号的还是无符号的，其内部的二进制表示形式都是相同的。<br>在 Java 中，编译器使用二进制补码记法来表示有符号整数。因此，在上面的 示例 2 中，输入表示有符号整数 -3，输出表示有符号整数 -1073741825。</p><p>进阶:<br>如果多次调用这个函数，你将如何优化你的算法？</p></blockquote><blockquote><p>示例 1：</p><p>输入: 00000010100101000001111010011100<br>输出: 00111001011110000010100101000000<br>解释: 输入的二进制串 00000010100101000001111010011100 表示无符号整数 43261596，<br>     因此返回 964176192，其二进制表示形式为 00111001011110000010100101000000。<br>示例 2：</p><p>输入：11111111111111111111111111111101<br>输出：10111111111111111111111111111111<br>解释：输入的二进制串 11111111111111111111111111111101 表示无符号整数 4294967293，<br>     因此返回 3221225471 其二进制表示形式为 10111111111111111111111111111111 。<br>示例 1：</p><p>输入：n = 00000010100101000001111010011100<br>输出：964176192 (00111001011110000010100101000000)<br>解释：输入的二进制串 00000010100101000001111010011100 表示无符号整数 43261596，<br>     因此返回 964176192，其二进制表示形式为 00111001011110000010100101000000。<br>示例 2：</p><p>输入：n = 11111111111111111111111111111101<br>输出：3221225471 (10111111111111111111111111111111)<br>解释：输入的二进制串 11111111111111111111111111111101 表示无符号整数 4294967293，<br>     因此返回 3221225471 其二进制表示形式为 10111111111111111111111111111111 。</p><p>提示：</p><ul><li>输入是一个长度为 32 的二进制字符串</li></ul></blockquote><p>首先想到位运算绝壁不难，（然后就推不动了）再套用一个循环，把每次移位操作后的二进制数累加，很容易就得到了结果。</p><p>不过问题就在于——总会有一些沙雕面试官给你提出一些奇奇怪怪的问题，比如：如果不使用循环，此题该如何解答？</p><p><img src="/2021/03/30/1/%E5%81%9A%E4%BA%8B.jpeg" alt="做事"></p><h5 id="可以说是非常适合治疗低血压了"><a href="#可以说是非常适合治疗低血压了" class="headerlink" title="可以说是非常适合治疗低血压了"></a>可以说是非常适合治疗低血压了</h5><p>于是带着懵逼，我找到了这样一种神奇地不讲道理的解法：</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="keyword">uint32_t</span> M1 = <span class="number">0x55555555</span>;  <span class="comment">// 01010101010101010101010101010101</span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">uint32_t</span> M2 = <span class="number">0x33333333</span>;  <span class="comment">// 00110011001100110011001100110011</span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">uint32_t</span> M4 = <span class="number">0x0f0f0f0f</span>;  <span class="comment">// 00001111000011110000111100001111</span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">uint32_t</span> M8 = <span class="number">0x00ff00ff</span>;  <span class="comment">// 00000000111111110000000011111111</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">uint32_t</span> <span class="title">reverseBits</span><span class="params">(<span class="keyword">uint32_t</span> n)</span> </span>&#123;</span><br><span class="line">    n = n &gt;&gt; <span class="number">1</span> &amp; M1 | (n &amp; M1) &lt;&lt; <span class="number">1</span>;</span><br><span class="line">    n = n &gt;&gt; <span class="number">2</span> &amp; M2 | (n &amp; M2) &lt;&lt; <span class="number">2</span>;</span><br><span class="line">    n = n &gt;&gt; <span class="number">4</span> &amp; M4 | (n &amp; M4) &lt;&lt; <span class="number">4</span>;</span><br><span class="line">    n = n &gt;&gt; <span class="number">8</span> &amp; M8 | (n &amp; M8) &lt;&lt; <span class="number">8</span>;</span><br><span class="line">    <span class="keyword">return</span> n &gt;&gt; <span class="number">16</span> | n &lt;&lt; <span class="number">16</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>这是个分治算法（应该算吧），通过不断对n进行二分交换，最后达到完全倒序的效果（不信可以试一试，确实倒序了），期间对多个十六进制数进行的与运算是为了保留特定位数上的二进制信息，或运算则是将每次的两半结果叠加，最后返回的即是倒序数列。可以看出这个做法的时间复杂度只有O(1)，比循环更优。</p><p>对了，关于位运算这里填一个传送门：</p><p><a href="https://www.cnblogs.com/yrjns/p/11246163.html">https://www.cnblogs.com/yrjns/p/11246163.html</a></p>]]></content>
+      
+      
       <categories>
-        <category>程序算法</category>
+          
+          <category> 程序算法 </category>
+          
       </categories>
-      <tags>
-        <tag>单调栈</tag>
-        <tag>题目</tag>
-        <tag>动态规划</tag>
-        <tag>双指针</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>最长公共子序列</title>
-    <url>/2021/04/04/%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E5%BA%8F%E5%88%97/</url>
-    <content><![CDATA[<p><em>这一类最长公共子序列问题属于二维数组动态规划的典型题目，非常经典所以做一下笔记。</em></p>
-<p><strong>首先是题干部分：</strong></p>
-<blockquote>
-<p>给定两个字符串 text1 和 text2，返回这两个字符串的最长 公共子序列 的长度。如果不存在 公共子序列 ，返回 0 。</p>
-<p>一个字符串的 子序列 是指这样一个新的字符串：它是由原字符串在不改变字符的相对顺序的情况下删除某些字符（也可以不删除任何字符）后组成的新字符串。</p>
-<p>例如，”ace” 是 “abcde” 的子序列，但 “aec” 不是 “abcde” 的子序列。<br>两个字符串的 公共子序列 是这两个字符串所共同拥有的子序列。</p>
-<blockquote>
-<p>示例 1：</p>
-<p>输入：text1 = “abcde”, text2 = “ace”<br>输出：3<br>解释：最长公共子序列是 “ace” ，它的长度为 3 。</p>
-</blockquote>
-<blockquote>
-<p>示例 2：</p>
-<p>输入：text1 = “abc”, text2 = “abc”<br>输出：3<br>解释：最长公共子序列是 “abc” ，它的长度为 3 。</p>
-</blockquote>
-<blockquote>
-<p>示例 3：</p>
-<p>输入：text1 = “abc”, text2 = “def”<br>输出：0<br>解释：两个字符串没有公共子序列，返回 0 。</p>
-</blockquote>
-<p>提示：</p>
-<ul>
-<li>1 &lt;= text1.length, text2.length &lt;= 1000</li>
-<li>text1 和 text2 仅由小写英文字符组成。</li>
-</ul>
-<p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/longest-common-subsequence">https://leetcode-cn.com/problems/longest-common-subsequence</a><br>著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。</p>
-</blockquote>
-<p>看见这种子序列啊，最长什么的，条件反射就会想到动态规划上，进而转到研究状态转化与条件。</p>
-<p>这里我们很清晰地认识到任一个字母最长的子序列长度取决于他之前字母的最长子序列。很显然，两组字符串做动态规划，一维数组基本不太可能满足需求了，这个时候就需要用上二维数组。</p>
-<p><img src="/2021/04/04/%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E5%BA%8F%E5%88%97/table.png" alt="table"></p>
-<p>这里解释一下为什么表格第一行与第一列都要用0填满了——实际上这是防止边际判断和出界的一种方式（说白了就是懒，不这么搞也行就是麻烦点）。</p>
-<p>表格的使用其实很简单：每次拿单行与不同列比较，遇到相同字母就将【当前位置的数】=【左上单元格的数】+1，否则就【当前位置的数】=MAX（【左边单元格的数】，【上边单元格的数】）。然后最后一行最后一列的元素就是答案啦。</p>
-<p>不过这样的使用其实是有重要的含义的，比如【左上单元格的数】其实就是到当前列对应字母上一个字母时最长公共子序列长度，因此在当前已确定字母相同时，+1就相当于更新了当前最长公共子序列长度。</p>
-<p>再说MAX（【左边单元格的数】，【上边单元格的数】）的含义，这其实就是一个状态转移方程的一部分（上面那个也是，欸嘿），优先选取最长的可能（与背包问题类似，都是动态规划）。</p>
-<p><strong>代码如下：</strong></p>
-<p>\</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> max(a,b) ( ((a)&gt;(b)) ? (a):(b) )</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">longestCommonSubsequence</span><span class="params">(<span class="keyword">char</span>* text1, <span class="keyword">char</span>* text2)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">int</span> max=<span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">int</span>** table=<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="keyword">int</span>*)*(<span class="built_in">strlen</span>(text1)+<span class="number">1</span>));</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="built_in">strlen</span>(text1)+<span class="number">1</span>;i++)&#123;</span><br><span class="line"></span><br><span class="line">​    table[i]=<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="keyword">int</span>)*(<span class="built_in">strlen</span>(text2)+<span class="number">1</span>));</span><br><span class="line"></span><br><span class="line">​    table[i][<span class="number">0</span>]=<span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="built_in">strlen</span>(text2)+<span class="number">1</span>;i++)</span><br><span class="line"></span><br><span class="line">  table[<span class="number">0</span>][i]=<span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;<span class="built_in">strlen</span>(text1)+<span class="number">1</span>;i++)&#123;</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;<span class="built_in">strlen</span>(text2)+<span class="number">1</span>;j++)&#123;</span><br><span class="line"></span><br><span class="line">​      <span class="keyword">if</span>(text1[i<span class="number">-1</span>]==text2[j<span class="number">-1</span>])</span><br><span class="line"></span><br><span class="line">​      table[i][j]=table[i<span class="number">-1</span>][j<span class="number">-1</span>]+<span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">​      <span class="keyword">else</span></span><br><span class="line"></span><br><span class="line">​      table[i][j]=max(table[i<span class="number">-1</span>][j],table[i][j<span class="number">-1</span>]);</span><br><span class="line"></span><br><span class="line">​    &#125;</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> table[<span class="built_in">strlen</span>(text1)][<span class="built_in">strlen</span>(text2)];</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>主要还是要多多锻炼，动态规划有时候感觉是真的阴间OMO</p>
-<p><strong>最后放一张女儿在这里o(*≧▽≦)ツ┏━┓：</strong></p>
-<p><img src="/2021/04/04/%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E5%BA%8F%E5%88%97/KLEE.png" alt="KLEE"></p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 算法 </tag>
+            
+            <tag> 进制转换 </tag>
+            
+            <tag> 分治 </tag>
+            
+            <tag> 位运算 </tag>
+            
+            <tag> 题目 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>132模式</title>
+      <link href="2021/03/24/132/"/>
+      <url>2021/03/24/132/</url>
+      
+        <content type="html"><![CDATA[<p><em>这道题主要涉及到了单调栈的运用，我还不是很熟悉这一类题型</em></p><h3 id="题干"><a href="#题干" class="headerlink" title="题干:"></a><strong>题干:</strong></h3><blockquote><p>给你一个整数数组 nums ，数组中共有 n 个整数。132 模式的子序列 由三个整数 nums[i]、nums[j] 和 nums[k] 组成，并同时满足：i &lt; j &lt; k 和 nums[i] &lt; nums[k] &lt; nums[j] 。</p><p>如果 nums 中存在 132 模式的子序列 ，返回 true ；否则，返回 false 。</p><p>进阶：很容易想到时间复杂度为 O(n^2) 的解决方案，你可以设计一个时间复杂度为 O(n logn) 或 O(n) 的解决方案吗？</p></blockquote><blockquote><p>示例 1：</p><p>输入：nums = [1,2,3,4]<br>输出：false<br>解释：序列中不存在 132 模式的子序列。<br>示例 2：</p><p>输入：nums = [3,1,4,2]<br>输出：true<br>解释：序列中有 1 个 132 模式的子序列： [1, 4, 2] 。<br>示例 3：</p><p>输入：nums = [-1,3,2,0]<br>输出：true<br>解释：序列中有 3 个 132 模式的的子序列：[-1, 3, 2]、[-1, 3, 0] 和 [-1, 2, 0] 。</p><p>提示：</p><ul><li>n == nums.length</li><li>1 &lt;= n &lt;= 104</li><li>-109 &lt;= nums[i] &lt;= 109</li></ul><p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/132-pattern">https://leetcode-cn.com/problems/132-pattern</a></p></blockquote><p>读完后第一反应是找一些方便判断的特征，找到对应的候选数字后不断进行维护。。。然后运行的时间复杂度是O（n^2）,而且在写代码时让人非常不舒服，过程过于繁杂且容易出错。</p><p>所以这里我们引入单调栈，即用栈存储数据，且栈内数据一定是单增（或单减），一旦遇到下一个数就立马用其与栈内元素比较，大于（或小于）的元素则全部出栈，最后将新的数压栈。</p><p>对于这道题，我们用单减的单调栈，即栈内元素中一定存在代表132模式中“3”的元素，而出栈元素用一个max变量维护，保证max对应132中“2”的候选元素中的最大值。此时，只要新的元素小于max，即可返回true（即新元素为132模式中代表“1”的元素）</p><p>代码如下：</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">find132pattern</span><span class="params">(<span class="keyword">int</span>* nums, <span class="keyword">int</span> numsSize)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span>(numsSize&lt;<span class="number">3</span>)</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">int</span> <span class="built_in">stack</span>[numsSize];</span><br><span class="line"></span><br><span class="line">  <span class="keyword">int</span> nu=<span class="number">0</span>,max=<span class="number">-1000000001</span>;</span><br><span class="line"></span><br><span class="line">  <span class="built_in">stack</span>[nu++]=nums[numsSize<span class="number">-1</span>];</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> i=numsSize<span class="number">-2</span>;i&gt;=<span class="number">0</span>;i--)&#123;</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">if</span>(nums[i]&lt;max)</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">for</span>(<span class="keyword">int</span> j=nu<span class="number">-1</span>;j&gt;=<span class="number">0</span>;j--)</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">if</span>(<span class="built_in">stack</span>[j]&lt;nums[i])&#123;</span><br><span class="line"></span><br><span class="line">​    nu--;</span><br><span class="line"></span><br><span class="line">​    max=<span class="built_in">stack</span>[j];</span><br><span class="line"></span><br><span class="line">​    &#125;</span><br><span class="line"></span><br><span class="line">​    <span class="built_in">stack</span>[nu++]=nums[i];</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><strong>如下图解：</strong></p><p><img src="/2021/03/24/132/132.png" alt="132模式"></p><p>这里还有一篇关于单调栈的文章，写的很好，放个链接在这里：</p><p><a href="https://blog.csdn.net/weixin_42784951/article/details/88963758?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161659419116780262549524%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&amp;request_id=161659419116780262549524&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_v2~rank_v29-2-88963758.pc_search_result_cache&amp;utm_term=%E5%8D%95%E8%B0%83%E6%A0%88">https://blog.csdn.net/weixin_42784951/article/details/88963758?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161659419116780262549524%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&amp;request_id=161659419116780262549524&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_v2~rank_v29-2-88963758.pc_search_result_cache&amp;utm_term=%E5%8D%95%E8%B0%83%E6%A0%88</a></p>]]></content>
+      
+      
       <categories>
-        <category>程序算法</category>
+          
+          <category> 程序算法 </category>
+          
       </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>题目</tag>
-        <tag>动态规划</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>数据结构KMP算法</title>
-    <url>/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/</url>
-    <content><![CDATA[<p><img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/cover.JPG" alt="cover"></p>
-<p><em>温馨提示：本篇属于总结，难免有疏漏和错误，如有发现建议直接囸作者，欸嘿</em></p>
-<span id="more"></span>
-
-<hr>
-<p><img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/hutao.JPG" alt="hutao"></p>
-<hr>
-<p>课上老师提到了KMP，下来了解了一下——md感觉瞬间懵逼（这就是马鹿吗i了i了）</p>
-<p>KMP简介是这样的：</p>
-<p><img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/a.png" alt="a"></p>
-<p>其中对核心要素next数组是这么介绍的：</p>
-<p><img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/b.png" alt="b"></p>
-<p><img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/c.jpeg" alt="c"></p>
-<p>最核心的next求法明白了，基本上KMP就没问题了。但是不幸的是，这玩意儿特别绕……</p>
-<h3 id="最长相等前后缀："><a href="#最长相等前后缀：" class="headerlink" title="最长相等前后缀："></a><strong>最长相等前后缀：</strong></h3><p>我们先看一下一个例子：<strong>abbcbabcc</strong></p>
-<p>这里对于他每一位字符而言，都会有一个对应的<strong>最长</strong>相等前后缀，针对倒数第二个c而言，我们可以画个图：<img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/long.png" alt="long"></p>
-<p>红框对应的就是一对最长相等前后缀，注意这里的“对称”并非是镜像的，而应该是以“a”，“a b”为整体的中心对称。</p>
-<p>现在再回到next求法上面。</p>
-<h3 id="关于NEXT："><a href="#关于NEXT：" class="headerlink" title="关于NEXT："></a>关于NEXT：</h3><p><img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/next.png" alt="next"></p>
-<p>这里的方程其实给人一种动态规划的状态转移方程的感觉（然而这个其实不是），但是问了一些ACM大手子，他们认为确实用了动态规划的一些思想但是缺少最优子结构什么的……</p>
-<blockquote>
-<p>我觉得KMP有dp的思想，但不能算dp，你可以认为它做了两个事情：构造状态转移关系和根据关系转移，但是并没有明确的最优子结构和转移方程，硬要说的话，更接近记忆化搜索或者自动机</p>
-</blockquote>
-<p>上面定义中，next[0]=-1是为了算法方便做的改动（实际j=0和j=-1都对应0）</p>
-<p>在这个过程中，最重要的其实就是确定当前的Max{k}，我们先看看GetNext代码：</p>
-<p><img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/GetNext.png" alt="GetNext"></p>
-<p>next[j]=k是记录当前最长相等前后缀长度，但是k=next[k]呢？这里就是理解这个函数的最大障碍，要弄清楚这个原理，我们再看看字符串中的对称：<br>$$<br>比如“abcdeabcdef”这个字符串<br>$$<br>字符串中“e”元素对应<strong>最长相等前后缀</strong>其实就是“abcde”，我们可以这么划分一下：</p>
-<p><strong>【abcde】【abcde】f</strong></p>
-<p>此时元素“f”出现了不匹配，那么我们就要找到一个新的<strong>最长相等前后缀</strong>，而这个新的最长相等前后缀肯定是小于“abcde”且除新的“f”元素以外都包含于“abcde”的，此时由于<strong>【abcde】【abcde】f</strong>中两个“abcdef”彼此对称，我们就可以把k回溯至开头的“abcde”后方进行判定。</p>
-<p>如此反复调用之前记录过的next[k]数据，即可求得新的最长相等前后缀。这里有两篇教程：</p>
-<p><a href="https://blog.csdn.net/weixin_34080571/article/details/93982239?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=KMPnext&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-4-93982239.first_rank_v2_pc_rank_v29">https://blog.csdn.net/weixin_34080571/article/details/93982239?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=KMPnext&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-4-93982239.first_rank_v2_pc_rank_v29</a></p>
-<p><a href="https://www.cnblogs.com/dusf/p/kmp.html">https://www.cnblogs.com/dusf/p/kmp.html</a></p>
-<h3 id="BMP的优化："><a href="#BMP的优化：" class="headerlink" title="BMP的优化："></a>BMP的优化：</h3><p>实际上，现在我们一般用的BMP算法与上面我们推导出来的还有一些细微的不同——BMP还可以进一步优化，省去一些不必要的过程。</p>
-<p>这里我们看一下目标串与模板串进行比对的函数：</p>
-<p><img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/betterKMP.png" alt="betterKMP"></p>
-<p>其实我们的优化就是利用中间标红的<em><strong>“j=next[j]”</strong></em>，对GetNext函数进行优化</p>
-<p>在比对过程中，可能会出现这样的状况：</p>
-<p><img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/search.jpg" alt="search"></p>
-<p>可以看到其实“d”在与“c”判断后，接下来几个连续与“a”的判断是多余的，因此要更改判断方式使相同的字符不会被重复选取。</p>
-<p><img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/betterNext.png" alt="GetNext"></p>
-<p>上图红色部分的意思是如果有t[j]==t[k]了，那么就说明KMP函数中调用next[j]肯定会出现重复，于是我们就直接跳过他调用next[k]（若再出现一致则重复递归）。</p>
-<blockquote>
-<p>附上详细讲解：</p>
-<p><a href="https://zhuanlan.zhihu.com/p/105629613">https://zhuanlan.zhihu.com/p/105629613</a></p>
-</blockquote>
-<p>KMP算法大致就是这样运行的，建议再做两道题巩固一下o(*￣▽￣*)o~</p>
-<hr>
-<p>好了，话也说完了，那差不多就该</p>
-<p><img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/IMG_2662.JPG" alt="IMG_2662"></p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 算法 </tag>
+            
+            <tag> 题目 </tag>
+            
+            <tag> 单调栈 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>dp子序列问题</title>
+      <link href="2021/03/17/dp%E5%AD%90%E5%BA%8F%E5%88%97%E9%97%AE%E9%A2%98/"/>
+      <url>2021/03/17/dp%E5%AD%90%E5%BA%8F%E5%88%97%E9%97%AE%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[<p><strong>PS：本文属于备忘笔记，今后遇到类似题目会持续更新</strong></p><p>​    今天在力扣上面看到一个子序列dp的问题，不得不感叹用dp数组解决的子序列问题还真是挺多，该题目属于困难分类，确实废了一番功夫。不过在练后回顾理清思路时，感觉其实也并没有那么难，只是有些套路有待总结——话不多说直接上题</p><blockquote><p>给定一个字符串 s 和一个字符串 t ，计算在 s 的子序列中 t 出现的个数。</p><p>字符串的一个 子序列 是指，通过删除一些（也可以不删除）字符且不干扰剩余字符相对位置所组成的新字符串。（例如，”ACE” 是 “ABCDE” 的一个子序列，而 “AEC” 不是）</p><p>题目数据保证答案符合 32 位带符号整数范围。</p></blockquote><blockquote><p>示例 1：</p><p>输入：s = “rabbbit”, t = “rabbit”<br>输出：3<br>解释：<br>如下图所示, 有 3 种可以从 s 中得到 “rabbit” 的方案。<br>(上箭头符号 ^ 表示选取的字母)<br>rabbbit<br>^^^^ ^^<br>rabbbit<br>^^ ^^^^<br>rabbbit<br>^^^ ^^^<br>示例 2：</p><p>输入：s = “babgbag”, t = “bag”<br>输出：5<br>解释：<br>如下图所示, 有 5 种可以从 s 中得到 “bag” 的方案。<br>(上箭头符号 ^ 表示选取的字母)<br>babgbag<br>^^ ^<br>babgbag<br>^^    ^<br>babgbag<br>^    ^^<br>babgbag<br>  ^  ^^<br>babgbag<br>    ^^^</p><p>提示：</p><ul><li>0 &lt;= s.length, t.length &lt;= 1000</li><li>s 和 t 由英文字母组成</li></ul></blockquote><p>牙白，这么久了都没有更新了</p>]]></content>
+      
+      
       <categories>
-        <category>项目案例</category>
+          
+          <category> 程序算法 </category>
+          
       </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>数据结构</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>逆波兰（转载）</title>
-    <url>/2021/03/16/%E9%80%86%E6%B3%A2%E5%85%B0/</url>
-    <content><![CDATA[<p>输入有两行,第一行为逆波兰式的结果,第二行为输入表达式的正确计算结果。逆波兰式中相邻的数字或运算符之间不用输出空格</p>
-<p>保证表达式计算的合理性,不需判断除零等情况</p>
-<p>表达式的计算遵循同级运算从左向右,先乘除后加减</p>
-<p>样例输入:</p>
-<p>2+1*3+4</p>
-<p>样例输出:</p>
-<p>213*+4+</p>
-<p>9</p>
-<p>解题思路:</p>
-<p>首先定义两个栈,一个临时存储运算符S1,另一个作为输入逆波兰式S2的存放栈</p>
-<p>在S1中先放入一个‘#’运算符调整为最低,方便运算符的比较</p>
-<p>然后开始从表达式中取值</p>
-<p>(1)若取出的是表达式,直接将其放置到S2存放栈中</p>
-<p>(2)若取出的运算符,则将该元素与S1栈顶元素进行比较,如果该运算符优先级大于(小于或者等于都不行)S1栈顶运算符优先级,则将该运算符进S1栈,否则,将S1栈栈的栈顶运算符弹出,送入S2栈,之后再和S1现在的栈顶比较,直到运算符优先级大于栈顶为止后，将该运算符送入S1中</p>
-<p>(3)重复上述1-2步,直到所有输入字符都处理完毕</p>
-<p>(4)将S1中的所有符号除‘#’以外都push到S2中</p>
-<p>这样我们就得到了一个逆波兰序列</p>
-<p>计算结果:</p>
-<p>将逆波兰式依次堆入一个栈中,如果堆入的是一个运算符,取出栈里的头两个操作数(必为数字),将其执行运算符所代表的操作后</p>
-<p>(一般是 下 运算符 上),将结果放回栈中,最后剩下的栈顶就是结果</p>
-<p>代码如下:</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">am&gt;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stack&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">precede</span><span class="params">(<span class="keyword">char</span> a)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">switch</span> (a)</span><br><span class="line">	&#123;</span><br><span class="line">	<span class="keyword">case</span> <span class="string">&#x27;+&#x27;</span>:</span><br><span class="line">		<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="string">&#x27;-&#x27;</span>:</span><br><span class="line">		<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="string">&#x27;*&#x27;</span>:</span><br><span class="line">		<span class="keyword">return</span> <span class="number">2</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="string">&#x27;/&#x27;</span>:</span><br><span class="line">		<span class="keyword">return</span> <span class="number">2</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="string">&#x27;#&#x27;</span>:</span><br><span class="line">		<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">comparePrecde</span><span class="params">(<span class="keyword">char</span> a,<span class="keyword">char</span> b)</span> </span>&#123;  <span class="comment">//前表达式中的元素 后栈中的元素</span></span><br><span class="line">	<span class="keyword">int</span> pre_a = precede(a);</span><br><span class="line">	<span class="keyword">int</span> pre_b = precede(b);</span><br><span class="line"> </span><br><span class="line">	<span class="keyword">if</span> (pre_a &gt; pre_b) &#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span> &#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"> </span><br><span class="line">	<span class="built_in">stack</span>&lt;<span class="keyword">char</span>&gt; numStack;  <span class="comment">//用来存储数字</span></span><br><span class="line">	<span class="built_in">stack</span>&lt;<span class="keyword">char</span>&gt; exprStack;  <span class="comment">//用来存储表达式</span></span><br><span class="line">	<span class="built_in">stack</span>&lt;<span class="keyword">char</span>&gt; tempStack;  <span class="comment">//暂时存储</span></span><br><span class="line">	<span class="built_in">stack</span>&lt;<span class="keyword">float</span>&gt; resStack;  <span class="comment">//用来存储计算结果</span></span><br><span class="line">	<span class="built_in">vector</span>&lt;<span class="keyword">char</span>&gt; opVec;   <span class="comment">//正序输出</span></span><br><span class="line">	exprStack.push(<span class="string">&#x27;#&#x27;</span>);   </span><br><span class="line"> </span><br><span class="line">	<span class="built_in">string</span> buffer;   <span class="comment">//用来读取中缀表达式</span></span><br><span class="line">	<span class="built_in">cin</span> &gt;&gt; buffer;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; buffer.size(); ++i) &#123;   <span class="comment">//数字和运算符分离</span></span><br><span class="line">		<span class="keyword">if</span> (<span class="built_in">isdigit</span>(buffer[i])) &#123;</span><br><span class="line">			numStack.push(buffer[i]);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> &#123;</span><br><span class="line">			<span class="keyword">while</span> (!comparePrecde(buffer[i], exprStack.top())) &#123;</span><br><span class="line">				numStack.push(exprStack.top());</span><br><span class="line">				exprStack.pop();</span><br><span class="line">			&#125;</span><br><span class="line">			exprStack.push(buffer[i]);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">while</span> (exprStack.top() != <span class="string">&#x27;#&#x27;</span>) &#123;     <span class="comment">//剩余的元素压入栈</span></span><br><span class="line">		numStack.push(exprStack.top());</span><br><span class="line">		exprStack.pop();</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">while</span> (!numStack.empty()) &#123;</span><br><span class="line">		opVec.push_back(numStack.top());</span><br><span class="line">		tempStack.push(numStack.top());</span><br><span class="line">		numStack.pop();</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	reverse(opVec.begin(), opVec.end());  <span class="comment">//输出逆波兰式列</span></span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">auto</span> x : opVec) &#123;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; x;</span><br><span class="line">	&#125;</span><br><span class="line"> </span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">	<span class="comment">//计算结果</span></span><br><span class="line">	<span class="keyword">while</span> (!tempStack.empty()) &#123;</span><br><span class="line">		<span class="keyword">if</span> (<span class="built_in">isdigit</span>(tempStack.top())) &#123;</span><br><span class="line">			resStack.push((<span class="keyword">float</span>)(tempStack.top() - <span class="string">&#x27;0&#x27;</span>));  <span class="comment">//char to int</span></span><br><span class="line">			tempStack.pop();</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> &#123;</span><br><span class="line">			<span class="keyword">char</span> expr = tempStack.top();</span><br><span class="line">			tempStack.pop();</span><br><span class="line">			<span class="keyword">float</span> a = resStack.top();</span><br><span class="line">			resStack.pop();</span><br><span class="line">			<span class="keyword">float</span> b = resStack.top();</span><br><span class="line">			resStack.pop();</span><br><span class="line"> </span><br><span class="line">			<span class="keyword">switch</span> (expr)</span><br><span class="line">			&#123;</span><br><span class="line">			<span class="keyword">case</span><span class="number">&#x27;</span>+<span class="string">&#x27;:</span></span><br><span class="line">				resStack.push(b + a);</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span><span class="number">&#x27;</span>-<span class="string">&#x27;:</span></span><br><span class="line">				resStack.push(b - a);</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span><span class="number">&#x27;</span>*<span class="string">&#x27;:</span></span><br><span class="line">				resStack.push(b * a);</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span><span class="number">&#x27;</span>/<span class="string">&#x27;:</span></span><br><span class="line">				resStack.push(b / a);</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; resStack.top() &lt;&lt; <span class="built_in">endl</span>;   <span class="comment">//输出结果</span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>————————————————<br>版权声明：本文为CSDN博主「alex1997222」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a href="https://blog.csdn.net/alex1997222/article/details/82764166">https://blog.csdn.net/alex1997222/article/details/82764166</a></p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 算法 </tag>
+            
+            <tag> 题目 </tag>
+            
+            <tag> 学习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>逆波兰（转载）</title>
+      <link href="2021/03/16/%E9%80%86%E6%B3%A2%E5%85%B0/"/>
+      <url>2021/03/16/%E9%80%86%E6%B3%A2%E5%85%B0/</url>
+      
+        <content type="html"><![CDATA[<p>输入有两行,第一行为逆波兰式的结果,第二行为输入表达式的正确计算结果。逆波兰式中相邻的数字或运算符之间不用输出空格</p><p>保证表达式计算的合理性,不需判断除零等情况</p><p>表达式的计算遵循同级运算从左向右,先乘除后加减</p><p>样例输入:</p><p>2+1*3+4</p><p>样例输出:</p><p>213*+4+</p><p>9</p><p>解题思路:</p><p>首先定义两个栈,一个临时存储运算符S1,另一个作为输入逆波兰式S2的存放栈</p><p>在S1中先放入一个‘#’运算符调整为最低,方便运算符的比较</p><p>然后开始从表达式中取值</p><p>(1)若取出的是表达式,直接将其放置到S2存放栈中</p><p>(2)若取出的运算符,则将该元素与S1栈顶元素进行比较,如果该运算符优先级大于(小于或者等于都不行)S1栈顶运算符优先级,则将该运算符进S1栈,否则,将S1栈栈的栈顶运算符弹出,送入S2栈,之后再和S1现在的栈顶比较,直到运算符优先级大于栈顶为止后，将该运算符送入S1中</p><p>(3)重复上述1-2步,直到所有输入字符都处理完毕</p><p>(4)将S1中的所有符号除‘#’以外都push到S2中</p><p>这样我们就得到了一个逆波兰序列</p><p>计算结果:</p><p>将逆波兰式依次堆入一个栈中,如果堆入的是一个运算符,取出栈里的头两个操作数(必为数字),将其执行运算符所代表的操作后</p><p>(一般是 下 运算符 上),将结果放回栈中,最后剩下的栈顶就是结果</p><p>代码如下:</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br></pre></td><td class="code"><pre><span class="line">am&gt;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stack&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">precede</span><span class="params">(<span class="keyword">char</span> a)</span> </span>&#123;</span><br><span class="line"><span class="keyword">switch</span> (a)</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">case</span> <span class="string">&#x27;+&#x27;</span>:</span><br><span class="line"><span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line"><span class="keyword">case</span> <span class="string">&#x27;-&#x27;</span>:</span><br><span class="line"><span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line"><span class="keyword">case</span> <span class="string">&#x27;*&#x27;</span>:</span><br><span class="line"><span class="keyword">return</span> <span class="number">2</span>;</span><br><span class="line"><span class="keyword">case</span> <span class="string">&#x27;/&#x27;</span>:</span><br><span class="line"><span class="keyword">return</span> <span class="number">2</span>;</span><br><span class="line"><span class="keyword">case</span> <span class="string">&#x27;#&#x27;</span>:</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">comparePrecde</span><span class="params">(<span class="keyword">char</span> a,<span class="keyword">char</span> b)</span> </span>&#123;  <span class="comment">//前表达式中的元素 后栈中的元素</span></span><br><span class="line"><span class="keyword">int</span> pre_a = precede(a);</span><br><span class="line"><span class="keyword">int</span> pre_b = precede(b);</span><br><span class="line"> </span><br><span class="line"><span class="keyword">if</span> (pre_a &gt; pre_b) &#123;</span><br><span class="line"><span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span> &#123;</span><br><span class="line"><span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"> </span><br><span class="line"><span class="built_in">stack</span>&lt;<span class="keyword">char</span>&gt; numStack;  <span class="comment">//用来存储数字</span></span><br><span class="line"><span class="built_in">stack</span>&lt;<span class="keyword">char</span>&gt; exprStack;  <span class="comment">//用来存储表达式</span></span><br><span class="line"><span class="built_in">stack</span>&lt;<span class="keyword">char</span>&gt; tempStack;  <span class="comment">//暂时存储</span></span><br><span class="line"><span class="built_in">stack</span>&lt;<span class="keyword">float</span>&gt; resStack;  <span class="comment">//用来存储计算结果</span></span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">char</span>&gt; opVec;   <span class="comment">//正序输出</span></span><br><span class="line">exprStack.push(<span class="string">&#x27;#&#x27;</span>);   </span><br><span class="line"> </span><br><span class="line"><span class="built_in">string</span> buffer;   <span class="comment">//用来读取中缀表达式</span></span><br><span class="line"><span class="built_in">cin</span> &gt;&gt; buffer;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; buffer.size(); ++i) &#123;   <span class="comment">//数字和运算符分离</span></span><br><span class="line"><span class="keyword">if</span> (<span class="built_in">isdigit</span>(buffer[i])) &#123;</span><br><span class="line">numStack.push(buffer[i]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span> &#123;</span><br><span class="line"><span class="keyword">while</span> (!comparePrecde(buffer[i], exprStack.top())) &#123;</span><br><span class="line">numStack.push(exprStack.top());</span><br><span class="line">exprStack.pop();</span><br><span class="line">&#125;</span><br><span class="line">exprStack.push(buffer[i]);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> (exprStack.top() != <span class="string">&#x27;#&#x27;</span>) &#123;     <span class="comment">//剩余的元素压入栈</span></span><br><span class="line">numStack.push(exprStack.top());</span><br><span class="line">exprStack.pop();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> (!numStack.empty()) &#123;</span><br><span class="line">opVec.push_back(numStack.top());</span><br><span class="line">tempStack.push(numStack.top());</span><br><span class="line">numStack.pop();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">reverse(opVec.begin(), opVec.end());  <span class="comment">//输出逆波兰式列</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">auto</span> x : opVec) &#123;</span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; x;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"><span class="comment">//计算结果</span></span><br><span class="line"><span class="keyword">while</span> (!tempStack.empty()) &#123;</span><br><span class="line"><span class="keyword">if</span> (<span class="built_in">isdigit</span>(tempStack.top())) &#123;</span><br><span class="line">resStack.push((<span class="keyword">float</span>)(tempStack.top() - <span class="string">&#x27;0&#x27;</span>));  <span class="comment">//char to int</span></span><br><span class="line">tempStack.pop();</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span> &#123;</span><br><span class="line"><span class="keyword">char</span> expr = tempStack.top();</span><br><span class="line">tempStack.pop();</span><br><span class="line"><span class="keyword">float</span> a = resStack.top();</span><br><span class="line">resStack.pop();</span><br><span class="line"><span class="keyword">float</span> b = resStack.top();</span><br><span class="line">resStack.pop();</span><br><span class="line"> </span><br><span class="line"><span class="keyword">switch</span> (expr)</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">case</span><span class="number">&#x27;</span>+<span class="string">&#x27;:</span></span><br><span class="line">resStack.push(b + a);</span><br><span class="line"><span class="keyword">break</span>;</span><br><span class="line"><span class="keyword">case</span><span class="number">&#x27;</span>-<span class="string">&#x27;:</span></span><br><span class="line">resStack.push(b - a);</span><br><span class="line"><span class="keyword">break</span>;</span><br><span class="line"><span class="keyword">case</span><span class="number">&#x27;</span>*<span class="string">&#x27;:</span></span><br><span class="line">resStack.push(b * a);</span><br><span class="line"><span class="keyword">break</span>;</span><br><span class="line"><span class="keyword">case</span><span class="number">&#x27;</span>/<span class="string">&#x27;:</span></span><br><span class="line">resStack.push(b / a);</span><br><span class="line"><span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; resStack.top() &lt;&lt; <span class="built_in">endl</span>;   <span class="comment">//输出结果</span></span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>————————————————<br>版权声明：本文为CSDN博主「alex1997222」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a href="https://blog.csdn.net/alex1997222/article/details/82764166">https://blog.csdn.net/alex1997222/article/details/82764166</a></p>]]></content>
+      
+      
       <categories>
-        <category>程序算法</category>
+          
+          <category> 程序算法 </category>
+          
       </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>题目</tag>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>误上贼船学习C++面对对象</title>
-    <url>/2021/04/06/%E8%AF%AF%E4%B8%8A%E8%B4%BC%E8%88%B9%E5%AD%A6%E4%B9%A0C-%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1/</url>
-    <content><![CDATA[]]></content>
+      
+      
+        <tags>
+            
+            <tag> 算法 </tag>
+            
+            <tag> 题目 </tag>
+            
+            <tag> 学习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>I love jwjj</title>
+      <link href="2021/03/09/I-love-jwjj/"/>
+      <url>2021/03/09/I-love-jwjj/</url>
+      
+        <content type="html"><![CDATA[<h1 id="jwjj-I-love-you"><a href="#jwjj-I-love-you" class="headerlink" title="jwjj,I love you"></a>jwjj,I love you</h1>]]></content>
+      
+      
       <categories>
-        <category>C++</category>
+          
+          <category> 对jwjj的爱 </category>
+          
       </categories>
-      <tags>
-        <tag>学习</tag>
-        <tag>C++</tag>
-        <tag>面对对象</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>森林中的兔子</title>
-    <url>/2021/04/04/%E6%A3%AE%E6%9E%97%E4%B8%AD%E7%9A%84%E5%85%94%E5%AD%90/</url>
-    <content><![CDATA[<p><img src="/2021/04/04/%E6%A3%AE%E6%9E%97%E4%B8%AD%E7%9A%84%E5%85%94%E5%AD%90/cover.jpg" alt="cover"></p>
-<p>今天的题目是兔子，很快啊，我全都码出去了啊</p>
-<p>可惜年轻人不讲武德，诶，来骗，来偷袭</p>
-<span id="more"></span>
-
-<blockquote>
-<p>森林中，每个兔子都有颜色。其中一些兔子（可能是全部）告诉你还有多少其他的兔子和自己有相同的颜色。我们将这些回答放在 answers 数组里。</p>
-<p>返回森林中兔子的最少数量。</p>
-<blockquote>
-<p>示例:<br>输入: answers = [1, 1, 2]<br>输出: 5<br>解释:<br>两只回答了 “1” 的兔子可能有相同的颜色，设为红色。<br>之后回答了 “2” 的兔子不会是红色，否则他们的回答会相互矛盾。<br>设回答了 “2” 的兔子为蓝色。<br>此外，森林中还应有另外 2 只蓝色兔子的回答没有包含在数组中。<br>因此森林中兔子的最少数量是 5: 3 只回答的和 2 只没有回答的。</p>
-</blockquote>
-<blockquote>
-<p>输入: answers = [10, 10, 10]<br>输出: 11</p>
-</blockquote>
-<blockquote>
-<p>输入: answers = []<br>输出: 0</p>
-</blockquote>
-<p>说明:</p>
-<ol>
-<li>answers 的长度最大为1000。</li>
-<li>answers[i] 是在 [0, 999] 范围内的整数。</li>
-</ol>
-<p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/rabbits-in-forest">https://leetcode-cn.com/problems/rabbits-in-forest</a><br>著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。</p>
-</blockquote>
-<p>首先看到这个题目我们就想到——</p>
-<p><strong>这个：</strong></p>
-<p><img src="/2021/04/04/%E6%A3%AE%E6%9E%97%E4%B8%AD%E7%9A%84%E5%85%94%E5%AD%90/rabbit.jpeg" alt="rabbit"></p>
-<p><strong>这个：</strong></p>
-<p><img src="/2021/04/04/%E6%A3%AE%E6%9E%97%E4%B8%AD%E7%9A%84%E5%85%94%E5%AD%90/tutu.jpeg" alt="tutu"></p>
-<p><img src="/2021/04/04/%E6%A3%AE%E6%9E%97%E4%B8%AD%E7%9A%84%E5%85%94%E5%AD%90/IMG_2631.PNG" alt="IMG_2631"></p>
-<p><strong>还有这个(o′┏▽┓｀o) ：</strong></p>
-<p><img src="/2021/04/04/%E6%A3%AE%E6%9E%97%E4%B8%AD%E7%9A%84%E5%85%94%E5%AD%90/tu.jpg" alt="tu"></p>
-<p><img src="/2021/04/04/%E6%A3%AE%E6%9E%97%E4%B8%AD%E7%9A%84%E5%85%94%E5%AD%90/mai.png" alt="mai"></p>
-<p><img src="/2021/04/04/%E6%A3%AE%E6%9E%97%E4%B8%AD%E7%9A%84%E5%85%94%E5%AD%90/mai2.png" alt="mai2"></p>
-<p>（欸嘿嘿嘿嘿，吸溜，欸嘿嘿……）</p>
-<p><img src="/2021/04/04/%E6%A3%AE%E6%9E%97%E4%B8%AD%E7%9A%84%E5%85%94%E5%AD%90/GKD.jpg" alt="GKD"></p>
-<h4 id="咳咳，不闹了正经点了"><a href="#咳咳，不闹了正经点了" class="headerlink" title="咳咳，不闹了正经点了"></a><em>咳咳，不闹了正经点了</em></h4><p>这道题其实就是灵活利用哈希表，最重要的是如何理解题目：每个兔子都会说出和他相同颜色剩余兔子的数目n——所以这种这种颜色兔子应该有n+1只，因此利用哈希表对对应数量的单元格下储存即可，同时用一个变量来存放总数量。</p>
-<p>那么此时还有一个问题——即若对应数目与进行数量描述的兔子相冲突该怎么办（e.g:比如[0,0,0]这种情况，这三只兔子虽然对应剩余同颜色兔子数量描述相同，却绝对不可能是一种颜色的兔子），这个时候就需要一次清零操作了——可以看作当某种颜色装满兔子后，清零变为另一种颜色，此时再次填入，再一次计算数目。</p>
-<p><strong>代码如下：</strong></p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">numRabbits</span><span class="params">(<span class="keyword">int</span>* answers, <span class="keyword">int</span> answersSize)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">int</span> <span class="built_in">set</span>[<span class="number">1001</span>]=&#123;<span class="number">0</span>&#125;,ans=<span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;answersSize;i++)&#123;</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">if</span>(<span class="built_in">set</span>[answers[i]]==<span class="number">0</span>)<span class="comment">//只要是“0”，即是一种全新的颜色，重新计数</span></span><br><span class="line"></span><br><span class="line">​      ans+=(answers[i]+<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">​    <span class="built_in">set</span>[answers[i]]++;</span><br><span class="line"></span><br><span class="line">​    <span class="built_in">set</span>[answers[i]]%=(answers[i]+<span class="number">1</span>);<span class="comment">//这里取模就是上文提到过的清零操作</span></span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> ans;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>哎呀感觉涩图没看够啊（；´д｀）ゞ。。。</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> jwjj </tag>
+            
+            <tag> 爱 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>first</title>
+      <link href="2021/03/09/first/"/>
+      <url>2021/03/09/first/</url>
+      
+        <content type="html"><![CDATA[<p><strong>老色皮</strong>博主终于搭了博客</p><p>因为平时都在搞黄涩所以基本不怎么更新&gt;V&lt;</p>]]></content>
+      
+      
       <categories>
-        <category>程序算法</category>
+          
+          <category> 项目案例 </category>
+          
       </categories>
-      <tags>
-        <tag>题目</tag>
-        <tag>哈希表</tag>
-      </tags>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> 博客 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
 </search>
