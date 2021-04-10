@@ -42,6 +42,62 @@
       </tags>
   </entry>
   <entry>
+    <title>132模式</title>
+    <url>/2021/03/24/132/</url>
+    <content><![CDATA[<p><em>这道题主要涉及到了单调栈的运用，我还不是很熟悉这一类题型</em></p>
+<h3 id="题干"><a href="#题干" class="headerlink" title="题干:"></a><strong>题干:</strong></h3><blockquote>
+<p>给你一个整数数组 nums ，数组中共有 n 个整数。132 模式的子序列 由三个整数 nums[i]、nums[j] 和 nums[k] 组成，并同时满足：i &lt; j &lt; k 和 nums[i] &lt; nums[k] &lt; nums[j] 。</p>
+<p>如果 nums 中存在 132 模式的子序列 ，返回 true ；否则，返回 false 。</p>
+<p>进阶：很容易想到时间复杂度为 O(n^2) 的解决方案，你可以设计一个时间复杂度为 O(n logn) 或 O(n) 的解决方案吗？</p>
+</blockquote>
+<blockquote>
+<p>示例 1：</p>
+<p>输入：nums = [1,2,3,4]<br>输出：false<br>解释：序列中不存在 132 模式的子序列。<br>示例 2：</p>
+<p>输入：nums = [3,1,4,2]<br>输出：true<br>解释：序列中有 1 个 132 模式的子序列： [1, 4, 2] 。<br>示例 3：</p>
+<p>输入：nums = [-1,3,2,0]<br>输出：true<br>解释：序列中有 3 个 132 模式的的子序列：[-1, 3, 2]、[-1, 3, 0] 和 [-1, 2, 0] 。</p>
+<p>提示：</p>
+<ul>
+<li>n == nums.length</li>
+<li>1 &lt;= n &lt;= 104</li>
+<li>-109 &lt;= nums[i] &lt;= 109</li>
+</ul>
+<p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/132-pattern">https://leetcode-cn.com/problems/132-pattern</a></p>
+</blockquote>
+<p>读完后第一反应是找一些方便判断的特征，找到对应的候选数字后不断进行维护。。。然后运行的时间复杂度是O（n^2）,而且在写代码时让人非常不舒服，过程过于繁杂且容易出错。</p>
+<p>所以这里我们引入单调栈，即用栈存储数据，且栈内数据一定是单增（或单减），一旦遇到下一个数就立马用其与栈内元素比较，大于（或小于）的元素则全部出栈，最后将新的数压栈。</p>
+<p>对于这道题，我们用单减的单调栈，即栈内元素中一定存在代表132模式中“3”的元素，而出栈元素用一个max变量维护，保证max对应132中“2”的候选元素中的最大值。此时，只要新的元素小于max，即可返回true（即新元素为132模式中代表“1”的元素）</p>
+<p>代码如下：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">find132pattern</span><span class="params">(<span class="keyword">int</span>* nums, <span class="keyword">int</span> numsSize)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span>(numsSize&lt;<span class="number">3</span>)</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">int</span> <span class="built_in">stack</span>[numsSize];</span><br><span class="line"></span><br><span class="line">  <span class="keyword">int</span> nu=<span class="number">0</span>,max=<span class="number">-1000000001</span>;</span><br><span class="line"></span><br><span class="line">  <span class="built_in">stack</span>[nu++]=nums[numsSize<span class="number">-1</span>];</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> i=numsSize<span class="number">-2</span>;i&gt;=<span class="number">0</span>;i--)&#123;</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">if</span>(nums[i]&lt;max)</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">for</span>(<span class="keyword">int</span> j=nu<span class="number">-1</span>;j&gt;=<span class="number">0</span>;j--)</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">if</span>(<span class="built_in">stack</span>[j]&lt;nums[i])&#123;</span><br><span class="line"></span><br><span class="line">​    nu--;</span><br><span class="line"></span><br><span class="line">​    max=<span class="built_in">stack</span>[j];</span><br><span class="line"></span><br><span class="line">​    &#125;</span><br><span class="line"></span><br><span class="line">​    <span class="built_in">stack</span>[nu++]=nums[i];</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>如下图解：</strong></p>
+<p><img src="/2021/03/24/132/132.png" alt="132模式"></p>
+<p>这里还有一篇关于单调栈的文章，写的很好，放个链接在这里：</p>
+<p><a href="https://blog.csdn.net/weixin_42784951/article/details/88963758?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161659419116780262549524%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&amp;request_id=161659419116780262549524&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_v2~rank_v29-2-88963758.pc_search_result_cache&amp;utm_term=%E5%8D%95%E8%B0%83%E6%A0%88">https://blog.csdn.net/weixin_42784951/article/details/88963758?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161659419116780262549524%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&amp;request_id=161659419116780262549524&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_v2~rank_v29-2-88963758.pc_search_result_cache&amp;utm_term=%E5%8D%95%E8%B0%83%E6%A0%88</a></p>
+]]></content>
+      <categories>
+        <category>程序算法</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>题目</tag>
+        <tag>单调栈</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>I love jwjj</title>
+    <url>/2021/03/09/I-love-jwjj/</url>
+    <content><![CDATA[<h1 id="jwjj-I-love-you"><a href="#jwjj-I-love-you" class="headerlink" title="jwjj,I love you"></a>jwjj,I love you</h1>]]></content>
+      <categories>
+        <category>对jwjj的爱</category>
+      </categories>
+      <tags>
+        <tag>jwjj</tag>
+        <tag>爱</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>ch2线性表总结</title>
     <url>/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/</url>
     <content><![CDATA[<p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/nice.jpg" alt="nice"></p>
@@ -117,18 +173,6 @@
       </tags>
   </entry>
   <entry>
-    <title>I love jwjj</title>
-    <url>/2021/03/09/I-love-jwjj/</url>
-    <content><![CDATA[<h1 id="jwjj-I-love-you"><a href="#jwjj-I-love-you" class="headerlink" title="jwjj,I love you"></a>jwjj,I love you</h1>]]></content>
-      <categories>
-        <category>对jwjj的爱</category>
-      </categories>
-      <tags>
-        <tag>jwjj</tag>
-        <tag>爱</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>first</title>
     <url>/2021/03/09/first/</url>
     <content><![CDATA[<p><strong>老色皮</strong>博主终于搭了博客</p>
@@ -139,6 +183,20 @@
       </categories>
       <tags>
         <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>image</title>
+    <url>/2021/03/31/image/</url>
+    <content><![CDATA[<p><img src="/2021/03/31/image/1.jpg" alt="1"></p>
+<p>很淦，终于把图片弄好了</p>
+<p>没想到错误原因竟然是路径符号’/‘和’\‘混了orz</p>
+]]></content>
+      <categories>
+        <category>项目案例</category>
+      </categories>
+      <tags>
+        <tag>测试</tag>
       </tags>
   </entry>
   <entry>
@@ -170,20 +228,6 @@
         <tag>算法</tag>
         <tag>题目</tag>
         <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>image</title>
-    <url>/2021/03/31/image/</url>
-    <content><![CDATA[<p><img src="/2021/03/31/image/1.jpg" alt="1"></p>
-<p>很淦，终于把图片弄好了</p>
-<p>没想到错误原因竟然是路径符号’/‘和’\‘混了orz</p>
-]]></content>
-      <categories>
-        <category>项目案例</category>
-      </categories>
-      <tags>
-        <tag>测试</tag>
       </tags>
   </entry>
   <entry>
@@ -260,105 +304,9 @@
       </categories>
       <tags>
         <tag>题目</tag>
-        <tag>动态规划</tag>
         <tag>单调栈</tag>
+        <tag>动态规划</tag>
         <tag>双指针</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>最长公共子序列</title>
-    <url>/2021/04/04/%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E5%BA%8F%E5%88%97/</url>
-    <content><![CDATA[<p><em>这一类最长公共子序列问题属于二维数组动态规划的典型题目，非常经典所以做一下笔记。</em></p>
-<p><strong>首先是题干部分：</strong></p>
-<blockquote>
-<p>给定两个字符串 text1 和 text2，返回这两个字符串的最长 公共子序列 的长度。如果不存在 公共子序列 ，返回 0 。</p>
-<p>一个字符串的 子序列 是指这样一个新的字符串：它是由原字符串在不改变字符的相对顺序的情况下删除某些字符（也可以不删除任何字符）后组成的新字符串。</p>
-<p>例如，”ace” 是 “abcde” 的子序列，但 “aec” 不是 “abcde” 的子序列。<br>两个字符串的 公共子序列 是这两个字符串所共同拥有的子序列。</p>
-<blockquote>
-<p>示例 1：</p>
-<p>输入：text1 = “abcde”, text2 = “ace”<br>输出：3<br>解释：最长公共子序列是 “ace” ，它的长度为 3 。</p>
-</blockquote>
-<blockquote>
-<p>示例 2：</p>
-<p>输入：text1 = “abc”, text2 = “abc”<br>输出：3<br>解释：最长公共子序列是 “abc” ，它的长度为 3 。</p>
-</blockquote>
-<blockquote>
-<p>示例 3：</p>
-<p>输入：text1 = “abc”, text2 = “def”<br>输出：0<br>解释：两个字符串没有公共子序列，返回 0 。</p>
-</blockquote>
-<p>提示：</p>
-<ul>
-<li>1 &lt;= text1.length, text2.length &lt;= 1000</li>
-<li>text1 和 text2 仅由小写英文字符组成。</li>
-</ul>
-<p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/longest-common-subsequence">https://leetcode-cn.com/problems/longest-common-subsequence</a><br>著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。</p>
-</blockquote>
-<p>看见这种子序列啊，最长什么的，条件反射就会想到动态规划上，进而转到研究状态转化与条件。</p>
-<p>这里我们很清晰地认识到任一个字母最长的子序列长度取决于他之前字母的最长子序列。很显然，两组字符串做动态规划，一维数组基本不太可能满足需求了，这个时候就需要用上二维数组。</p>
-<p><img src="/2021/04/04/%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E5%BA%8F%E5%88%97/table.png" alt="table"></p>
-<p>这里解释一下为什么表格第一行与第一列都要用0填满了——实际上这是防止边际判断和出界的一种方式（说白了就是懒，不这么搞也行就是麻烦点）。</p>
-<p>表格的使用其实很简单：每次拿单行与不同列比较，遇到相同字母就将【当前位置的数】=【左上单元格的数】+1，否则就【当前位置的数】=MAX（【左边单元格的数】，【上边单元格的数】）。然后最后一行最后一列的元素就是答案啦。</p>
-<p>不过这样的使用其实是有重要的含义的，比如【左上单元格的数】其实就是到当前列对应字母上一个字母时最长公共子序列长度，因此在当前已确定字母相同时，+1就相当于更新了当前最长公共子序列长度。</p>
-<p>再说MAX（【左边单元格的数】，【上边单元格的数】）的含义，这其实就是一个状态转移方程的一部分（上面那个也是，欸嘿），优先选取最长的可能（与背包问题类似，都是动态规划）。</p>
-<p><strong>代码如下：</strong></p>
-<p>\</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> max(a,b) ( ((a)&gt;(b)) ? (a):(b) )</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">longestCommonSubsequence</span><span class="params">(<span class="keyword">char</span>* text1, <span class="keyword">char</span>* text2)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">int</span> max=<span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">int</span>** table=<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="keyword">int</span>*)*(<span class="built_in">strlen</span>(text1)+<span class="number">1</span>));</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="built_in">strlen</span>(text1)+<span class="number">1</span>;i++)&#123;</span><br><span class="line"></span><br><span class="line">​    table[i]=<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="keyword">int</span>)*(<span class="built_in">strlen</span>(text2)+<span class="number">1</span>));</span><br><span class="line"></span><br><span class="line">​    table[i][<span class="number">0</span>]=<span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="built_in">strlen</span>(text2)+<span class="number">1</span>;i++)</span><br><span class="line"></span><br><span class="line">  table[<span class="number">0</span>][i]=<span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;<span class="built_in">strlen</span>(text1)+<span class="number">1</span>;i++)&#123;</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;<span class="built_in">strlen</span>(text2)+<span class="number">1</span>;j++)&#123;</span><br><span class="line"></span><br><span class="line">​      <span class="keyword">if</span>(text1[i<span class="number">-1</span>]==text2[j<span class="number">-1</span>])</span><br><span class="line"></span><br><span class="line">​      table[i][j]=table[i<span class="number">-1</span>][j<span class="number">-1</span>]+<span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">​      <span class="keyword">else</span></span><br><span class="line"></span><br><span class="line">​      table[i][j]=max(table[i<span class="number">-1</span>][j],table[i][j<span class="number">-1</span>]);</span><br><span class="line"></span><br><span class="line">​    &#125;</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> table[<span class="built_in">strlen</span>(text1)][<span class="built_in">strlen</span>(text2)];</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>主要还是要多多锻炼，动态规划有时候感觉是真的阴间OMO</p>
-<p><strong>最后放一张女儿在这里o(*≧▽≦)ツ┏━┓：</strong></p>
-<p><img src="/2021/04/04/%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E5%BA%8F%E5%88%97/KLEE.png" alt="KLEE"></p>
-]]></content>
-      <categories>
-        <category>程序算法</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>题目</tag>
-        <tag>动态规划</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>132模式</title>
-    <url>/2021/03/24/132/</url>
-    <content><![CDATA[<p><em>这道题主要涉及到了单调栈的运用，我还不是很熟悉这一类题型</em></p>
-<h3 id="题干"><a href="#题干" class="headerlink" title="题干:"></a><strong>题干:</strong></h3><blockquote>
-<p>给你一个整数数组 nums ，数组中共有 n 个整数。132 模式的子序列 由三个整数 nums[i]、nums[j] 和 nums[k] 组成，并同时满足：i &lt; j &lt; k 和 nums[i] &lt; nums[k] &lt; nums[j] 。</p>
-<p>如果 nums 中存在 132 模式的子序列 ，返回 true ；否则，返回 false 。</p>
-<p>进阶：很容易想到时间复杂度为 O(n^2) 的解决方案，你可以设计一个时间复杂度为 O(n logn) 或 O(n) 的解决方案吗？</p>
-</blockquote>
-<blockquote>
-<p>示例 1：</p>
-<p>输入：nums = [1,2,3,4]<br>输出：false<br>解释：序列中不存在 132 模式的子序列。<br>示例 2：</p>
-<p>输入：nums = [3,1,4,2]<br>输出：true<br>解释：序列中有 1 个 132 模式的子序列： [1, 4, 2] 。<br>示例 3：</p>
-<p>输入：nums = [-1,3,2,0]<br>输出：true<br>解释：序列中有 3 个 132 模式的的子序列：[-1, 3, 2]、[-1, 3, 0] 和 [-1, 2, 0] 。</p>
-<p>提示：</p>
-<ul>
-<li>n == nums.length</li>
-<li>1 &lt;= n &lt;= 104</li>
-<li>-109 &lt;= nums[i] &lt;= 109</li>
-</ul>
-<p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/132-pattern">https://leetcode-cn.com/problems/132-pattern</a></p>
-</blockquote>
-<p>读完后第一反应是找一些方便判断的特征，找到对应的候选数字后不断进行维护。。。然后运行的时间复杂度是O（n^2）,而且在写代码时让人非常不舒服，过程过于繁杂且容易出错。</p>
-<p>所以这里我们引入单调栈，即用栈存储数据，且栈内数据一定是单增（或单减），一旦遇到下一个数就立马用其与栈内元素比较，大于（或小于）的元素则全部出栈，最后将新的数压栈。</p>
-<p>对于这道题，我们用单减的单调栈，即栈内元素中一定存在代表132模式中“3”的元素，而出栈元素用一个max变量维护，保证max对应132中“2”的候选元素中的最大值。此时，只要新的元素小于max，即可返回true（即新元素为132模式中代表“1”的元素）</p>
-<p>代码如下：</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">find132pattern</span><span class="params">(<span class="keyword">int</span>* nums, <span class="keyword">int</span> numsSize)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span>(numsSize&lt;<span class="number">3</span>)</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">int</span> <span class="built_in">stack</span>[numsSize];</span><br><span class="line"></span><br><span class="line">  <span class="keyword">int</span> nu=<span class="number">0</span>,max=<span class="number">-1000000001</span>;</span><br><span class="line"></span><br><span class="line">  <span class="built_in">stack</span>[nu++]=nums[numsSize<span class="number">-1</span>];</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> i=numsSize<span class="number">-2</span>;i&gt;=<span class="number">0</span>;i--)&#123;</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">if</span>(nums[i]&lt;max)</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">for</span>(<span class="keyword">int</span> j=nu<span class="number">-1</span>;j&gt;=<span class="number">0</span>;j--)</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">if</span>(<span class="built_in">stack</span>[j]&lt;nums[i])&#123;</span><br><span class="line"></span><br><span class="line">​    nu--;</span><br><span class="line"></span><br><span class="line">​    max=<span class="built_in">stack</span>[j];</span><br><span class="line"></span><br><span class="line">​    &#125;</span><br><span class="line"></span><br><span class="line">​    <span class="built_in">stack</span>[nu++]=nums[i];</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<p><strong>如下图解：</strong></p>
-<p><img src="/2021/03/24/132/132.png" alt="132模式"></p>
-<p>这里还有一篇关于单调栈的文章，写的很好，放个链接在这里：</p>
-<p><a href="https://blog.csdn.net/weixin_42784951/article/details/88963758?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161659419116780262549524%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&amp;request_id=161659419116780262549524&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_v2~rank_v29-2-88963758.pc_search_result_cache&amp;utm_term=%E5%8D%95%E8%B0%83%E6%A0%88">https://blog.csdn.net/weixin_42784951/article/details/88963758?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161659419116780262549524%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&amp;request_id=161659419116780262549524&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_v2~rank_v29-2-88963758.pc_search_result_cache&amp;utm_term=%E5%8D%95%E8%B0%83%E6%A0%88</a></p>
-]]></content>
-      <categories>
-        <category>程序算法</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>题目</tag>
-        <tag>单调栈</tag>
       </tags>
   </entry>
   <entry>
@@ -423,45 +371,47 @@
       </tags>
   </entry>
   <entry>
-    <title>误上贼船学习C++面对对象</title>
-    <url>/2021/04/06/%E8%AF%AF%E4%B8%8A%E8%B4%BC%E8%88%B9%E5%AD%A6%E4%B9%A0C-%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>C++</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-        <tag>C++</tag>
-        <tag>面对对象</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>逆波兰（转载）</title>
-    <url>/2021/03/16/%E9%80%86%E6%B3%A2%E5%85%B0/</url>
-    <content><![CDATA[<p>输入有两行,第一行为逆波兰式的结果,第二行为输入表达式的正确计算结果。逆波兰式中相邻的数字或运算符之间不用输出空格</p>
-<p>保证表达式计算的合理性,不需判断除零等情况</p>
-<p>表达式的计算遵循同级运算从左向右,先乘除后加减</p>
-<p>样例输入:</p>
-<p>2+1*3+4</p>
-<p>样例输出:</p>
-<p>213*+4+</p>
-<p>9</p>
-<p>解题思路:</p>
-<p>首先定义两个栈,一个临时存储运算符S1,另一个作为输入逆波兰式S2的存放栈</p>
-<p>在S1中先放入一个‘#’运算符调整为最低,方便运算符的比较</p>
-<p>然后开始从表达式中取值</p>
-<p>(1)若取出的是表达式,直接将其放置到S2存放栈中</p>
-<p>(2)若取出的运算符,则将该元素与S1栈顶元素进行比较,如果该运算符优先级大于(小于或者等于都不行)S1栈顶运算符优先级,则将该运算符进S1栈,否则,将S1栈栈的栈顶运算符弹出,送入S2栈,之后再和S1现在的栈顶比较,直到运算符优先级大于栈顶为止后，将该运算符送入S1中</p>
-<p>(3)重复上述1-2步,直到所有输入字符都处理完毕</p>
-<p>(4)将S1中的所有符号除‘#’以外都push到S2中</p>
-<p>这样我们就得到了一个逆波兰序列</p>
-<p>计算结果:</p>
-<p>将逆波兰式依次堆入一个栈中,如果堆入的是一个运算符,取出栈里的头两个操作数(必为数字),将其执行运算符所代表的操作后</p>
-<p>(一般是 下 运算符 上),将结果放回栈中,最后剩下的栈顶就是结果</p>
-<p>代码如下:</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">am&gt;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stack&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">precede</span><span class="params">(<span class="keyword">char</span> a)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">switch</span> (a)</span><br><span class="line">	&#123;</span><br><span class="line">	<span class="keyword">case</span> <span class="string">&#x27;+&#x27;</span>:</span><br><span class="line">		<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="string">&#x27;-&#x27;</span>:</span><br><span class="line">		<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="string">&#x27;*&#x27;</span>:</span><br><span class="line">		<span class="keyword">return</span> <span class="number">2</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="string">&#x27;/&#x27;</span>:</span><br><span class="line">		<span class="keyword">return</span> <span class="number">2</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="string">&#x27;#&#x27;</span>:</span><br><span class="line">		<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">comparePrecde</span><span class="params">(<span class="keyword">char</span> a,<span class="keyword">char</span> b)</span> </span>&#123;  <span class="comment">//前表达式中的元素 后栈中的元素</span></span><br><span class="line">	<span class="keyword">int</span> pre_a = precede(a);</span><br><span class="line">	<span class="keyword">int</span> pre_b = precede(b);</span><br><span class="line"> </span><br><span class="line">	<span class="keyword">if</span> (pre_a &gt; pre_b) &#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span> &#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"> </span><br><span class="line">	<span class="built_in">stack</span>&lt;<span class="keyword">char</span>&gt; numStack;  <span class="comment">//用来存储数字</span></span><br><span class="line">	<span class="built_in">stack</span>&lt;<span class="keyword">char</span>&gt; exprStack;  <span class="comment">//用来存储表达式</span></span><br><span class="line">	<span class="built_in">stack</span>&lt;<span class="keyword">char</span>&gt; tempStack;  <span class="comment">//暂时存储</span></span><br><span class="line">	<span class="built_in">stack</span>&lt;<span class="keyword">float</span>&gt; resStack;  <span class="comment">//用来存储计算结果</span></span><br><span class="line">	<span class="built_in">vector</span>&lt;<span class="keyword">char</span>&gt; opVec;   <span class="comment">//正序输出</span></span><br><span class="line">	exprStack.push(<span class="string">&#x27;#&#x27;</span>);   </span><br><span class="line"> </span><br><span class="line">	<span class="built_in">string</span> buffer;   <span class="comment">//用来读取中缀表达式</span></span><br><span class="line">	<span class="built_in">cin</span> &gt;&gt; buffer;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; buffer.size(); ++i) &#123;   <span class="comment">//数字和运算符分离</span></span><br><span class="line">		<span class="keyword">if</span> (<span class="built_in">isdigit</span>(buffer[i])) &#123;</span><br><span class="line">			numStack.push(buffer[i]);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> &#123;</span><br><span class="line">			<span class="keyword">while</span> (!comparePrecde(buffer[i], exprStack.top())) &#123;</span><br><span class="line">				numStack.push(exprStack.top());</span><br><span class="line">				exprStack.pop();</span><br><span class="line">			&#125;</span><br><span class="line">			exprStack.push(buffer[i]);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">while</span> (exprStack.top() != <span class="string">&#x27;#&#x27;</span>) &#123;     <span class="comment">//剩余的元素压入栈</span></span><br><span class="line">		numStack.push(exprStack.top());</span><br><span class="line">		exprStack.pop();</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">while</span> (!numStack.empty()) &#123;</span><br><span class="line">		opVec.push_back(numStack.top());</span><br><span class="line">		tempStack.push(numStack.top());</span><br><span class="line">		numStack.pop();</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	reverse(opVec.begin(), opVec.end());  <span class="comment">//输出逆波兰式列</span></span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">auto</span> x : opVec) &#123;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; x;</span><br><span class="line">	&#125;</span><br><span class="line"> </span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">	<span class="comment">//计算结果</span></span><br><span class="line">	<span class="keyword">while</span> (!tempStack.empty()) &#123;</span><br><span class="line">		<span class="keyword">if</span> (<span class="built_in">isdigit</span>(tempStack.top())) &#123;</span><br><span class="line">			resStack.push((<span class="keyword">float</span>)(tempStack.top() - <span class="string">&#x27;0&#x27;</span>));  <span class="comment">//char to int</span></span><br><span class="line">			tempStack.pop();</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> &#123;</span><br><span class="line">			<span class="keyword">char</span> expr = tempStack.top();</span><br><span class="line">			tempStack.pop();</span><br><span class="line">			<span class="keyword">float</span> a = resStack.top();</span><br><span class="line">			resStack.pop();</span><br><span class="line">			<span class="keyword">float</span> b = resStack.top();</span><br><span class="line">			resStack.pop();</span><br><span class="line"> </span><br><span class="line">			<span class="keyword">switch</span> (expr)</span><br><span class="line">			&#123;</span><br><span class="line">			<span class="keyword">case</span><span class="number">&#x27;</span>+<span class="string">&#x27;:</span></span><br><span class="line">				resStack.push(b + a);</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span><span class="number">&#x27;</span>-<span class="string">&#x27;:</span></span><br><span class="line">				resStack.push(b - a);</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span><span class="number">&#x27;</span>*<span class="string">&#x27;:</span></span><br><span class="line">				resStack.push(b * a);</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span><span class="number">&#x27;</span>/<span class="string">&#x27;:</span></span><br><span class="line">				resStack.push(b / a);</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; resStack.top() &lt;&lt; <span class="built_in">endl</span>;   <span class="comment">//输出结果</span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    <title>最长公共子序列</title>
+    <url>/2021/04/04/%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E5%BA%8F%E5%88%97/</url>
+    <content><![CDATA[<p><em>这一类最长公共子序列问题属于二维数组动态规划的典型题目，非常经典所以做一下笔记。</em></p>
+<p><strong>首先是题干部分：</strong></p>
+<blockquote>
+<p>给定两个字符串 text1 和 text2，返回这两个字符串的最长 公共子序列 的长度。如果不存在 公共子序列 ，返回 0 。</p>
+<p>一个字符串的 子序列 是指这样一个新的字符串：它是由原字符串在不改变字符的相对顺序的情况下删除某些字符（也可以不删除任何字符）后组成的新字符串。</p>
+<p>例如，”ace” 是 “abcde” 的子序列，但 “aec” 不是 “abcde” 的子序列。<br>两个字符串的 公共子序列 是这两个字符串所共同拥有的子序列。</p>
+<blockquote>
+<p>示例 1：</p>
+<p>输入：text1 = “abcde”, text2 = “ace”<br>输出：3<br>解释：最长公共子序列是 “ace” ，它的长度为 3 。</p>
+</blockquote>
+<blockquote>
+<p>示例 2：</p>
+<p>输入：text1 = “abc”, text2 = “abc”<br>输出：3<br>解释：最长公共子序列是 “abc” ，它的长度为 3 。</p>
+</blockquote>
+<blockquote>
+<p>示例 3：</p>
+<p>输入：text1 = “abc”, text2 = “def”<br>输出：0<br>解释：两个字符串没有公共子序列，返回 0 。</p>
+</blockquote>
+<p>提示：</p>
+<ul>
+<li>1 &lt;= text1.length, text2.length &lt;= 1000</li>
+<li>text1 和 text2 仅由小写英文字符组成。</li>
+</ul>
+<p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/longest-common-subsequence">https://leetcode-cn.com/problems/longest-common-subsequence</a><br>著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。</p>
+</blockquote>
+<p>看见这种子序列啊，最长什么的，条件反射就会想到动态规划上，进而转到研究状态转化与条件。</p>
+<p>这里我们很清晰地认识到任一个字母最长的子序列长度取决于他之前字母的最长子序列。很显然，两组字符串做动态规划，一维数组基本不太可能满足需求了，这个时候就需要用上二维数组。</p>
+<p><img src="/2021/04/04/%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E5%BA%8F%E5%88%97/table.png" alt="table"></p>
+<p>这里解释一下为什么表格第一行与第一列都要用0填满了——实际上这是防止边际判断和出界的一种方式（说白了就是懒，不这么搞也行就是麻烦点）。</p>
+<p>表格的使用其实很简单：每次拿单行与不同列比较，遇到相同字母就将【当前位置的数】=【左上单元格的数】+1，否则就【当前位置的数】=MAX（【左边单元格的数】，【上边单元格的数】）。然后最后一行最后一列的元素就是答案啦。</p>
+<p>不过这样的使用其实是有重要的含义的，比如【左上单元格的数】其实就是到当前列对应字母上一个字母时最长公共子序列长度，因此在当前已确定字母相同时，+1就相当于更新了当前最长公共子序列长度。</p>
+<p>再说MAX（【左边单元格的数】，【上边单元格的数】）的含义，这其实就是一个状态转移方程的一部分（上面那个也是，欸嘿），优先选取最长的可能（与背包问题类似，都是动态规划）。</p>
+<p><strong>代码如下：</strong></p>
+<p>\</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> max(a,b) ( ((a)&gt;(b)) ? (a):(b) )</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">longestCommonSubsequence</span><span class="params">(<span class="keyword">char</span>* text1, <span class="keyword">char</span>* text2)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">int</span> max=<span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">int</span>** table=<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="keyword">int</span>*)*(<span class="built_in">strlen</span>(text1)+<span class="number">1</span>));</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="built_in">strlen</span>(text1)+<span class="number">1</span>;i++)&#123;</span><br><span class="line"></span><br><span class="line">​    table[i]=<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="keyword">int</span>)*(<span class="built_in">strlen</span>(text2)+<span class="number">1</span>));</span><br><span class="line"></span><br><span class="line">​    table[i][<span class="number">0</span>]=<span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="built_in">strlen</span>(text2)+<span class="number">1</span>;i++)</span><br><span class="line"></span><br><span class="line">  table[<span class="number">0</span>][i]=<span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;<span class="built_in">strlen</span>(text1)+<span class="number">1</span>;i++)&#123;</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;<span class="built_in">strlen</span>(text2)+<span class="number">1</span>;j++)&#123;</span><br><span class="line"></span><br><span class="line">​      <span class="keyword">if</span>(text1[i<span class="number">-1</span>]==text2[j<span class="number">-1</span>])</span><br><span class="line"></span><br><span class="line">​      table[i][j]=table[i<span class="number">-1</span>][j<span class="number">-1</span>]+<span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">​      <span class="keyword">else</span></span><br><span class="line"></span><br><span class="line">​      table[i][j]=max(table[i<span class="number">-1</span>][j],table[i][j<span class="number">-1</span>]);</span><br><span class="line"></span><br><span class="line">​    &#125;</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> table[<span class="built_in">strlen</span>(text1)][<span class="built_in">strlen</span>(text2)];</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p>————————————————<br>版权声明：本文为CSDN博主「alex1997222」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a href="https://blog.csdn.net/alex1997222/article/details/82764166">https://blog.csdn.net/alex1997222/article/details/82764166</a></p>
+<p>主要还是要多多锻炼，动态规划有时候感觉是真的阴间OMO</p>
+<p><strong>最后放一张女儿在这里o(*≧▽≦)ツ┏━┓：</strong></p>
+<p><img src="/2021/04/04/%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E5%BA%8F%E5%88%97/KLEE.png" alt="KLEE"></p>
 ]]></content>
       <categories>
         <category>程序算法</category>
@@ -469,7 +419,7 @@
       <tags>
         <tag>算法</tag>
         <tag>题目</tag>
-        <tag>学习</tag>
+        <tag>动态规划</tag>
       </tags>
   </entry>
   <entry>
@@ -524,6 +474,56 @@
       <tags>
         <tag>题目</tag>
         <tag>哈希表</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>误上贼船学习C++面对对象</title>
+    <url>/2021/04/06/%E8%AF%AF%E4%B8%8A%E8%B4%BC%E8%88%B9%E5%AD%A6%E4%B9%A0C-%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>C++</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+        <tag>C++</tag>
+        <tag>面对对象</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>逆波兰（转载）</title>
+    <url>/2021/03/16/%E9%80%86%E6%B3%A2%E5%85%B0/</url>
+    <content><![CDATA[<p>输入有两行,第一行为逆波兰式的结果,第二行为输入表达式的正确计算结果。逆波兰式中相邻的数字或运算符之间不用输出空格</p>
+<p>保证表达式计算的合理性,不需判断除零等情况</p>
+<p>表达式的计算遵循同级运算从左向右,先乘除后加减</p>
+<p>样例输入:</p>
+<p>2+1*3+4</p>
+<p>样例输出:</p>
+<p>213*+4+</p>
+<p>9</p>
+<p>解题思路:</p>
+<p>首先定义两个栈,一个临时存储运算符S1,另一个作为输入逆波兰式S2的存放栈</p>
+<p>在S1中先放入一个‘#’运算符调整为最低,方便运算符的比较</p>
+<p>然后开始从表达式中取值</p>
+<p>(1)若取出的是表达式,直接将其放置到S2存放栈中</p>
+<p>(2)若取出的运算符,则将该元素与S1栈顶元素进行比较,如果该运算符优先级大于(小于或者等于都不行)S1栈顶运算符优先级,则将该运算符进S1栈,否则,将S1栈栈的栈顶运算符弹出,送入S2栈,之后再和S1现在的栈顶比较,直到运算符优先级大于栈顶为止后，将该运算符送入S1中</p>
+<p>(3)重复上述1-2步,直到所有输入字符都处理完毕</p>
+<p>(4)将S1中的所有符号除‘#’以外都push到S2中</p>
+<p>这样我们就得到了一个逆波兰序列</p>
+<p>计算结果:</p>
+<p>将逆波兰式依次堆入一个栈中,如果堆入的是一个运算符,取出栈里的头两个操作数(必为数字),将其执行运算符所代表的操作后</p>
+<p>(一般是 下 运算符 上),将结果放回栈中,最后剩下的栈顶就是结果</p>
+<p>代码如下:</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">am&gt;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stack&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">precede</span><span class="params">(<span class="keyword">char</span> a)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">switch</span> (a)</span><br><span class="line">	&#123;</span><br><span class="line">	<span class="keyword">case</span> <span class="string">&#x27;+&#x27;</span>:</span><br><span class="line">		<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="string">&#x27;-&#x27;</span>:</span><br><span class="line">		<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="string">&#x27;*&#x27;</span>:</span><br><span class="line">		<span class="keyword">return</span> <span class="number">2</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="string">&#x27;/&#x27;</span>:</span><br><span class="line">		<span class="keyword">return</span> <span class="number">2</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="string">&#x27;#&#x27;</span>:</span><br><span class="line">		<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">comparePrecde</span><span class="params">(<span class="keyword">char</span> a,<span class="keyword">char</span> b)</span> </span>&#123;  <span class="comment">//前表达式中的元素 后栈中的元素</span></span><br><span class="line">	<span class="keyword">int</span> pre_a = precede(a);</span><br><span class="line">	<span class="keyword">int</span> pre_b = precede(b);</span><br><span class="line"> </span><br><span class="line">	<span class="keyword">if</span> (pre_a &gt; pre_b) &#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span> &#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"> </span><br><span class="line">	<span class="built_in">stack</span>&lt;<span class="keyword">char</span>&gt; numStack;  <span class="comment">//用来存储数字</span></span><br><span class="line">	<span class="built_in">stack</span>&lt;<span class="keyword">char</span>&gt; exprStack;  <span class="comment">//用来存储表达式</span></span><br><span class="line">	<span class="built_in">stack</span>&lt;<span class="keyword">char</span>&gt; tempStack;  <span class="comment">//暂时存储</span></span><br><span class="line">	<span class="built_in">stack</span>&lt;<span class="keyword">float</span>&gt; resStack;  <span class="comment">//用来存储计算结果</span></span><br><span class="line">	<span class="built_in">vector</span>&lt;<span class="keyword">char</span>&gt; opVec;   <span class="comment">//正序输出</span></span><br><span class="line">	exprStack.push(<span class="string">&#x27;#&#x27;</span>);   </span><br><span class="line"> </span><br><span class="line">	<span class="built_in">string</span> buffer;   <span class="comment">//用来读取中缀表达式</span></span><br><span class="line">	<span class="built_in">cin</span> &gt;&gt; buffer;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; buffer.size(); ++i) &#123;   <span class="comment">//数字和运算符分离</span></span><br><span class="line">		<span class="keyword">if</span> (<span class="built_in">isdigit</span>(buffer[i])) &#123;</span><br><span class="line">			numStack.push(buffer[i]);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> &#123;</span><br><span class="line">			<span class="keyword">while</span> (!comparePrecde(buffer[i], exprStack.top())) &#123;</span><br><span class="line">				numStack.push(exprStack.top());</span><br><span class="line">				exprStack.pop();</span><br><span class="line">			&#125;</span><br><span class="line">			exprStack.push(buffer[i]);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">while</span> (exprStack.top() != <span class="string">&#x27;#&#x27;</span>) &#123;     <span class="comment">//剩余的元素压入栈</span></span><br><span class="line">		numStack.push(exprStack.top());</span><br><span class="line">		exprStack.pop();</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">while</span> (!numStack.empty()) &#123;</span><br><span class="line">		opVec.push_back(numStack.top());</span><br><span class="line">		tempStack.push(numStack.top());</span><br><span class="line">		numStack.pop();</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	reverse(opVec.begin(), opVec.end());  <span class="comment">//输出逆波兰式列</span></span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">auto</span> x : opVec) &#123;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; x;</span><br><span class="line">	&#125;</span><br><span class="line"> </span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">	<span class="comment">//计算结果</span></span><br><span class="line">	<span class="keyword">while</span> (!tempStack.empty()) &#123;</span><br><span class="line">		<span class="keyword">if</span> (<span class="built_in">isdigit</span>(tempStack.top())) &#123;</span><br><span class="line">			resStack.push((<span class="keyword">float</span>)(tempStack.top() - <span class="string">&#x27;0&#x27;</span>));  <span class="comment">//char to int</span></span><br><span class="line">			tempStack.pop();</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> &#123;</span><br><span class="line">			<span class="keyword">char</span> expr = tempStack.top();</span><br><span class="line">			tempStack.pop();</span><br><span class="line">			<span class="keyword">float</span> a = resStack.top();</span><br><span class="line">			resStack.pop();</span><br><span class="line">			<span class="keyword">float</span> b = resStack.top();</span><br><span class="line">			resStack.pop();</span><br><span class="line"> </span><br><span class="line">			<span class="keyword">switch</span> (expr)</span><br><span class="line">			&#123;</span><br><span class="line">			<span class="keyword">case</span><span class="number">&#x27;</span>+<span class="string">&#x27;:</span></span><br><span class="line">				resStack.push(b + a);</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span><span class="number">&#x27;</span>-<span class="string">&#x27;:</span></span><br><span class="line">				resStack.push(b - a);</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span><span class="number">&#x27;</span>*<span class="string">&#x27;:</span></span><br><span class="line">				resStack.push(b * a);</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span><span class="number">&#x27;</span>/<span class="string">&#x27;:</span></span><br><span class="line">				resStack.push(b / a);</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; resStack.top() &lt;&lt; <span class="built_in">endl</span>;   <span class="comment">//输出结果</span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>————————————————<br>版权声明：本文为CSDN博主「alex1997222」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a href="https://blog.csdn.net/alex1997222/article/details/82764166">https://blog.csdn.net/alex1997222/article/details/82764166</a></p>
+]]></content>
+      <categories>
+        <category>程序算法</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>题目</tag>
+        <tag>学习</tag>
       </tags>
   </entry>
 </search>
