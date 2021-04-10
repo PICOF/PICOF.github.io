@@ -4831,8 +4831,8 @@ object-assign
             "shack hand": "e9/2018new_woshou_thumb.png",
             bow: "e7/2018new_zuoyi_org.png",
             come: "42/2018new_guolai_thumb.png",
-            punch: "86/2018new_quantou_thumb.png",
-            这个吊: "https://picof.github.io/images/bqb/diao",
+            punch: "86/2018new_quantou_thumb.png",//从这里开始就是自定义表情包，网络上面都叫用第三方网站保存。害，感觉不太踏实就都换成github仓库链接了
+            这个吊: "https://picof.github.io/images/bqb/diao.jfif",
             傲娇:"https://cdn.jsdelivr.net/gh/drew233/cdn/20200409103906.webp",
 	开心:"https://cdn.jsdelivr.net/gh/drew233/cdn/20200409104757.webp",
 	扣手手:"https://cdn.jsdelivr.net/gh/drew233/cdn/20200409130304.webp",
