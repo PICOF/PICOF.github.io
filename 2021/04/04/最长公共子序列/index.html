@@ -826,11 +826,11 @@
 
 
   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  <script src="/js/src/valineDIY.js"></script>
   
   <script type="text/javascript">
     var GUEST = ['nick','mail','link'];
-    var guest = 'nick';
+    var guest = 'nick,mail';
     guest = guest.split(',').filter(item=>{
       return GUEST.indexOf(item)>-1;
     });
@@ -841,7 +841,7 @@
         appId: '34JaUOWKIzaErTN3kNpmGQIr-gzGzoHsz',
         appKey: 'q1AOfq4hT1awmBzPprgaPz1l',
         placeholder: '快来一起玩呀(o゜▽゜)o☆',
-        avatar:'mm',
+        avatar:'retro',
         guest_info:guest,
         pageSize:'10' || 10,
     });
