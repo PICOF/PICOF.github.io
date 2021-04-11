@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="题目,动态规划,最小堆," />
 
 
 
@@ -86,15 +86,22 @@
 
 
 
-<meta name="description" content="һ����ȤʹȻ�Ĳ���">
-<meta property="og:type" content="website">
-<meta property="og:title" content="PICOF&#39;s blog">
-<meta property="og:url" content="http://picof.github.io/tags/%E6%B5%8B%E8%AF%95/index.html">
+<meta name="description" content="其实这道题本身难度并不大，但是这道题目与最小堆相关的解法上仍有很多值得学习的地方。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="丑数II">
+<meta property="og:url" content="http://picof.github.io/2021/04/11/%E4%B8%91%E6%95%B0II/index.html">
 <meta property="og:site_name" content="PICOF&#39;s blog">
-<meta property="og:description" content="һ����ȤʹȻ�Ĳ���">
+<meta property="og:description" content="其实这道题本身难度并不大，但是这道题目与最小堆相关的解法上仍有很多值得学习的地方。">
 <meta property="og:locale">
+<meta property="og:image" content="http://picof.github.io/2021/04/11/%E4%B8%91%E6%95%B0II/cover.JPG">
+<meta property="article:published_time" content="2021-04-11T10:20:16.000Z">
+<meta property="article:modified_time" content="2021-04-11T12:12:16.881Z">
 <meta property="article:author" content="PICOF">
+<meta property="article:tag" content="题目">
+<meta property="article:tag" content="动态规划">
+<meta property="article:tag" content="最小堆">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://picof.github.io/2021/04/11/%E4%B8%91%E6%95%B0II/cover.JPG">
 
 
 
@@ -124,13 +131,13 @@
 
 
 
-  <link rel="canonical" href="http://PICOF.github.io/tags/测试/"/>
+  <link rel="canonical" href="http://PICOF.github.io/2021/04/11/丑数II/"/>
 
 
 
 
 
-  <title>标签: 测试 | PICOF's blog</title>
+  <title>丑数II | PICOF's blog</title>
   
 
 
@@ -155,7 +162,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -293,54 +300,284 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>测试<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://PICOF.github.io/2021/04/11/%E4%B8%91%E6%95%B0II/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/head.JPG">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="PICOF's blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2021/03/31/image/" itemprop="url">
-              
-                <span itemprop="name">image</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">丑数II</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2021-03-31T17:04:02+08:00"
-              content="2021-03-31" >
-          03-31
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-04-11T18:20:16+08:00">
+                2021-04-11
+              </time>
+            
 
-    </header>
-  </article>
+            
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2021-04-11T20:12:16+08:00">
+                2021-04-11
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A8%8B%E5%BA%8F%E7%AE%97%E6%B3%95/" itemprop="url" rel="index">
+                    <span itemprop="name">程序算法</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2021/04/11/%E4%B8%91%E6%95%B0II/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2021/04/11/%E4%B8%91%E6%95%B0II/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  921 字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  3 分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="/2021/04/11/%E4%B8%91%E6%95%B0II/cover.JPG" alt="cover"></p>
+<p><em>其实这道题本身难度并不大，但是这道题目与最小堆相关的解法上仍有很多值得学习的地方。</em></p>
+<span id="more"></span>
+
+<h2 id="一、题干："><a href="#一、题干：" class="headerlink" title="一、题干："></a>一、题干：</h2><blockquote>
+<p>给你一个整数 n ，请你找出并返回第 n 个 丑数 。</p>
+<p>丑数 就是只包含质因数 2、3 和/或 5 的正整数。</p>
+<blockquote>
+<p>示例 1：</p>
+<p>输入：n = 10<br>输出：12<br>解释：[1, 2, 3, 4, 5, 6, 8, 9, 10, 12] 是由前 10 个丑数组成的序列。</p>
+</blockquote>
+<blockquote>
+<p>示例 2：</p>
+<p>输入：n = 1<br>输出：1<br>解释：1 通常被视为丑数。</p>
+</blockquote>
+<blockquote>
+<p>提示：</p>
+<ul>
+<li>1 &lt;= n &lt;= 1690</li>
+</ul>
+</blockquote>
+<p>来源：力扣（LeetCode）<br>链接：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/ugly-number-ii">https://leetcode-cn.com/problems/ugly-number-ii</a><br>著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。</p>
+</blockquote>
+<p>建议先阅读丑数I的题目作为了解：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/ugly-number/">https://leetcode-cn.com/problems/ugly-number/</a></p>
+<h2 id="二、题解："><a href="#二、题解：" class="headerlink" title="二、题解："></a>二、题解：</h2><h3 id="1、动态规划："><a href="#1、动态规划：" class="headerlink" title="1、动态规划："></a>1、动态规划：</h3><p>实际上，最容易想到的解法就是动态规划，毕竟这种新数字可以用之前的数据推出摆明了就是动态规划。</p>
+<p>那么我们该怎么建立状态转移方程呢?其实这个应该从丑数的性质开始探讨：</p>
+<blockquote>
+<p>“<strong>丑数</strong> 就是只包含质因数 <code>2</code>、<code>3</code> 和/或 <code>5</code> 的正整数。”</p>
+</blockquote>
+<p>因此我们新的数字肯定是要用之前的某数乘上2，3或5得到的，并且因为题目要求是升序排列，那么不难得出dp【i】=max{num1*2，num2*3，num3*5}这个方程。</p>
+<p>那么现在新的问题又出现了：这三个数该如何确定呢？</p>
+<p>这里我们采用三指针（a，b，c）的方法：初始位置都是第一个数，每一个指针只会单一地将所指向的数乘上2，3或者5。一旦找出max{dp【a】*2，dp【b】*3，dp【c】*5}，就将对应的指针后移。这里用C写一个判断：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> tar=min(dp[a]*<span class="number">5</span>,dp[b]*<span class="number">3</span>,dp[c]*<span class="number">2</span>);</span><br><span class="line">       <span class="keyword">if</span>(tar==dp[a]*<span class="number">5</span>) </span><br><span class="line">       a++;</span><br><span class="line">	   <span class="keyword">if</span>(tar==dp[b]*<span class="number">3</span>) </span><br><span class="line">       b++;</span><br><span class="line">       <span class="keyword">if</span>(tar==dp[c]*<span class="number">2</span>) </span><br><span class="line">       c++;</span><br><span class="line">       dp[i]=tar;</span><br></pre></td></tr></table></figure>
+
+<p>这里注意三个指针乘2，3或5后的值都要参与判断，目的是为了将与最小值相等的所有指针都后移从而避免重复的情况。</p>
+<h5 id="！：为何后移？"><a href="#！：为何后移？" class="headerlink" title="！：为何后移？"></a>！：为何后移？</h5><p><em>我们说过丑数是由之前的数乘2，3，5得到的，因此得到最小值后，该指针指向的数就已经没有再乘对应数的价值了（比如说a指针对应乘2，被选取后这个最小值就已经在dp队列里了，因此就可以丢弃了即a++），而其它的不变（因为丑数数列是定的，我们只是把他写出来，所有的丑数都会用上，所以上一次未成为最小值的数一定会在未来成为某位置的最小数）。</em></p>
+<h3 id="2、最小堆："><a href="#2、最小堆：" class="headerlink" title="2、最小堆："></a>2、最小堆：</h3><p>用最小堆的优点是易于理解，仅需要用一个哈希表进行查重工作防止重复输出，剩下的就是模板化的堆运算，但是缺点也太明显了要写好多内容呜呜呜，并且时间复杂度为O(nlogn)远高于动态规划。</p>
+<p>每次拿出最顶端的数，存入对应乘以2，3，5后的数（三个），以此类推。</p>
+<p><strong>最小堆 构建、插入、删除的过程图解：</strong></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/hrn1216/article/details/51465270?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161812713416780357267485%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=161812713416780357267485&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-2-51465270.first_rank_v2_pc_rank_v29&amp;utm_term=%E6%9C%80%E5%B0%8F%E5%A0%86">https://blog.csdn.net/hrn1216/article/details/51465270?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161812713416780357267485%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=161812713416780357267485&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-2-51465270.first_rank_v2_pc_rank_v29&amp;utm_term=%E6%9C%80%E5%B0%8F%E5%A0%86</a></p>
+<p>之后学习堆这一部分时会再详细整理一下各种理论知识与细节，数据结构的氵还是挺深的</p>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    PICOF
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://picof.github.io/2021/04/11/%E4%B8%91%E6%95%B0II/" title="丑数II">http://picof.github.io/2021/04/11/%E4%B8%91%E6%95%B0II/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E9%A2%98%E7%9B%AE/" rel="tag"><i class="fa fa-tag"></i> 题目</a>
+          
+            <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" rel="tag"><i class="fa fa-tag"></i> 动态规划</a>
+          
+            <a href="/tags/%E6%9C%80%E5%B0%8F%E5%A0%86/" rel="tag"><i class="fa fa-tag"></i> 最小堆</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2021/04/08/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%EF%BC%88%E7%AC%91%EF%BC%89/" rel="next" title="学习资料（笑）">
+                <i class="fa fa-chevron-left"></i> 学习资料（笑）
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -348,6 +585,13 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -368,8 +612,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -433,6 +686,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E9%A2%98%E5%B9%B2%EF%BC%9A"><span class="nav-number">1.</span> <span class="nav-text">一、题干：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E9%A2%98%E8%A7%A3%EF%BC%9A"><span class="nav-number">2.</span> <span class="nav-text">二、题解：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%EF%BC%9A"><span class="nav-number">2.1.</span> <span class="nav-text">1、动态规划：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%EF%BC%81%EF%BC%9A%E4%B8%BA%E4%BD%95%E5%90%8E%E7%A7%BB%EF%BC%9F"><span class="nav-number">2.1.0.1.</span> <span class="nav-text">！：为何后移？</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81%E6%9C%80%E5%B0%8F%E5%A0%86%EF%BC%9A"><span class="nav-number">2.2.</span> <span class="nav-text">2、最小堆：</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -603,6 +872,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
