@@ -134,9 +134,10 @@
 <p><em>因此算法的时间复杂度其实就和两表长度和有关</em></p>
 </blockquote>
 <p>其实也完全可以先直接一股脑全部塞进去，再利用qsort（）函数进行排序（从懒得写代码的角度来说我其实更喜欢这个）。</p>
-<h4 id="总结："><a href="#总结：" class="headerlink" title="总结："></a><strong>总结：</strong></h4><p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/f.png" alt="f"></p>
+<h4 id="顺序存储总结："><a href="#顺序存储总结：" class="headerlink" title="顺序存储总结："></a><strong>顺序存储总结：</strong></h4><p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/f.png" alt="f"></p>
 <p>顺序储存固然方便，但同时也存在诸多不足。因此，在一些特定情况下，顺序存储显然已不能满足要求，此时就需要用到链式存储。</p>
 <h3 id="二、线性表的链式存储："><a href="#二、线性表的链式存储：" class="headerlink" title="二、线性表的链式存储："></a>二、线性表的链式存储：</h3><p>☺<strong>采用链式存储结构的线性表称为链表</strong> <strong>。</strong></p>
+<p>☺<strong>每个节点包含指针域（存放位置）和数据域（存放结点的值）</strong> </p>
 <p>☺<strong>设计链式存储结构时，每个逻辑结点存储单独存储，为了表示逻辑关系，增加指针域。</strong> </p>
 <p><em>（物理上不一定相连，是由指针域来保持逻辑关系上相连的）</em></p>
 <p>仅有后继节点的是单链表，而多一个前驱节点则成为了双链表</p>
@@ -162,6 +163,10 @@
 <p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/g.png" alt="g"></p>
 <p>由此可见带尾结点的链表结构在进行一些运算时比仅有头指针的链表表现更优（查找，合并等操作），比如：</p>
 <p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/i.png" alt="i"><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/h.png" alt="h"></p>
+<h4 id="双向链表："><a href="#双向链表：" class="headerlink" title="双向链表："></a>双向链表：</h4><p>相比单向链表，既有后继节点又有前驱节点，从任一结点出发可以访问其他结点。</p>
+<p>对应的，也有<strong>双向循环链表</strong>。</p>
+<p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/j.png" alt="j"></p>
+<h4 id="链式存储总结："><a href="#链式存储总结：" class="headerlink" title="链式存储总结："></a>链式存储总结：</h4><p><img src="/2021/04/06/ch2%E7%BA%BF%E6%80%A7%E8%A1%A8%E6%80%BB%E7%BB%93/k.png" alt="k"></p>
 ]]></content>
       <categories>
         <category>数据结构</category>
