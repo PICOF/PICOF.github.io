@@ -581,4 +581,59 @@
         <tag>哈希表</tag>
       </tags>
   </entry>
+  <entry>
+    <title>最大数</title>
+    <url>/2021/04/12/%E6%9C%80%E5%A4%A7%E6%95%B0/</url>
+    <content><![CDATA[<p><img src="/2021/04/12/%E6%9C%80%E5%A4%A7%E6%95%B0/cover.JPG" alt="cover"></p>
+<p><em>主要是复习了sprintf函数，快速排序的灵活运用。</em></p>
+<span id="more"></span>
+
+<h2 id="一、题干："><a href="#一、题干：" class="headerlink" title="一、题干："></a>一、题干：</h2><blockquote>
+<p>给定一组非负整数 nums，重新排列每个数的顺序（每个数不可拆分）使之组成一个最大的整数。</p>
+<p>注意：输出结果可能非常大，所以你需要返回一个字符串而不是整数。</p>
+<blockquote>
+<p>示例 1：</p>
+<p>输入：nums = [10,2]<br>输出：”210”</p>
+</blockquote>
+<blockquote>
+<p>示例 2：</p>
+<p>输入：nums = [3,30,34,5,9]<br>输出：”9534330”</p>
+</blockquote>
+<blockquote>
+<p>示例 3：</p>
+<p>输入：nums = [1]<br>输出：”1”</p>
+</blockquote>
+<blockquote>
+<p>示例 4：</p>
+<p>输入：nums = [10]<br>输出：”10”</p>
+</blockquote>
+<p>提示：</p>
+<ul>
+<li>1 &lt;= nums.length &lt;= 100</li>
+<li>0 &lt;= nums[i] &lt;= 109</li>
+</ul>
+<p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/largest-number">https://leetcode-cn.com/problems/largest-number</a><br>著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。</p>
+</blockquote>
+<h2 id="二、解答："><a href="#二、解答：" class="headerlink" title="二、解答："></a>二、解答：</h2><p>题目难点在于解决先后排序问题：即在新的大小定义下调整顺序，用qsort函数加自定义比较函数cmp可以解决。</p>
+<p>如何比较谁应该前置？我们可以先将相邻两个数链接组合，比较两种序列大小（比如12和3就应该比较123和312），选取较大数并将顺序重排。对整个数列操作后得到最大数列，再利用sprintf插入。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">cmp</span><span class="params">(<span class="keyword">int</span> *a,<span class="keyword">int</span> *b)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">long</span> p=<span class="number">10</span>,q=<span class="number">10</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">while</span>(p&lt;=*a)</span><br><span class="line"></span><br><span class="line">  p*=<span class="number">10</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">while</span>(q&lt;=*b)</span><br><span class="line"></span><br><span class="line">  q*=<span class="number">10</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> (*b)*p+(*a)-((*a)*q+(*b));</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">char</span> * <span class="title">largestNumber</span><span class="params">(<span class="keyword">int</span>* nums, <span class="keyword">int</span> numsSize)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= numsSize; i++)&#123;</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">if</span>(i==numsSize)</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">return</span> <span class="string">&quot;0&quot;</span>;</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">if</span>(nums[i]!=<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">break</span>;</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">char</span>* ch=(<span class="keyword">char</span>*)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="keyword">char</span>)*<span class="number">10000</span>);</span><br><span class="line"></span><br><span class="line">  qsort(nums, numsSize, <span class="keyword">sizeof</span>(<span class="keyword">int</span>), cmp);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">char</span> *p = ch;<span class="comment">//这里再次声明了一个字符指针p，是为了追踪每次sprintf后末尾的位置。</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; numsSize; i++) &#123;</span><br><span class="line"></span><br><span class="line">​    <span class="built_in">sprintf</span>(p, <span class="string">&quot;%d&quot;</span>, nums[i]);</span><br><span class="line"></span><br><span class="line">​    p += <span class="built_in">strlen</span>(p);</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> ch;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="三、关于函数sprintf："><a href="#三、关于函数sprintf：" class="headerlink" title="三、关于函数sprintf："></a>三、关于函数sprintf：</h2><p>这个函数在C语言库的&lt;stdio.h&gt;中就有，以下是sprintf函数的声明：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">sprintf</span><span class="params">(<span class="keyword">char</span> *str, <span class="keyword">const</span> <span class="keyword">char</span> *format, ...)</span></span></span><br></pre></td></tr></table></figure>
+
+<p><strong>str</strong>–即是我们要写入的对象，指向一个字符数组</p>
+<p><strong>format</strong>–是一个字符串，包含了要被写入到字符串 str 的文本。它可以包含嵌入的 format 标签，format 标签可被随后的附加参数中指定的值替换，并按需求进行格式化。</p>
+<p><strong>附加参数</strong> – 根据不同的 format 字符串，函数可能需要一系列的附加参数，每个参数包含了一个要被插入的值，替换了 format 参数中指定的每个 % 标签。参数的个数应与 % 标签的个数相同。</p>
+<p>如果成功，则会返回写入字符长度（不包含’\0’），失败返回一个负数。</p>
+<p><em>详细说明链接：</em></p>
+<p><em><a href="https://www.runoob.com/cprogramming/c-function-sprintf.html">https://www.runoob.com/cprogramming/c-function-sprintf.html</a></em></p>
+]]></content>
+      <categories>
+        <category>程序算法</category>
+      </categories>
+      <tags>
+        <tag>题目</tag>
+        <tag>串</tag>
+      </tags>
+  </entry>
 </search>
