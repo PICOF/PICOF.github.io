@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="题目,单调栈,动态规划,双指针," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -86,29 +86,15 @@
 
 
 
-<meta name="description" content="今天遇见了一道程序员面试经典题，虽然分级算是困难但实际上较好上手，并且有许多解法都能正确解决此类问题，是很好的学习材料，特此记录。">
-<meta property="og:type" content="article">
-<meta property="og:title" content="接雨水问题">
-<meta property="og:url" content="http://picof.github.io/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/index.html">
+<meta name="description" content="һ����ȤʹȻ�Ĳ���">
+<meta property="og:type" content="website">
+<meta property="og:title" content="PICOF&#39;s blog">
+<meta property="og:url" content="http://picof.github.io/categories/%E7%A8%8B%E5%BA%8F%E7%AE%97%E6%B3%95-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/index.html">
 <meta property="og:site_name" content="PICOF&#39;s blog">
-<meta property="og:description" content="今天遇见了一道程序员面试经典题，虽然分级算是困难但实际上较好上手，并且有许多解法都能正确解决此类问题，是很好的学习材料，特此记录。">
+<meta property="og:description" content="һ����ȤʹȻ�Ĳ���">
 <meta property="og:locale">
-<meta property="og:image" content="http://picof.github.io/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/cover.JPG">
-<meta property="og:image" content="http://picof.github.io/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/rainwatertrap.png">
-<meta property="og:image" content="http://picof.github.io/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/dp.png">
-<meta property="og:image" content="http://picof.github.io/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/f11.png">
-<meta property="og:image" content="http://picof.github.io/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/f12.png">
-<meta property="og:image" content="http://picof.github.io/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/f13.png">
-<meta property="og:image" content="http://picof.github.io/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/f14.png">
-<meta property="article:published_time" content="2021-04-02T07:57:57.000Z">
-<meta property="article:modified_time" content="2021-04-10T04:21:37.538Z">
 <meta property="article:author" content="PICOF">
-<meta property="article:tag" content="题目">
-<meta property="article:tag" content="单调栈">
-<meta property="article:tag" content="动态规划">
-<meta property="article:tag" content="双指针">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://picof.github.io/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/cover.JPG">
 
 
 
@@ -138,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="http://PICOF.github.io/2021/04/02/接雨水问题/"/>
+  <link rel="canonical" href="http://PICOF.github.io/categories/程序算法-数据结构/"/>
 
 
 
 
 
-  <title>接雨水问题 | PICOF's blog</title>
+  <title>分类: 程序算法 数据结构 | PICOF's blog</title>
   
 
 
@@ -169,7 +155,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-left ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -307,285 +293,55 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
+  
+  
+  
+  <div class="post-block category">
 
-  
+    <div id="posts" class="posts-collapse">
+      <div class="collection-title">
+        <h1>程序算法 数据结构<small>分类</small>
+        </h1>
+      </div>
 
-  
-  
-  
+      
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://PICOF.github.io/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/">
+    <header class="post-header">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/head.JPG">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="PICOF's blog">
-    </span>
-
-    
-      <header class="post-header">
-
+      <h2 class="post-title">
         
+            <a class="post-title-link" href="/2021/04/14/Trie%E5%89%8D%E7%BC%80%E6%A0%91/" itemprop="url">
+              
+                <span itemprop="name">Trie前缀树</span>
+              
+            </a>
         
-          <h1 class="post-title" itemprop="name headline">接雨水问题</h1>
-        
+      </h2>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-04-02T15:57:57+08:00">
-                2021-04-02
-              </time>
-            
-
-            
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2021-04-10T12:21:37+08:00">
-                2021-04-10
-              </time>
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%A8%8B%E5%BA%8F%E7%AE%97%E6%B3%95/" itemprop="url" rel="index">
-                    <span itemprop="name">程序算法</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  720 字
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  2 分钟
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <p><img src="/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/cover.JPG" alt="cover"></p>
-<p><em>今天遇见了一道程序员面试经典题，虽然分级算是困难但实际上较好上手，并且有许多解法都能正确解决此类问题，是很好的学习材料，特此记录。</em></p>
-<span id="more"></span>
-
-<h2 id="题干："><a href="#题干：" class="headerlink" title="题干："></a><strong>题干：</strong></h2><blockquote>
-<p>给定一个直方图(也称柱状图)，假设有人从上面源源不断地倒水，最后直方图能存多少水量?直方图的宽度为 1。</p>
-<p><img src="/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/rainwatertrap.png" alt="rainwatertrap"></p>
-<p>上面是由数组 [0,1,0,2,1,0,1,3,2,1,2,1] 表示的直方图，在这种情况下，可以接 6 个单位的水（蓝色部分表示水）。 感谢 Marcos 贡献此图。</p>
-<p>示例:</p>
-<p>输入: [0,1,0,2,1,0,1,3,2,1,2,1]<br>输出: 6</p>
-<p>来源：力扣（LeetCode）<br>链接：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/volume-of-histogram-lcci">https://leetcode-cn.com/problems/volume-of-histogram-lcci</a></p>
-</blockquote>
-<p>下面是三种不同的解法：</p>
-<p>[^（朴素做法是将每个height元素都向左右两边遍历，很明显这个方案时间复杂度足足有O(n^2)，在此不作赘述）]: </p>
-<h2 id="一、动态规划："><a href="#一、动态规划：" class="headerlink" title="一、动态规划："></a>一、动态规划：</h2><h2 id><a href="#" class="headerlink" title></a><img src="/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/dp.png" alt="动态规划解法"></h2><p>因为实际蓄水量取决于左右两边最矮的高度，因此两边重叠得到的就是对应的蓄水量（注意单个方向遍历时都是取的遍历中遇到过的最高高度）</p>
-<p>时间复杂度只有O(n)。</p>
-<h2 id="二、单调栈："><a href="#二、单调栈：" class="headerlink" title="二、单调栈："></a>二、单调栈：</h2><p>其实，个人觉得用单调栈其实更好一些（问就是单调栈yyds），仅用一次遍历就可以得出答案，比上一解法三次遍历更优。</p>
-<p>具体操作过程主要有3步：</p>
-<blockquote>
-<ol>
-<li><strong>设置一个单调栈用于储存元素下标（注意是下标）</strong></li>
-<li><strong>开始向右依次遍历，遇到元素入栈，如果有top元素，且top比即将入栈的元素小，则出栈并计算该元素蓄水量，直至没有更小的top或者栈空</strong></li>
-<li><strong>重复2步骤直至遍历结束</strong></li>
-</ol>
-</blockquote>
-<p>至于每次如何计算蓄水量，下面有图解：</p>
-<p>（来源：力扣官方题解）</p>
-<p><img src="/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/f11.png" alt="f11"></p>
-<p><img src="/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/f12.png" alt="f12"></p>
-<p><img src="/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/f13.png" alt="f13"></p>
-<p><img src="/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/f14.png" alt="f14"></p>
-<p>由上图可见，基本上我们计算蓄水量时有三个重要的量：即将放入的元素next，栈顶元素top，以及top之前的一个元素pre。</p>
-<p>每次计算蓄水量时，其实是计算一个矩形面积——长为next-pre-1，而高则是在height[pre]和height[next]中挑一个最小的（满足“木桶效应”），与height[top]做差。最后再与之前得到的总蓄水量相加。</p>
-<h2 id="三、双指针："><a href="#三、双指针：" class="headerlink" title="三、双指针："></a>三、双指针：</h2><p>这个其实是最好理解的做法，算是朴素做法的一种优化设计。</p>
-<p>大致思路是利用left，right两个指针进行遍历，遇到right比left高就记录沿途蓄水量并移动left至right位置，没遇到就把沿途最高的值赋给left再次遍历，直至left到倒数第二个（此时就不可能再有后续蓄水量了）结束。</p>
-<p><em><strong>愿清明安康</strong></em></p>
-
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-      <div>
-        <ul class="post-copyright">
-  <li class="post-copyright-author">
-    <strong>本文作者：</strong>
-    PICOF
-  </li>
-  <li class="post-copyright-link">
-    <strong>本文链接：</strong>
-    <a href="http://picof.github.io/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/" title="接雨水问题">http://picof.github.io/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/</a>
-  </li>
-  <li class="post-copyright-license">
-    <strong>版权声明： </strong>
-    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
-  </li>
-</ul>
-
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2021-04-14T17:11:00+08:00"
+              content="2021-04-14" >
+          04-14
+        </time>
       </div>
-    
 
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/%E9%A2%98%E7%9B%AE/" rel="tag"><i class="fa fa-tag"></i> 题目</a>
-          
-            <a href="/tags/%E5%8D%95%E8%B0%83%E6%A0%88/" rel="tag"><i class="fa fa-tag"></i> 单调栈</a>
-          
-            <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" rel="tag"><i class="fa fa-tag"></i> 动态规划</a>
-          
-            <a href="/tags/%E5%8F%8C%E6%8C%87%E9%92%88/" rel="tag"><i class="fa fa-tag"></i> 双指针</a>
-          
-        </div>
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2021/03/31/image/" rel="next" title="image">
-                <i class="fa fa-chevron-left"></i> image
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2021/04/04/%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E5%BA%8F%E5%88%97/" rel="prev" title="最长公共子序列">
-                最长公共子序列 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
+    </header>
   </article>
 
 
-
-    <div class="post-spread">
       
     </div>
+
   </div>
+  
+  
+  
+
+  
+
 
 
           </div>
@@ -593,13 +349,6 @@
 
 
           
-
-  
-    <div class="comments" id="comments">
-    </div>
-  
-
-
 
         </div>
         
@@ -620,17 +369,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -694,22 +434,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A2%98%E5%B9%B2%EF%BC%9A"><span class="nav-number">1.</span> <span class="nav-text">题干：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%EF%BC%9A"><span class="nav-number">2.</span> <span class="nav-text">一、动态规划：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">3.</span> <span class="nav-text"></span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%8D%95%E8%B0%83%E6%A0%88%EF%BC%9A"><span class="nav-number">4.</span> <span class="nav-text">二、单调栈：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E5%8F%8C%E6%8C%87%E9%92%88%EF%BC%9A"><span class="nav-number">5.</span> <span class="nav-text">三、双指针：</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
@@ -880,10 +604,6 @@
 
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
-
-
 
   
 

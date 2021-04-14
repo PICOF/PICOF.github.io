@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="题目,单调栈,动态规划,双指针," />
+  <meta name="keywords" content="题目,树," />
 
 
 
@@ -86,29 +86,22 @@
 
 
 
-<meta name="description" content="今天遇见了一道程序员面试经典题，虽然分级算是困难但实际上较好上手，并且有许多解法都能正确解决此类问题，是很好的学习材料，特此记录。">
+<meta name="description" content="一、题干： 208. 实现 Trie (前缀树)**Trie**（发音类似 “try”）或者说 前缀树 是一种树形数据结构，用于高效地存储和检索字符串数据集中的键。这一数据结构有相当多的应用情景，例如自动补完和拼写检查。 请你实现 Trie 类：  Trie() 初始化前缀树对象。 void insert(String word) 向前缀树中插入字符串 word 。 boolean search">
 <meta property="og:type" content="article">
-<meta property="og:title" content="接雨水问题">
-<meta property="og:url" content="http://picof.github.io/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/index.html">
+<meta property="og:title" content="Trie前缀树">
+<meta property="og:url" content="http://picof.github.io/2021/04/14/Trie%E5%89%8D%E7%BC%80%E6%A0%91/index.html">
 <meta property="og:site_name" content="PICOF&#39;s blog">
-<meta property="og:description" content="今天遇见了一道程序员面试经典题，虽然分级算是困难但实际上较好上手，并且有许多解法都能正确解决此类问题，是很好的学习材料，特此记录。">
+<meta property="og:description" content="一、题干： 208. 实现 Trie (前缀树)**Trie**（发音类似 “try”）或者说 前缀树 是一种树形数据结构，用于高效地存储和检索字符串数据集中的键。这一数据结构有相当多的应用情景，例如自动补完和拼写检查。 请你实现 Trie 类：  Trie() 初始化前缀树对象。 void insert(String word) 向前缀树中插入字符串 word 。 boolean search">
 <meta property="og:locale">
-<meta property="og:image" content="http://picof.github.io/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/cover.JPG">
-<meta property="og:image" content="http://picof.github.io/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/rainwatertrap.png">
-<meta property="og:image" content="http://picof.github.io/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/dp.png">
-<meta property="og:image" content="http://picof.github.io/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/f11.png">
-<meta property="og:image" content="http://picof.github.io/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/f12.png">
-<meta property="og:image" content="http://picof.github.io/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/f13.png">
-<meta property="og:image" content="http://picof.github.io/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/f14.png">
-<meta property="article:published_time" content="2021-04-02T07:57:57.000Z">
-<meta property="article:modified_time" content="2021-04-10T04:21:37.538Z">
+<meta property="og:image" content="http://picof.github.io/2021/04/14/Trie%E5%89%8D%E7%BC%80%E6%A0%91/cover.jpg">
+<meta property="og:image" content="http://picof.github.io/2021/04/14/Trie%E5%89%8D%E7%BC%80%E6%A0%91/tree.bmp">
+<meta property="article:published_time" content="2021-04-14T09:11:00.000Z">
+<meta property="article:modified_time" content="2021-04-14T12:28:23.624Z">
 <meta property="article:author" content="PICOF">
 <meta property="article:tag" content="题目">
-<meta property="article:tag" content="单调栈">
-<meta property="article:tag" content="动态规划">
-<meta property="article:tag" content="双指针">
+<meta property="article:tag" content="树">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://picof.github.io/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/cover.JPG">
+<meta name="twitter:image" content="http://picof.github.io/2021/04/14/Trie%E5%89%8D%E7%BC%80%E6%A0%91/cover.jpg">
 
 
 
@@ -138,13 +131,13 @@
 
 
 
-  <link rel="canonical" href="http://PICOF.github.io/2021/04/02/接雨水问题/"/>
+  <link rel="canonical" href="http://PICOF.github.io/2021/04/14/Trie前缀树/"/>
 
 
 
 
 
-  <title>接雨水问题 | PICOF's blog</title>
+  <title>Trie前缀树 | PICOF's blog</title>
   
 
 
@@ -321,7 +314,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://PICOF.github.io/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/">
+    <link itemprop="mainEntityOfPage" href="http://PICOF.github.io/2021/04/14/Trie%E5%89%8D%E7%BC%80%E6%A0%91/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
@@ -338,7 +331,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">接雨水问题</h1>
+          <h1 class="post-title" itemprop="name headline">Trie前缀树</h1>
         
 
         <div class="post-meta">
@@ -350,8 +343,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-04-02T15:57:57+08:00">
-                2021-04-02
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-04-14T17:11:00+08:00">
+                2021-04-14
               </time>
             
 
@@ -366,8 +359,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2021-04-10T12:21:37+08:00">
-                2021-04-10
+              <time title="更新于" itemprop="dateModified" datetime="2021-04-14T20:28:23+08:00">
+                2021-04-14
               </time>
             
           </span>
@@ -385,8 +378,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%A8%8B%E5%BA%8F%E7%AE%97%E6%B3%95/" itemprop="url" rel="index">
-                    <span itemprop="name">程序算法</span>
+                  <a href="/categories/%E7%A8%8B%E5%BA%8F%E7%AE%97%E6%B3%95-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" itemprop="url" rel="index">
+                    <span itemprop="name">程序算法 数据结构</span>
                   </a>
                 </span>
 
@@ -403,8 +396,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/" itemprop="commentCount"></span>
+                <a href="/2021/04/14/Trie%E5%89%8D%E7%BC%80%E6%A0%91/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2021/04/14/Trie%E5%89%8D%E7%BC%80%E6%A0%91/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -426,7 +419,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  720 字
+                  1.1k 字
                 </span>
               
 
@@ -442,7 +435,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2 分钟
+                  4 分钟
                 </span>
               
             </div>
@@ -463,42 +456,44 @@
       
 
       
-        <p><img src="/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/cover.JPG" alt="cover"></p>
-<p><em>今天遇见了一道程序员面试经典题，虽然分级算是困难但实际上较好上手，并且有许多解法都能正确解决此类问题，是很好的学习材料，特此记录。</em></p>
-<span id="more"></span>
+        <p><img src="/2021/04/14/Trie%E5%89%8D%E7%BC%80%E6%A0%91/cover.jpg" alt="cover"></p>
+<h3 id="一、题干："><a href="#一、题干：" class="headerlink" title="一、题干："></a>一、题干：</h3><blockquote>
+<h4 id="208-实现-Trie-前缀树"><a href="#208-实现-Trie-前缀树" class="headerlink" title="208. 实现 Trie (前缀树)"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/implement-trie-prefix-tree/">208. 实现 Trie (前缀树)</a></h4><p>**<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%AD%97%E5%85%B8%E6%A0%91/9825209?fr=aladdin">Trie</a>**（发音类似 “try”）或者说 <strong>前缀树</strong> 是一种树形数据结构，用于高效地存储和检索字符串数据集中的键。这一数据结构有相当多的应用情景，例如自动补完和拼写检查。</p>
+<p>请你实现 Trie 类：</p>
+<ul>
+<li><code>Trie()</code> 初始化前缀树对象。</li>
+<li><code>void insert(String word)</code> 向前缀树中插入字符串 <code>word</code> 。</li>
+<li><code>boolean search(String word)</code> 如果字符串 <code>word</code> 在前缀树中，返回 <code>true</code>（即，在检索之前已经插入）；否则，返回 <code>false</code> 。</li>
+<li><code>boolean startsWith(String prefix)</code> 如果之前已经插入的字符串 <code>word</code> 的前缀之一为 <code>prefix</code> ，返回 <code>true</code> ；否则，返回 <code>false</code> 。</li>
+</ul>
+<p><strong>示例：</strong></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">输入</span><br><span class="line">[<span class="string">&quot;Trie&quot;</span>, <span class="string">&quot;insert&quot;</span>, <span class="string">&quot;search&quot;</span>, <span class="string">&quot;search&quot;</span>, <span class="string">&quot;startsWith&quot;</span>, <span class="string">&quot;insert&quot;</span>, <span class="string">&quot;search&quot;</span>]</span><br><span class="line">[[], [<span class="string">&quot;apple&quot;</span>], [<span class="string">&quot;apple&quot;</span>], [<span class="string">&quot;app&quot;</span>], [<span class="string">&quot;app&quot;</span>], [<span class="string">&quot;app&quot;</span>], [<span class="string">&quot;app&quot;</span>]]</span><br><span class="line">输出</span><br><span class="line">[null, null, <span class="literal">true</span>, <span class="literal">false</span>, <span class="literal">true</span>, null, <span class="literal">true</span>]</span><br><span class="line"></span><br><span class="line">解释</span><br><span class="line">Trie trie = <span class="keyword">new</span> Trie();</span><br><span class="line">trie.insert(<span class="string">&quot;apple&quot;</span>);</span><br><span class="line">trie.search(<span class="string">&quot;apple&quot;</span>);   <span class="comment">// 返回 True</span></span><br><span class="line">trie.search(<span class="string">&quot;app&quot;</span>);     <span class="comment">// 返回 False</span></span><br><span class="line">trie.startsWith(<span class="string">&quot;app&quot;</span>); <span class="comment">// 返回 True</span></span><br><span class="line">trie.insert(<span class="string">&quot;app&quot;</span>);</span><br><span class="line">trie.search(<span class="string">&quot;app&quot;</span>);     <span class="comment">// 返回 True</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="题干："><a href="#题干：" class="headerlink" title="题干："></a><strong>题干：</strong></h2><blockquote>
-<p>给定一个直方图(也称柱状图)，假设有人从上面源源不断地倒水，最后直方图能存多少水量?直方图的宽度为 1。</p>
-<p><img src="/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/rainwatertrap.png" alt="rainwatertrap"></p>
-<p>上面是由数组 [0,1,0,2,1,0,1,3,2,1,2,1] 表示的直方图，在这种情况下，可以接 6 个单位的水（蓝色部分表示水）。 感谢 Marcos 贡献此图。</p>
-<p>示例:</p>
-<p>输入: [0,1,0,2,1,0,1,3,2,1,2,1]<br>输出: 6</p>
-<p>来源：力扣（LeetCode）<br>链接：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/volume-of-histogram-lcci">https://leetcode-cn.com/problems/volume-of-histogram-lcci</a></p>
+<p><strong>提示：</strong></p>
+<ul>
+<li><code>1 &lt;= word.length, prefix.length &lt;= 2000</code></li>
+<li><code>word</code> 和 <code>prefix</code> 仅由小写英文字母组成</li>
+<li><code>insert</code>、<code>search</code> 和 <code>startsWith</code> 调用次数 <strong>总计</strong> 不超过 <code>3 * 104</code> 次</li>
+</ul>
 </blockquote>
-<p>下面是三种不同的解法：</p>
-<p>[^（朴素做法是将每个height元素都向左右两边遍历，很明显这个方案时间复杂度足足有O(n^2)，在此不作赘述）]: </p>
-<h2 id="一、动态规划："><a href="#一、动态规划：" class="headerlink" title="一、动态规划："></a>一、动态规划：</h2><h2 id><a href="#" class="headerlink" title></a><img src="/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/dp.png" alt="动态规划解法"></h2><p>因为实际蓄水量取决于左右两边最矮的高度，因此两边重叠得到的就是对应的蓄水量（注意单个方向遍历时都是取的遍历中遇到过的最高高度）</p>
-<p>时间复杂度只有O(n)。</p>
-<h2 id="二、单调栈："><a href="#二、单调栈：" class="headerlink" title="二、单调栈："></a>二、单调栈：</h2><p>其实，个人觉得用单调栈其实更好一些（问就是单调栈yyds），仅用一次遍历就可以得出答案，比上一解法三次遍历更优。</p>
-<p>具体操作过程主要有3步：</p>
-<blockquote>
-<ol>
-<li><strong>设置一个单调栈用于储存元素下标（注意是下标）</strong></li>
-<li><strong>开始向右依次遍历，遇到元素入栈，如果有top元素，且top比即将入栈的元素小，则出栈并计算该元素蓄水量，直至没有更小的top或者栈空</strong></li>
-<li><strong>重复2步骤直至遍历结束</strong></li>
-</ol>
-</blockquote>
-<p>至于每次如何计算蓄水量，下面有图解：</p>
-<p>（来源：力扣官方题解）</p>
-<p><img src="/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/f11.png" alt="f11"></p>
-<p><img src="/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/f12.png" alt="f12"></p>
-<p><img src="/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/f13.png" alt="f13"></p>
-<p><img src="/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/f14.png" alt="f14"></p>
-<p>由上图可见，基本上我们计算蓄水量时有三个重要的量：即将放入的元素next，栈顶元素top，以及top之前的一个元素pre。</p>
-<p>每次计算蓄水量时，其实是计算一个矩形面积——长为next-pre-1，而高则是在height[pre]和height[next]中挑一个最小的（满足“木桶效应”），与height[top]做差。最后再与之前得到的总蓄水量相加。</p>
-<h2 id="三、双指针："><a href="#三、双指针：" class="headerlink" title="三、双指针："></a>三、双指针：</h2><p>这个其实是最好理解的做法，算是朴素做法的一种优化设计。</p>
-<p>大致思路是利用left，right两个指针进行遍历，遇到right比left高就记录沿途蓄水量并移动left至right位置，没遇到就把沿途最高的值赋给left再次遍历，直至left到倒数第二个（此时就不可能再有后续蓄水量了）结束。</p>
-<p><em><strong>愿清明安康</strong></em></p>
+<h3 id="二、关于前缀树："><a href="#二、关于前缀树：" class="headerlink" title="二、关于前缀树："></a>二、关于前缀树：</h3><p>前缀树又被称为字典树，是一种树状数据结构，可以存储字符串集合，尤其对于相同前缀的字符串非常友好</p>
+<p>这一高效的数据结构有多种应用：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span>自动补全</span><br><span class="line"><span class="number">2.</span>拼写检查</span><br><span class="line"><span class="number">3.</span>IP 路由 (最长前缀匹配)</span><br><span class="line"><span class="number">4.</span>打字预测</span><br></pre></td></tr></table></figure>
+
+<p><strong>存储方式：</strong></p>
+<p><img src="/2021/04/14/Trie%E5%89%8D%E7%BC%80%E6%A0%91/tree.bmp" alt="tree"></p>
+<p>根节点上存储的全都是某几个字符串的公共字符，因此便于查找前缀。每一个节点里都是一个字符元素。在与哈希表相似的原理支持下，按字符搜索可以将其复杂度降低至O（n）<em>（这里n是字符串长度）</em>平衡二叉树复杂度为O（logn），可见在字符串的长度较小时前缀树更为合适。</p>
+<p><strong>实现：</strong></p>
+<p>具体实现方式其实有两种——<strong>1、用数组</strong>实现和<strong>2、用Hash Map</strong>实现。</p>
+<p>数组解法基本思路是每个节点用一个长度26的数组储存该节点字符情况，并用一个bool数值判断是否到达末尾（即后续无字符节点）。</p>
+<h3 id="代码（数组）："><a href="#代码（数组）：" class="headerlink" title="代码（数组）："></a><strong>代码（数组）：</strong></h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> &#123;</span></span><br><span class="line">  <span class="class"><span class="keyword">struct</span> <span class="title">Trie</span>* <span class="title">wd</span>[26];</span></span><br><span class="line">  <span class="keyword">bool</span> end;</span><br><span class="line">&#125; Trie;</span><br><span class="line"><span class="comment">/** Initialize your data structure here. */</span></span><br><span class="line"><span class="function">Trie* <span class="title">trieCreate</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  Trie* p=(Trie*)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(Trie));</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">26</span>;i++)&#123;</span><br><span class="line">​    p-&gt;wd[i]=<span class="literal">NULL</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  p-&gt;end=<span class="literal">false</span>;</span><br><span class="line">  <span class="keyword">return</span> p;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/** Inserts a word into the trie. */</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">trieInsert</span><span class="params">(Trie* obj, <span class="keyword">char</span> * word)</span> </span>&#123;</span><br><span class="line"> <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="built_in">strlen</span>(word);i++)&#123;</span><br><span class="line">   <span class="keyword">if</span>(obj-&gt;wd[word[i]<span class="number">-97</span>]==<span class="literal">NULL</span>)&#123;</span><br><span class="line">​     Trie* p=trieCreate();</span><br><span class="line">​     obj-&gt;wd[word[i]<span class="number">-97</span>]=p;</span><br><span class="line">   &#125;</span><br><span class="line">   obj=obj-&gt;wd[word[i]<span class="number">-97</span>];</span><br><span class="line"> &#125;</span><br><span class="line"> obj-&gt;end=<span class="literal">true</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/** Returns if the word is in the trie. */</span></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">trieSearch</span><span class="params">(Trie* obj, <span class="keyword">char</span> * word)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="built_in">strlen</span>(word);i++)&#123;</span><br><span class="line">​    <span class="comment">// if(i=strlen(word)-1&amp;&amp;obj-&gt;wd[word[i]-97]-&gt;wd!=NULL)</span></span><br><span class="line">​    <span class="comment">// return false;</span></span><br><span class="line">   <span class="keyword">if</span>(obj-&gt;wd[word[i]<span class="number">-97</span>]!=<span class="literal">NULL</span>)&#123;</span><br><span class="line">​     obj=obj-&gt;wd[word[i]<span class="number">-97</span>];</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">else</span>&#123;</span><br><span class="line">​     <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">   &#125;</span><br><span class="line"> &#125;</span><br><span class="line"> <span class="keyword">return</span> obj-&gt;end;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/** Returns if there is any word in the trie that starts with the given prefix. */</span></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">trieStartsWith</span><span class="params">(Trie* obj, <span class="keyword">char</span> * prefix)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="built_in">strlen</span>(prefix);i++)&#123;</span><br><span class="line">   <span class="keyword">if</span>(obj-&gt;wd[prefix[i]<span class="number">-97</span>]!=<span class="literal">NULL</span>)&#123;</span><br><span class="line">​     obj=obj-&gt;wd[prefix[i]<span class="number">-97</span>];</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">else</span>&#123;</span><br><span class="line">​     <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">   &#125;</span><br><span class="line"> &#125;</span><br><span class="line"> <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">trieFree</span><span class="params">(Trie* obj)</span> </span>&#123;</span><br><span class="line">  <span class="built_in">free</span>(obj);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> \* Your Trie struct will be instantiated and called as such:</span></span><br><span class="line"><span class="comment"> \* Trie* obj = trieCreate();</span></span><br><span class="line"><span class="comment"> \* trieInsert(obj, word);</span></span><br><span class="line"><span class="comment"> \* bool param_2 = trieSearch(obj, word);</span></span><br><span class="line"><span class="comment"> \* bool param_3 = trieStartsWith(obj, prefix);</span></span><br><span class="line"><span class="comment"> \* trieFree(obj);</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+<p>搜索字符串和前缀的方式相近，都是随节点向下匹配，只不过字符串要考虑当前是否为末尾（bool值判定）</p>
+<h3 id="Hash-Map方法："><a href="#Hash-Map方法：" class="headerlink" title="Hash Map方法："></a>Hash Map方法：</h3><h4 id="思路："><a href="#思路：" class="headerlink" title="思路："></a>思路：</h4><p>上面的方法预先对每个节点设置了一个长为26的数组，浪费空间。我们可以使用字典来实现。</p>
+<p>对于每个节点都是一个字典dict， <strong>它的键为后续的字符，值为这个字符对应的字典，同时对单词结尾的字符，我们添加一个键-1，如果-1在这个字典中，说明这个单词存在。整个结构相当于一层一层嵌套的字典，所以叫字典树。</strong></p>
+<p>参考资料：</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/JUandjuddd/article/details/110095650">Trie 前缀树原理及两种实现</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/xuexiaoyaani/article/details/79808338">数据结构之字典</a></p>
 
       
     </div>
@@ -519,7 +514,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://picof.github.io/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/" title="接雨水问题">http://picof.github.io/2021/04/02/%E6%8E%A5%E9%9B%A8%E6%B0%B4%E9%97%AE%E9%A2%98/</a>
+    <a href="http://picof.github.io/2021/04/14/Trie%E5%89%8D%E7%BC%80%E6%A0%91/" title="Trie前缀树">http://picof.github.io/2021/04/14/Trie%E5%89%8D%E7%BC%80%E6%A0%91/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -536,11 +531,7 @@
           
             <a href="/tags/%E9%A2%98%E7%9B%AE/" rel="tag"><i class="fa fa-tag"></i> 题目</a>
           
-            <a href="/tags/%E5%8D%95%E8%B0%83%E6%A0%88/" rel="tag"><i class="fa fa-tag"></i> 单调栈</a>
-          
-            <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" rel="tag"><i class="fa fa-tag"></i> 动态规划</a>
-          
-            <a href="/tags/%E5%8F%8C%E6%8C%87%E9%92%88/" rel="tag"><i class="fa fa-tag"></i> 双指针</a>
+            <a href="/tags/%E6%A0%91/" rel="tag"><i class="fa fa-tag"></i> 树</a>
           
         </div>
       
@@ -553,8 +544,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2021/03/31/image/" rel="next" title="image">
-                <i class="fa fa-chevron-left"></i> image
+              <a href="/2021/04/13/ch3%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/" rel="next" title="ch3栈和队列">
+                <i class="fa fa-chevron-left"></i> ch3栈和队列
               </a>
             
           </div>
@@ -562,10 +553,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2021/04/04/%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E5%BA%8F%E5%88%97/" rel="prev" title="最长公共子序列">
-                最长公共子序列 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -704,7 +691,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A2%98%E5%B9%B2%EF%BC%9A"><span class="nav-number">1.</span> <span class="nav-text">题干：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%EF%BC%9A"><span class="nav-number">2.</span> <span class="nav-text">一、动态规划：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">3.</span> <span class="nav-text"></span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%8D%95%E8%B0%83%E6%A0%88%EF%BC%9A"><span class="nav-number">4.</span> <span class="nav-text">二、单调栈：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E5%8F%8C%E6%8C%87%E9%92%88%EF%BC%9A"><span class="nav-number">5.</span> <span class="nav-text">三、双指针：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E9%A2%98%E5%B9%B2%EF%BC%9A"><span class="nav-number">1.</span> <span class="nav-text">一、题干：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#208-%E5%AE%9E%E7%8E%B0-Trie-%E5%89%8D%E7%BC%80%E6%A0%91"><span class="nav-number">1.1.</span> <span class="nav-text">208. 实现 Trie (前缀树)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%85%B3%E4%BA%8E%E5%89%8D%E7%BC%80%E6%A0%91%EF%BC%9A"><span class="nav-number">2.</span> <span class="nav-text">二、关于前缀树：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%EF%BC%88%E6%95%B0%E7%BB%84%EF%BC%89%EF%BC%9A"><span class="nav-number">3.</span> <span class="nav-text">代码（数组）：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hash-Map%E6%96%B9%E6%B3%95%EF%BC%9A"><span class="nav-number">4.</span> <span class="nav-text">Hash Map方法：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF%EF%BC%9A"><span class="nav-number">4.1.</span> <span class="nav-text">思路：</span></a></li></ol></li></ol></div>
             
 
           </div>
