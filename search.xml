@@ -832,4 +832,116 @@
         <tag>字符串</tag>
       </tags>
   </entry>
+  <entry>
+    <title>关于前缀和与差分数组</title>
+    <url>/2021/04/22/%E5%85%B3%E4%BA%8E%E5%89%8D%E7%BC%80%E5%92%8C/</url>
+    <content><![CDATA[<img src="/2021/04/22/%E5%85%B3%E4%BA%8E%E5%89%8D%E7%BC%80%E5%92%8C/cover.JPG" alt="cover" style="zoom: 67%;">
+
+<p><em>写这篇博客是因为前一天遇到了二维前缀和的题目，趁着这次机会（还没忘）赶紧梳理一下前缀和以及区分一下和它很像的差分</em></p>
+<span id="more"></span>
+
+<h3 id="一、从一维讲起的前缀和"><a href="#一、从一维讲起的前缀和" class="headerlink" title="一、从一维讲起的前缀和"></a>一、从一维讲起的前缀和</h3><p>前缀和——一听就知道是与总和密切相关的变量，那么究竟是什么原理呢？</p>
+<p>对于一个数列（如1，3，5，7，9），我们在求其某一位或某几位数的总和时，一般采用累加的方式，而前缀和就是记录到每一位位置之前所以数累加的和。</p>
+<p><img src="/2021/04/22/%E5%85%B3%E4%BA%8E%E5%89%8D%E7%BC%80%E5%92%8C/a.bmp" alt="a"></p>
+<p>这样其实会有一次复杂度为O(n)的遍历，和一般直接求和复杂度基本一致，为什么还要多此一举呢？原因在于我们一般将前缀和与动态规划及其它需要频繁调用数据的算法相结合，这些情况下前缀和只用遍历一次，复杂度远远低于一般求和。</p>
+<h3 id="二、前缀和进阶——二维前缀和"><a href="#二、前缀和进阶——二维前缀和" class="headerlink" title="二、前缀和进阶——二维前缀和"></a>二、前缀和进阶——二维前缀和</h3><p>既然能够求解一维数组的区间和，那么我们推而广之，它是否也可以进行矩阵区域的求和呢？答案是肯定的</p>
+<p><img src="/2021/04/22/%E5%85%B3%E4%BA%8E%E5%89%8D%E7%BC%80%E5%92%8C/b.bmp" alt="b"></p>
+<p>如上图，这里我们定义每个位置对应s数组储存的是其左上区域所有元素的总和，因此调用上方元素和左方元素，再加上a【i】【j】。但是注意我们的s[i-1][j]和s[i][j-1]其实有一片重合区域——s[i-1][j-1]，他被我们重复计算，因此需要减去其中一个。</p>
+<p>所以至此，求区域总和慢慢变得像是一个数学几何问题了，用区域相减相加，再处理重合部分</p>
+<p><img src="/2021/04/22/%E5%85%B3%E4%BA%8E%E5%89%8D%E7%BC%80%E5%92%8C/c.bmp" alt="c"></p>
+<p>这里我们求的是坐标（a，b）至（i，j）围成的红色矩形区域的总和，易得:</p>
+<ol>
+<li><strong>s[a][j-1]=BLUE+GREEN;</strong></li>
+<li><strong>s[i-1][b]=ORANGE+GREEN;</strong></li>
+<li><strong>s[a-1][b-1]=GREEN;</strong></li>
+<li><strong>RED=GREEN+BLUE+ORANGE;</strong></li>
+</ol>
+<p>联立解得红色区域。</p>
+<h3 id="三、前缀和的近亲——差分数组"><a href="#三、前缀和的近亲——差分数组" class="headerlink" title="三、前缀和的近亲——差分数组"></a>三、前缀和的近亲——差分数组</h3><p>如果弄清楚了前缀和，那么差分其实也好办了——我们说前缀和计算的是一段区域总和，而差分则是能方便我们快速地将一段区域上的元素同时加减某数。</p>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th align="center">0</th>
+<th align="center">1</th>
+<th align="center">2</th>
+<th align="center">3</th>
+<th align="center">4</th>
+<th align="center">5</th>
+<th align="center">6</th>
+<th align="center">7</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>原始数组 a[i]</strong></td>
+<td align="center">0</td>
+<td align="center">3</td>
+<td align="center">4</td>
+<td align="center">5</td>
+<td align="center">2</td>
+<td align="center">7</td>
+<td align="center">12</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td><strong>差分数组 d[i]</strong></td>
+<td align="center"></td>
+<td align="center">3</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">-3</td>
+<td align="center">5</td>
+<td align="center">5</td>
+<td align="center">-6</td>
+</tr>
+</tbody></table>
+<p>之前我们计算前缀和是用**s[i]=a[1]+a[2]+a[3]+…+a[i]<strong>来计算的，目的是为了使</strong>a[i]=s[i]-s[i-1]<strong>；同理，差分的公式为：</strong>d[i](差分数组)=a[i]-a[i-1]<strong>，这样就可以保证</strong>a[i]=s[1]+s[2]+s[3]+…+s[i]<strong>。注意差分数组由于公式中存在</strong>a[i-1]<strong>，所以也要在原始数组中多添加一项</strong>a[0]**防止溢出。</p>
+<p>我们在用差分数组计算某一项的值时，都会从最开头累加，因此只要在差分数组上动些手脚，就能实现对区域上的元素同时加减某数。</p>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th align="center">0</th>
+<th align="center">1</th>
+<th align="center">2</th>
+<th align="center">3</th>
+<th align="center">4</th>
+<th align="center">5</th>
+<th align="center">6</th>
+<th align="center">7</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>原始数组 a[i]</strong></td>
+<td align="center">0</td>
+<td align="center">3</td>
+<td align="center">4+1=5</td>
+<td align="center">5+1=6</td>
+<td align="center">2+1=3</td>
+<td align="center">7</td>
+<td align="center">12</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td><strong>差分数组 d[i]</strong></td>
+<td align="center"></td>
+<td align="center">3</td>
+<td align="center"><em><strong>1+1</strong></em></td>
+<td align="center">1</td>
+<td align="center">-3</td>
+<td align="center"><em><strong>5-1</strong></em></td>
+<td align="center">5</td>
+<td align="center">-6</td>
+</tr>
+</tbody></table>
+<p>由于是累加，那么在差分数组某一项上加减，它之后的所有项都会受到加减的buff，直到有一项主动减去来抵消这种影响。</p>
+]]></content>
+      <categories>
+        <category>程序算法</category>
+      </categories>
+      <tags>
+        <tag>题目</tag>
+        <tag>数组</tag>
+      </tags>
+  </entry>
 </search>
