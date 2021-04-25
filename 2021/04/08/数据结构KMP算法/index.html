@@ -106,7 +106,7 @@
 <meta property="og:image" content="http://picof.github.io/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/betterNext.png">
 <meta property="og:image" content="http://picof.github.io/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/IMG_2662.JPG">
 <meta property="article:published_time" content="2021-04-08T03:41:17.000Z">
-<meta property="article:modified_time" content="2021-04-11T10:51:49.892Z">
+<meta property="article:modified_time" content="2021-04-25T08:05:50.808Z">
 <meta property="article:author" content="PICOF">
 <meta property="article:tag" content="算法">
 <meta property="article:tag" content="数据结构">
@@ -369,8 +369,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2021-04-11T18:51:49+08:00">
-                2021-04-11
+              <time title="更新于" itemprop="dateModified" datetime="2021-04-25T16:05:50+08:00">
+                2021-04-25
               </time>
             
           </span>
@@ -429,7 +429,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  998 字
+                  997 字
                 </span>
               
 
@@ -494,7 +494,7 @@
 <p><img src="/2021/04/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84KMP%E7%AE%97%E6%B3%95/GetNext.png" alt="GetNext"></p>
 <p>next[j]=k是记录当前最长相等前后缀长度，但是k=next[k]呢？这里就是理解这个函数的最大障碍，要弄清楚这个原理，我们再看看字符串中的对称：<br>$$<br>比如“abcdeabcdef”这个字符串<br>$$<br>字符串中“e”元素对应<strong>最长相等前后缀</strong>其实就是“abcde”，我们可以这么划分一下：</p>
 <p><strong>【abcde】【abcde】f</strong></p>
-<p>此时元素“f”出现了不匹配，那么我们就要找到一个新的<strong>最长相等前后缀</strong>，而这个新的最长相等前后缀肯定是小于“abcde”且除新的“f”元素以外都包含于“abcde”的，此时由于<strong>【abcde】【abcde】f</strong>中两个“abcdef”彼此对称，我们就可以把k回溯至开头的“abcde”后方进行判定。</p>
+<p>此时元素“f”出现了不匹配，那么我们就要找到一个新的<strong>最长相等前后缀</strong>，而这个新的最长相等前后缀肯定是小于“abcde”且除新的“f”元素以外都包含于“abcde”的，此时由于<strong>【abcde】【abcde】f</strong>中两个“abcdef”彼此对称，我们就可以把k回溯至开头的“abcde”后进行判定。</p>
 <p>如此反复调用之前记录过的next[k]数据，即可求得新的最长相等前后缀。这里有两篇教程：</p>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_34080571/article/details/93982239?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=KMPnext&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-4-93982239.first_rank_v2_pc_rank_v29">https://blog.csdn.net/weixin_34080571/article/details/93982239?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=KMPnext&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-4-93982239.first_rank_v2_pc_rank_v29</a></p>
 <p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/dusf/p/kmp.html">https://www.cnblogs.com/dusf/p/kmp.html</a></p>
@@ -661,7 +661,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">20</span>
+                  <span class="site-state-item-count">21</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -757,7 +757,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">13.1k</span>
+    <span title="Site words total count">13.9k</span>
   
 </div>
 
