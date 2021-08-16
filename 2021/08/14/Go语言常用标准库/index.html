@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="学习,Go,工作," />
 
 
 
@@ -86,19 +86,21 @@
 
 
 
-<meta name="description" content="文件操作文件的打开：使用 os.Open() 函数可以打开一个文件返回一个*File和一个err。相对的，使用 [文件对象].Close() 可以关闭对应文件  注：为防止忘记关闭文件，一般我们会加上 defer 推迟语句保证执行后关闭  读取文件：1、使用 read 方法Read方法定义如下： 1func (f *File) Read(b []byte) (n int, err error)">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PICOF&#39;s blog">
-<meta property="og:url" content="http://picof.github.io/2021/08/10/Go%E8%AF%AD%E8%A8%80%E5%B8%B8%E7%94%A8%E6%A0%87%E5%87%86%E5%BA%93/index.html">
+<meta property="og:title" content="Go语言常用标准库">
+<meta property="og:url" content="http://picof.github.io/2021/08/14/Go%E8%AF%AD%E8%A8%80%E5%B8%B8%E7%94%A8%E6%A0%87%E5%87%86%E5%BA%93/index.html">
 <meta property="og:site_name" content="PICOF&#39;s blog">
-<meta property="og:description" content="文件操作文件的打开：使用 os.Open() 函数可以打开一个文件返回一个*File和一个err。相对的，使用 [文件对象].Close() 可以关闭对应文件  注：为防止忘记关闭文件，一般我们会加上 defer 推迟语句保证执行后关闭  读取文件：1、使用 read 方法Read方法定义如下： 1func (f *File) Read(b []byte) (n int, err error)">
 <meta property="og:locale">
-<meta property="og:image" content="http://picof.github.io/2021/08/10/Go%E8%AF%AD%E8%A8%80%E5%B8%B8%E7%94%A8%E6%A0%87%E5%87%86%E5%BA%93/time.bmp">
-<meta property="article:published_time" content="2021-08-10T02:37:33.563Z">
-<meta property="article:modified_time" content="2021-08-16T15:01:51.521Z">
+<meta property="og:image" content="http://picof.github.io/2021/08/14/Go%E8%AF%AD%E8%A8%80%E5%B8%B8%E7%94%A8%E6%A0%87%E5%87%86%E5%BA%93/c.png">
+<meta property="og:image" content="http://picof.github.io/2021/08/14/Go%E8%AF%AD%E8%A8%80%E5%B8%B8%E7%94%A8%E6%A0%87%E5%87%86%E5%BA%93/time.bmp">
+<meta property="article:published_time" content="2021-08-14T06:55:00.000Z">
+<meta property="article:modified_time" content="2021-08-16T15:08:18.018Z">
 <meta property="article:author" content="PICOF">
+<meta property="article:tag" content="学习">
+<meta property="article:tag" content="Go">
+<meta property="article:tag" content="工作">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://picof.github.io/2021/08/10/Go%E8%AF%AD%E8%A8%80%E5%B8%B8%E7%94%A8%E6%A0%87%E5%87%86%E5%BA%93/time.bmp">
+<meta name="twitter:image" content="http://picof.github.io/2021/08/14/Go%E8%AF%AD%E8%A8%80%E5%B8%B8%E7%94%A8%E6%A0%87%E5%87%86%E5%BA%93/c.png">
 
 
 
@@ -128,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://PICOF.github.io/2021/08/10/Go语言常用标准库/"/>
+  <link rel="canonical" href="http://PICOF.github.io/2021/08/14/Go语言常用标准库/"/>
 
 
 
 
 
-  <title> | PICOF's blog</title>
+  <title>Go语言常用标准库 | PICOF's blog</title>
   
 
 
@@ -311,7 +313,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://PICOF.github.io/2021/08/10/Go%E8%AF%AD%E8%A8%80%E5%B8%B8%E7%94%A8%E6%A0%87%E5%87%86%E5%BA%93/">
+    <link itemprop="mainEntityOfPage" href="http://PICOF.github.io/2021/08/14/Go%E8%AF%AD%E8%A8%80%E5%B8%B8%E7%94%A8%E6%A0%87%E5%87%86%E5%BA%93/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
@@ -328,7 +330,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline"></h1>
+          <h1 class="post-title" itemprop="name headline">Go语言常用标准库</h1>
         
 
         <div class="post-meta">
@@ -340,8 +342,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-08-10T10:37:33+08:00">
-                2021-08-10
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-08-14T14:55:00+08:00">
+                2021-08-14
               </time>
             
 
@@ -356,12 +358,34 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2021-08-16T23:01:51+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2021-08-16T23:08:18+08:00">
                 2021-08-16
               </time>
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%90%8E%E7%AB%AF/" itemprop="url" rel="index">
+                    <span itemprop="name">后端</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -371,8 +395,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2021/08/10/Go%E8%AF%AD%E8%A8%80%E5%B8%B8%E7%94%A8%E6%A0%87%E5%87%86%E5%BA%93/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2021/08/10/Go%E8%AF%AD%E8%A8%80%E5%B8%B8%E7%94%A8%E6%A0%87%E5%87%86%E5%BA%93/" itemprop="commentCount"></span>
+                <a href="/2021/08/14/Go%E8%AF%AD%E8%A8%80%E5%B8%B8%E7%94%A8%E6%A0%87%E5%87%86%E5%BA%93/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2021/08/14/Go%E8%AF%AD%E8%A8%80%E5%B8%B8%E7%94%A8%E6%A0%87%E5%87%86%E5%BA%93/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -431,7 +455,10 @@
       
 
       
-        <h3 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h3><h4 id="文件的打开："><a href="#文件的打开：" class="headerlink" title="文件的打开："></a>文件的打开：</h4><p>使用 <code>os.Open()</code> 函数可以打开一个文件返回一个<code>*File</code>和一个<code>err</code>。相对的，使用 <code>[文件对象].Close()</code> 可以关闭对应文件</p>
+        <p><img src="/2021/08/14/Go%E8%AF%AD%E8%A8%80%E5%B8%B8%E7%94%A8%E6%A0%87%E5%87%86%E5%BA%93/c.png" alt="c"></p>
+<span id="more"></span>
+
+<h3 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h3><h4 id="文件的打开："><a href="#文件的打开：" class="headerlink" title="文件的打开："></a>文件的打开：</h4><p>使用 <code>os.Open()</code> 函数可以打开一个文件返回一个<code>*File</code>和一个<code>err</code>。相对的，使用 <code>[文件对象].Close()</code> 可以关闭对应文件</p>
 <blockquote>
 <p>注：为防止忘记关闭文件，一般我们会加上 defer 推迟语句保证执行后关闭</p>
 </blockquote>
@@ -855,7 +882,7 @@
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> (</span><br><span class="line">    Nanosecond  Duration = <span class="number">1</span></span><br><span class="line">    Microsecond          = <span class="number">1000</span> * Nanosecond</span><br><span class="line">    Millisecond          = <span class="number">1000</span> * Microsecond</span><br><span class="line">    Second               = <span class="number">1000</span> * Millisecond</span><br><span class="line">    Minute               = <span class="number">60</span> * Second</span><br><span class="line">    Hour                 = <span class="number">60</span> * Minute</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
 
 <p>例如：<code>time.Duration</code>表示1纳秒，<code>time.Second</code>表示1秒。</p>
-<h4 id="时间操作"><a href="#时间操作" class="headerlink" title="时间操作"></a>时间操作</h4><img src="/2021/08/10/Go%E8%AF%AD%E8%A8%80%E5%B8%B8%E7%94%A8%E6%A0%87%E5%87%86%E5%BA%93/time.bmp" alt="time" style="zoom: 40%;">
+<h4 id="时间操作"><a href="#时间操作" class="headerlink" title="时间操作"></a>时间操作</h4><img src="/2021/08/14/Go%E8%AF%AD%E8%A8%80%E5%B8%B8%E7%94%A8%E6%A0%87%E5%87%86%E5%BA%93/time.bmp" alt="time" style="zoom: 40%;">
 
 <p>有时候我们需要进行一些时间操作，这个时候 Go 语言丰富的方法就为我们提供了便捷。</p>
 <h5 id="Add"><a href="#Add" class="headerlink" title="Add"></a>Add</h5><p>我们在日常的编码过程中可能会遇到要求时间+时间间隔的需求，Go语言的时间对象有提供Add方法如下：</p>
@@ -960,7 +987,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://picof.github.io/2021/08/10/Go%E8%AF%AD%E8%A8%80%E5%B8%B8%E7%94%A8%E6%A0%87%E5%87%86%E5%BA%93/" title="">http://picof.github.io/2021/08/10/Go%E8%AF%AD%E8%A8%80%E5%B8%B8%E7%94%A8%E6%A0%87%E5%87%86%E5%BA%93/</a>
+    <a href="http://picof.github.io/2021/08/14/Go%E8%AF%AD%E8%A8%80%E5%B8%B8%E7%94%A8%E6%A0%87%E5%87%86%E5%BA%93/" title="Go语言常用标准库">http://picof.github.io/2021/08/14/Go%E8%AF%AD%E8%A8%80%E5%B8%B8%E7%94%A8%E6%A0%87%E5%87%86%E5%BA%93/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -972,6 +999,16 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag"><i class="fa fa-tag"></i> 学习</a>
+          
+            <a href="/tags/Go/" rel="tag"><i class="fa fa-tag"></i> Go</a>
+          
+            <a href="/tags/%E5%B7%A5%E4%BD%9C/" rel="tag"><i class="fa fa-tag"></i> 工作</a>
+          
+        </div>
       
 
       
